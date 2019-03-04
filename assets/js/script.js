@@ -72,7 +72,11 @@ $(document).ready(function(){
         nextArrow : '<button class="slick-review slick-next slick-models-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
     });
 });
-//---------------------------------------------------------------
+
+
+
+//---Table on Page Proguct------------------------------------------------------------
+
 (function () {
     var markers = $('.product_specifications_marker');
     var blocks = $('.product_specifications_values_content');
@@ -85,6 +89,19 @@ $(document).ready(function(){
     })
 })();
 
+// Slick Slider photo on page Individual Order
+
+$(document).ready(function(){
+    $('.individual_order_card_img_slider_main').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow : '<button class="slick-review slick-prev slick-photo-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow : '<button class="slick-review slick-next slick-photo-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+    });
+});
+
+// ----------------------------------
 
 
 // (function() {

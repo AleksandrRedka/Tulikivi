@@ -51,19 +51,25 @@
         left: 0%
         z-index: -1
 
-    &_button
-      display: flex
-      justify-content: center
-      align-items: center
-      &>button
-        width: 25rem
-        height: 6rem
-        border: 1px solid $orange
-        border-radius: 10px
-        background-color: #FFFFFF
-        font-size: 1.6rem
-        font-family: $LatoR
-        line-height: 2rem
-        color: $black
+  .button_more
+    display: flex
+    justify-content: center
+    align-items: center
+    &>button
+      outline: none
+      width: 25rem
+      height: 6rem
+      border: 1px solid $orange
+      border-radius: 10px
+      background-color: #FFFFFF
+      font-size: 1.6rem
+      font-family: $LatoR
+      line-height: 2rem
+      color: $black
+      transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out
+      &:hover
+        background-color: $orange
+        transform: scale(1.05)
+        font-weight: normal
 
 
