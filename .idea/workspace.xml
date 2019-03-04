@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea69979-a0dd-464d-847d-00a52b021a3e" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Tulikivi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_page_article.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/_page_product_2.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
@@ -19277,12 +19282,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551700295382</updated>
-      <workItem from="1551700298790" duration="259000" />
+      <workItem from="1551700298790" duration="580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259000" />
+    <option name="totallyTimeSpent" value="580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
