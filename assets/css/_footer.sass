@@ -1,0 +1,117 @@
+@media (min-width: $desct)
+  .footer
+    display: flex
+    flex-direction: column
+  .footer_top_content
+    padding: 0 3rem
+    display: flex
+    padding-bottom: 5rem
+    position: relative
+    flex-direction: row
+    height: 35rem
+  .footer_title
+    font-family: $LatoB
+    font-size: 2.4rem
+    line-height: 3rem
+    color: $black
+    margin-bottom: 2rem
+
+  //Contacts
+
+  .footer_contact_info
+    width: 23%
+    margin-right: 5rem
+    &_tel
+      font-family: $LatoB
+      font-size: 1.8rem
+      line-height: 2.4rem
+      &:last-child
+        margin-bottom: 1rem
+    &_time
+      font-family: $LatoR
+      font-size: 1.8rem
+      line-height: 3rem
+      color: $orange
+
+    //Footer Navigation
+
+  .footer_nav
+    width: 55%
+    &_list
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      height: 100%
+      width: 100%
+    &_link
+      width: 30%
+      margin-right: 5rem
+      margin-bottom: 1.5rem
+
+      &:nth-child(1n+5)
+        margin-right: 0
+      &:nth-child(7n+5)
+        margin-bottom: 1rem
+      &>a
+        font-family: $LatoR
+        font-size: 1.8rem
+        line-height: 2.4rem
+        color: $black
+        text-decoration: none
+        &:hover
+          color: $orange
+
+  .footer_adress
+    width: 22%
+    &_value
+      font-family: $LatoR
+      font-size: 1.8rem
+      line-height: 2.4rem
+      color: $black
+      margin-bottom: 20px
+    &_email
+      font-family: $LatoR
+      font-size: 1.8rem
+      line-height: 3rem
+      color: $black
+      margin-bottom: 0.5rem
+    &_small_text
+      font-family: $LatoR
+      font-size: 1.4rem
+      color: #707070
+      line-height: 1.7rem
+  .social_icon
+    position: absolute
+    bottom: 5rem
+    left: 3rem
+    &>ul
+      display: flex
+      flex-direction: row
+      &>li
+        margin-right: 3.5rem
+
+
+  .footer_down_content
+    padding: 4rem 3rem 2rem
+    background-color: #FAFAFA
+    display: flex
+    flex-direction: row
+    width: 100%
+    &_bold
+      margin-right: 8rem
+      &>p
+        font-family: $RubikM
+        font-size: 1.6rem
+        line-height: 3rem
+        color: $black
+        font-weight: bold
+    &_text
+      width: 90%
+      font-family: $LatoR
+      font-size: 1.4rem
+      color: #ACACAC
+      line-height: 1.8rem
+
+
+
+

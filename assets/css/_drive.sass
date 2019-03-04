@@ -1,0 +1,140 @@
+.drive
+  width: 100%
+  margin: 0 auto
+  position: relative
+  padding: 10rem 0 2rem 3rem
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  &_header
+    width: 100%
+    font-size: 3.2rem
+    line-height: 4rem
+    color: $orange
+    font-weight: bold
+  &_img
+    display: inline-block
+    width: 35%
+    min-height: 80vh
+    overflow: hidden
+    position: relative
+    &_viewer
+      width: 200%
+      height: 200%
+      position: absolute
+      left: -50%
+      top: -50%
+      display: flex
+      justify-content: center
+      align-items: center
+      align-content: center
+      perspective: 60px
+    img
+      min-height: 55%
+      min-width: 55%
+      transition: all 350ms ease-in-out
+      &:hover
+        transform: rotateY(1deg)
+        transition: all 350ms ease-in-out
+    .rotate_img
+      transform: rotateY(180deg)
+      transition: all 350ms ease-in-out
+      &:hover
+        transform: rotateY(181deg)
+        transition: all 350ms ease-in-out
+  &_content
+    width: 65%
+    background-color: rgba(250, 250, 250, 1)
+    padding: 3rem
+    text-align: center
+  &_sub_header
+    font-size: 1.8rem
+    color: $black
+    line-height: 2.4rem
+    margin-top: 3rem
+  &_text
+    font-size: 1.8rem
+    line-height: 2.4rem
+    color: $black
+    margin-top: 5rem
+    text-align: center
+  &_form
+    display: block
+    margin: 5rem auto
+    width: 50%
+    min-width: 40rem
+    &_input
+      width: 100%
+      display: block
+      position: relative
+      margin-top: 4.5rem
+      label
+        font-size: 1.8rem
+        content: $orange
+        position: absolute
+        display: inline-block
+        top: 0
+        left: 0
+        transition: top 350ms ease-in-out, font-size 350ms ease-in-out
+        pointer-events: none
+      option
+        font-size: 1.8rem
+        color: $black
+        outline: 1px solid rgba(250, 250, 250, 1)
+        background-color: rgba(250, 250, 250, 1)
+        border: 1px solid rgba(250, 250, 250, 1)
+        &:focus
+          background-color: $orange
+          color: white
+          font-weight: bold
+        //padding-left: 10rem
+      input, select
+        display: inline-block
+        background-color: transparent
+        outline: none
+        border: none
+        border-bottom: 1px solid rgba(172, 172, 172, 1)
+        height: 3rem
+        width: 100%
+        color: $black
+        font-size: 1.8rem
+        text-indent: 10rem
+        transition: text-indent 200ms ease-in-out
+        &:focus
+          text-indent: 1rem
+          border-bottom: 1px solid $orange
+        &:focus + label
+          top: - 50%
+          font-size: 1.4rem
+          color: $orange
+      &:nth-child(4)
+        input
+          text-indent: 15rem
+          &:focus
+            text-indent: 1rem
+
+  &_submit
+    display: inline-block
+    position: relative
+    width: 100%
+    height: 60px
+    line-height: 56px
+    background-color: transparent
+    border: 2px solid $orange
+    border-radius: 10px
+    font-size: 1.8rem
+    text-align: center
+    color: $black
+    box-sizing: border-box
+    margin: 4rem auto 0
+    text-decoration: none
+    transition: all 350ms
+    text-transform: uppercase
+    &:hover
+      background-color: $orange
+      text-decoration: none
+      color: white
+      transform: scale(1.05)
+      p
+        color: white
+        text-transform: uppercase

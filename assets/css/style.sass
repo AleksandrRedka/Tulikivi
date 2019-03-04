@@ -1,0 +1,101 @@
+$orange: rgba(229, 103, 68, 1)
+$black : rgba(68, 68, 68, 1)
+
+//Переменные А.R.=======================================
+$LatoB : "Lato Bold", sans-serif
+$LatoR : "Lato Regular", sans-serif
+$LatoBI : 'Lato Bolt Italic', sans-serif
+$fontC : #444444
+$RubikM : 'Rubik Medium', sans-serif
+$desct : 1200px
+p
+  font-family: $LatoR
+  font-size: 1.8rem
+  color: #444444
+  line-height: 2.4rem
+a
+  cursor: pointer
+  text-decoration: none
+a:hover
+  text-decoration: none
+  color: $black
+button
+  cursor: pointer
+.section_title
+  font-family: $LatoB
+  color: $black
+  font-size: 3.2rem
+  line-height: 4rem
+  margin-bottom: 3rem
+
+//=================================================
+body,html, *
+  font-size: 10px
+  font-family: Lato
+  color: $black
+  @media screen and (max-width: 1680px)
+    font-size: 8px
+  @media screen and (max-width: 1200px)
+    font-size: 6px
+
+@import "font"
+@import "input_range_style"
+@import "aside"
+@import "drive"
+@import "plitka"
+@import "form"
+@import "login"
+@import "site_bar"
+@import "main"
+@import "main_about"
+@import "main_popular"
+@import "main_why"
+@import "main_review"
+@import "slider_works"
+@import "slider_popular_models"
+@import "about"
+@import "ovens"
+@import "gallery"
+@import "page_product"
+@import "page_product_two"
+@import "photo"
+@import "articles"
+@import "page_article"
+@import "contacts"
+@import "partners"
+@import "why_tulikivi"
+@import "footer"
+.main_wrapper
+  width: 100%
+  height: auto
+  display: block
+.page_wrapper
+  width: 55%
+  margin-left: 20%
+  height: auto
+  display: block
+.page_wrapper_without_site_bar
+  width: 80%
+  margin-left: 20%
+  height: auto
+  display: block
+.aside
+  width: 20%
+.center_wrapper
+  width: 55%
+  padding-left: 3rem
+  padding-right: 3rem
+  margin-left: 20%
+  height: auto
+  display: block
+.site_bar
+  padding: 0rem 3rem
+  content: ""
+  width: 25%
+  height: 100%
+  display: block
+  border: 2px solid #000
+  background-color: #FAFAFA
+  position: fixed
+  right: 0
+  top: 0

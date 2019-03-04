@@ -1,0 +1,137 @@
+@media (min-width: $desct)
+  .main_reviews
+    //overflow: hidden
+    width: 100%
+    margin: 0 auto
+    position: relative
+    padding: 10rem 3rem 2rem 3rem
+    &_content
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: stretch
+      align-content: stretch
+      height: auto
+      width: 100%
+      padding-top: 3rem
+    &_wrapper
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 50%
+      flex: 1 1 auto
+      //padding-right: 3rem
+      padding-left: 1.5rem
+      position: relative
+      &:after
+        pointer-events: none
+        content: ''
+        display: block
+        width: 50%
+        height: 100%
+        background-color: rgba(255, 255, 255, 0.6)
+        position: absolute
+        box-shadow: 0px 10px 45px 2px rgba(255,255,255,1)
+        right: -35%
+        top: 0
+    &_videos
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      width: 50%
+      flex: 1 1 auto
+      justify-content: space-between
+      align-content: space-between
+      padding-right: 1.5rem
+      padding-bottom: 5rem
+    &_video
+      width: calc(50% - 1.5rem)
+      height: calc(50% - 1.2rem)
+      &_frame
+        width: 100%
+        height: 100%
+      &_text
+        width: 100%
+        font-size: 1.4rem
+        line-height: 3.2rem
+        color: $black
+        padding-top: 0.5rem
+    &_header
+      width: 100%
+      font-size: 8rem
+      line-height: 10rem
+      color: $orange
+      font-weight: bold
+    &_slider
+      width: 130%
+      height: 100%
+      overflow: hidden
+      padding-bottom: 5rem
+      .slick-review
+        position: absolute
+        bottom: 1rem
+        width: 5rem
+        background-color: transparent
+        border: none
+        transition: transform 200ms ease-in-out
+        img
+          width: 100%
+        &:focus
+          outline: none
+        &:hover
+          transform: scale(1.2)
+      .slick-prev
+        left: 61%
+        img
+          transform: rotate(180deg)
+      .slick-next
+        left: calc(60% + 8rem)
+    &_slide
+      display: inline-block
+      width: 26%
+      box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+      text-decoration: none
+      cursor: pointer
+      margin-right: 3rem
+      transition: transform 600ms ease-in-out
+      &:hover
+        text-decoration: none
+        transform: scale(1.05)
+
+      &_img
+        width: 100%
+        height: 33%
+        overflow: hidden
+        cursor: pointer
+        img
+          width: 100%
+          height: auto
+      &_content
+        padding: 2rem
+      &_header
+        font-size: 3rem
+        font-weight: bold
+        color: $orange
+      &_text
+        font-size: 1.6rem
+        line-height: 2.5rem
+        margin-top: 2rem
+        font-weight: normal
+        width: 100%
+        height: 17.5rem
+        overflow: hidden
+        color: $black
+      &_link
+        font-size: 1.6rem
+        color: $orange
+        text-decoration: underline
+        cursor: pointer
+        margin-top: 2rem
+
+
+        //Page ovens
+    .main_reviews_videos_for_page_ovens
+      flex-direction: column
+      width: 30%
+    .main_reviews_video_for_page_ovens
+      width: 100%

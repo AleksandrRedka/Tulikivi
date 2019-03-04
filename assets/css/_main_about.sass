@@ -1,0 +1,193 @@
+.main_about
+  width: 100%
+  margin: 0 auto
+  position: relative
+  height: auto
+  //padding-top: 100px
+  //padding-bottom: 20px
+  padding: 10rem 3rem 2rem 3rem
+  &_options
+    width: 100%
+    ul
+      display: flex
+      flex-direction: row
+      align-content: center
+      justify-content: space-between
+    &_btn
+      display: block
+      position: relative
+      width: 250px
+      height: 60px
+      line-height: 56px
+      background-color: white
+      border: 2px solid $orange
+      border-radius: 10px
+      font-size: 1.8rem
+      text-align: center
+      color: $black
+      box-sizing: border-box
+      margin: 30px auto 0
+      text-decoration: none
+      transition: all 350ms
+      text-transform: uppercase
+      &:hover
+        background-color: $orange
+        text-decoration: none
+        color: white
+        transform: scale(1.05)
+        p
+          color: white
+          text-transform: uppercase
+      //p
+      //  position: absolute
+      //  text-align: center
+      //  display: block
+      //  width: 100%
+      //  line-height: 56px
+      //  top: 0
+      //  left: 0
+      //  bottom: 0
+      //  transition: all 350ms
+      //  text-transform: uppercase
+      //&:hover
+      //  color: white
+      //  text-decoration: none
+      //  border-width: 30px
+      //  p
+      //    top: -28px
+      //    color: white
+  &_option
+    display: block
+    width: 12%
+    height: auto
+    a
+      display: block
+      width: 100%
+      height: auto
+      text-decoration: none
+      text-align: center
+      img
+        display: inline-block
+        height: 10.5rem
+        transition: transform 350ms ease-in-out
+    &:hover
+      img
+        transform: scale(1.1)
+    &_text
+      display: block
+      width: 100%
+      position: relative
+      font-size: 1.8rem
+      color: $black
+      padding-top: 35px
+      &:before
+        content: ''
+        position: absolute
+        display: block
+        top: 22px
+        left: 0
+        right: 0
+        width: 30%
+        height: 1px
+        background-color: $orange
+        margin: 0 auto
+
+      u
+        color: $orange
+        text-decoration: none
+
+  &_content
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: stretch
+    align-content: stretch
+    height: auto
+    width: 100%
+    padding-top: 10rem
+  &_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 50%
+    flex: 1 1 auto
+    padding-right: 3rem
+  &_videos
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    width: 50%
+    flex: 1 1 auto
+    justify-content: space-between
+    align-content: space-between
+  &_video
+    width: calc(50% - 1.5rem)
+    height: calc(50% - 1.2rem)
+    padding-top: 5rem
+    &_frame
+      width: 100%
+      height: calc(100% - 3.2rem)
+    &_text
+      width: 100%
+      font-size: 1.4rem
+      line-height: 3.2rem
+      color: $black
+      padding-top: 0.5rem
+  &_header
+    width: 100%
+    font-size: 8rem
+    line-height: 10rem
+    color: $orange
+    font-weight: bold
+  &_text
+    width: 100%
+    font-size: 1.6rem
+    color: $black
+    margin-top: 1.5rem
+  &_services
+    width: 100%
+    height: auto
+    padding-top: 3rem
+    ul
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      max-height: 11rem
+      width: 100%
+    li
+      font-size: 1.6rem
+      line-height: 3.5rem
+      vertical-align: baseline
+      font-weight: bold
+      color: $black
+      margin-right: 1rem
+      img
+        display: inline-block
+        height: 2rem
+        width: auto
+        margin-right: 0.5rem
+  &_btn
+    display: inline-block
+    position: relative
+    width: 250px
+    height: 60px
+    line-height: 56px
+    background-color: white
+    border: 2px solid $orange
+    border-radius: 10px
+    font-size: 1.8rem
+    text-align: center
+    color: $black
+    box-sizing: border-box
+    margin: 4rem auto 0
+    text-decoration: none
+    transition: all 350ms
+    text-transform: uppercase
+    &:hover
+      background-color: $orange
+      text-decoration: none
+      color: white
+      transform: scale(1.05)
+      p
+        color: white
+        text-transform: uppercase

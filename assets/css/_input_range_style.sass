@@ -1,0 +1,31 @@
+input
+  &[type='range']
+    overflow: hidden
+    width: 200px
+    -webkit-appearance: none
+    background-color: #969696
+    position: relative
+    z-index: 1
+    &::-webkit-slider-runnable-track
+      height: 10px
+      -webkit-appearance: none
+      color: #13bba4
+      margin-top: -1px
+    &::-webkit-slider-thumb
+      position: relative
+      z-index: 2
+      width: 20px
+      -webkit-appearance: none
+      height: 20px
+      cursor: pointer
+      background: #FFFFFF
+      box-shadow: -100px 0 0 100px $orange
+
+input[type=range]::-moz-range-thumb
+  box-shadow: 10px 10px 1px #FFFFFF, 10px 0px 0.9px #FFFFFF
+  border: 0.3px solid #ffffff
+  height: 40px
+  width: 40px
+  border-radius: 15px
+  background: #FFFFFF
+  cursor: pointer

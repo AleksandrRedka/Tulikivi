@@ -1,0 +1,271 @@
+@media (min-width: $desct)
+  .ovens_top
+    width: 100%
+    height: 60vh
+    display: flex
+    flex-direction: row
+    margin-bottom: 7rem
+    position: relative
+    overflow: hidden
+    &_img
+      width: 40%
+      height: auto
+      overflow: hidden
+      position: relative
+      &>img
+        width: auto
+        height: 100%
+        position: absolute
+        top: 0rem
+        left: -10%
+    &_content
+      padding: 10% 3rem 0rem
+      width: 45%
+      height: auto
+      &_title
+        font-size: 4.8rem
+        line-height: 5.8rem
+        margin-bottom: 5rem
+      &>p
+        margin-bottom: 3rem
+    .ovens_advantages
+      display: flex
+      flex-direction: column
+      &_item>a
+        display: flex
+        align-items: center
+        flex-direction: row
+        margin-bottom: 2rem
+        text-decoration: none
+        &>img
+          margin-right: 2.5rem
+          width: 3rem
+          height: 3rem
+        &>p
+          font-family: $LatoB
+          &:hover
+            color: $orange
+            text-decoration: underline
+
+
+
+
+    &_information
+      width: 15%
+      height: 100%
+      background-color: $orange
+      padding: 0rem 1.5rem
+      position: relative
+      &_title
+        position: absolute
+        transform: rotate(90deg) translate(-50%, -50%)
+        top: 65%
+        left: -30%
+        font-size: 4rem
+        line-height: 5.8rem
+        color: #DBDBDB
+        z-index: 3
+        transition: color 1s
+      &_arrow
+        z-index: 3
+        display: block
+        content: ""
+        position: absolute
+        transform: translate(-50%, -50%)
+        top: 50%
+        left: 25%
+        width: 5rem
+        height: 5rem
+        &:before
+          content: ""
+          width: 3px
+          height: 3.5rem
+          background-color: #DBDBDB
+          position: absolute
+          bottom: -10%
+          right: 22%
+          transform: rotate(-45deg)
+          transition: 500ms
+        &:after
+          content: ""
+          width: 3px
+          height: 3.5rem
+          background-color: #DBDBDB
+          position: absolute
+          top: -10%
+          right: 22%
+          transform: rotate(45deg)
+          transition: 500ms
+        &:hover:before
+          height: 7rem
+          bottom: -22%
+          right: 48%
+          background-color: #FFFFFF
+        &:hover:after
+          height: 7rem
+          top: -22%
+          right: 48%
+          background-color: #FFFFFF
+
+      //Style Open Information
+
+      &_open
+        position: absolute
+        top: 0%
+        right: -100%
+        width: 100%
+        height: 100%
+        overflow: hidden
+        background-size: cover
+        background-position: 60% 50%
+        background-repeat: no-repeat
+        padding: 12rem 17rem  0rem 3rem
+        z-index: 1
+        transition: right 1s
+        &:before
+          position: absolute
+          top: 0
+          left: 0
+          content: ""
+          width: 100%
+          height: 100%
+          background-color: #fff
+          opacity: 0.75
+          z-index: 1
+        &>img
+          width: 105%
+          height: 110%
+        &_content>p
+          font-size: 1.6rem
+          position: relative
+          z-index: 2
+          margin-bottom: 2rem
+          &:last-child
+            margin-bottom: 0
+
+      //LIST PRODUCT
+
+  .ovens_list
+    width: 100%
+    padding: 0rem 3rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    &_product
+      position: relative
+      overflow: hidden
+      width: calc(33% - 3rem)
+      height: auto
+      margin-bottom: 11rem
+      &:hover &_button_more
+        left: 0%
+        transition: left 500ms
+      &_img
+        width: 100%
+        height: auto
+        margin-bottom: 5px
+        &>img
+          width: 100%
+          height: 100%
+      &_name
+        text-decoration: none
+        font-family: $LatoB
+        font-size: 2.4rem
+        line-height: 3rem
+        color: $black
+        margin-bottom: 2rem
+      &_features
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        height: 6rem
+        &_icon
+          display: flex
+          flex-direction: row
+          align-items: center
+          justify-content: space-between
+          &>img
+            width: 3.5rem
+            height: 3.5rem
+            margin-right: 1.5rem
+      &_button_more
+        position: absolute
+        left: -110%
+        bottom: 0%
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 6rem
+        background-color: #FFFFFF
+        border: 1px solid $orange
+        border-radius: 1rem
+        font-family: $LatoR
+        font-size: 1.6rem
+        line-height: 2rem
+        color: $orange
+        transition: left 500ms
+        &:hover
+          color: #FFFFFF
+          background-color: $orange
+          border: 1px solid $orange
+          border-radius: 1rem
+
+      &_label_stock
+        position: absolute
+        left: -30%
+        top: 6%
+        transform: rotate(-45deg)
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 5rem
+        background-color: $orange
+        &>p
+          font-family: $LatoB
+          line-height: 2.2rem
+          color: #FFFFFF
+      &_label_new
+        position: absolute
+        top: 0%
+        right: 0%
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 12rem
+        height: 4.5rem
+        border: 2px solid $orange
+        border-radius: 20px
+        &>p
+          line-height: 2.2rem
+          color: $orange
+          font-family: $LatoB
+    //MAIN BUTTON MORE
+  .ovens_models_more
+    margin-bottom: 13rem
+    display: flex
+    justify-content: center
+    align-items: center
+    &>button
+      width: 25rem
+      height: 6rem
+      border: 1px solid $orange
+      border-radius: 10px
+      background-color: #FFFFFF
+      font-size: 1.6rem
+      font-family: $LatoR
+      line-height: 2rem
+      color: $black
+      transition: scale 1s
+      &:hover
+        background-color: $orange
+        color: #FFFFFF
+
+
+
+
+
+

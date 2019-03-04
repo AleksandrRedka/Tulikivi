@@ -1,0 +1,297 @@
+@media (min-width: $desct)
+  .product_card
+    padding: 0rem 3rem
+    width: 100%
+    height: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 8rem
+    &_img
+      width: calc(45% - 1.5rem)
+      height: 100%
+      &_main
+        width: 100%
+        height: 80%
+        &>img
+          width: 100%
+          height: 100%
+      &_list
+        width: 100%
+        height: 20%
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        &_wrapper_photo
+          width: calc(25% - 0.75rem)
+          height: auto
+          &:hover
+            border: 1px solid $orange
+            border-radius: 10px
+          &>img
+            width: 100%
+            height: 100%
+        &_wrapper_video
+          width: calc(25% - 0.75rem)
+          height: auto
+          position: relative
+          border: 1px solid $orange
+          border-radius: 10px
+          &>img
+            width: 100%
+            height: 100%
+          &_icon
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 3.5rem
+            height: 2.5rem
+            transform: translate(-50%,-50%)
+            &>img
+              width: 100%
+              height: 100%
+
+
+
+
+
+
+    &_about_product
+      width: calc(55% - 1.5rem)
+      padding-top: 8rem
+      &_title
+        width: 70%
+        margin-bottom: 3rem
+
+      &>p
+        font-size: 1.6rem
+        margin-bottom: 3rem
+      &_feature
+        padding: 3rem 5rem
+        border-radius: 10px
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 3rem
+        &_title
+          width: 60%
+          height: auto
+          display: flex
+          flex-direction: column
+          &>p
+            font-size: 1.6rem
+            margin-bottom: 2.5rem
+            &:last-child
+              margin-bottom: 0rem
+        &_value
+          width: 30%
+          height: auto
+          &>p
+            margin-bottom: 2.5rem
+            font-size: 2rem
+            font-family: $LatoB
+            &:last-child
+              margin-bottom: 0rem
+
+      &_button
+        width: 25rem
+        height: 6rem
+        border: none
+        border-radius: 10px
+        background-color: $orange
+        font-size: 1.6rem
+        line-height: 2.4rem
+        color: #FFFFFF
+
+  //-------------Section BOX SALE-----------------------------------
+  .box_sale
+    padding: 0rem 3rem
+    margin-bottom: 3rem
+    &_content
+      border: none
+      border-radius: 10px
+      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+      padding: 3rem
+      &>p
+        font-family: $LatoB
+        font-size: 2.4rem
+        color: $orange
+        line-height: 3.6rem
+
+  //---------Section Product Advantages---------
+
+  .product_advantages
+    padding: 0rem 3rem
+    margin-bottom: 8rem
+    &_title
+      margin-bottom: 2rem
+    &_img
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center
+      margin-bottom: 1rem
+      &>img
+        width: 8rem
+        height: 8rem
+        border: none
+        border-radius: 50%
+        margin-right: 4rem
+        &:last-child
+          margin-right: 0rem
+
+  //-----------Section Product Specifications-----------
+
+  .product_specifications
+    padding: 0rem 3rem
+    margin-bottom: 12rem
+    &_values
+      display: flex
+      flex-direction: column
+      margin-bottom: 5rem
+      &_header
+        display: flex
+        flex-direction: row
+        width: 100%
+
+      &_content
+        display: none
+        width: 100%
+        flex-direction: row
+        padding: 5rem
+        border-radius: 0px 0px 10px 10px
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+        &:nth-child(2)
+          display: flex
+
+        //First Block
+
+        .specifications_values_content_col
+          width: 33%
+          display: flex
+          flex-direction: column
+          justify-content: center
+          &>p
+            font-family: $LatoB
+            font-size: 1.8rem
+            line-height: 2.2rem
+            color: $black
+            margin-bottom: 7rem
+            text-align: center
+            &:last-child
+              margin-bottom: 0
+
+    //Style First Block Item
+
+    &_marker
+      width: 33%
+      padding: 3rem 0rem
+      display: flex
+      justify-content: center
+      align-items: center
+      border: none
+      border-radius: 10px 10px 0px 0px
+      font-family: $LatoB
+      font-size: 1.8rem
+      line-height: 2.2rem
+      color: $black
+      &_active
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+    &_button
+      padding: 2rem 5rem
+      width: 40rem
+      height: 6rem
+      border: 1px solid $orange
+      border-radius: 10px
+      text-align: center
+      font-family: $LatoR
+      font-size: 1.6rem
+      color: $black
+      line-height: 2rem
+      text-decoration: none
+
+      //Second Block
+
+  .values_content_data
+    width: 100%
+    display: flex
+    flex-direction: column
+    &_item
+      width: 100%
+      height: auto
+      border-bottom: 1px solid rgba(0,0,0,0.1)
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding: 3.5rem 0rem
+      &:first-child
+        padding-top: 0rem
+      &:last-child
+        border-bottom: none
+        padding-bottom: 0rem
+      &>p
+        font-family: $LatoB
+        line-height: 2.2rem
+      &_name
+        width: 80%
+      &_number
+        width: 20%
+
+    //Third Block
+
+  .values_content_conection
+    width: 70%
+    display: flex
+    flex-direction: column
+  .conection_size
+    width: 100%
+    height: auto
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 3.5rem 0rem
+    &:first-child
+      padding-top: 0rem
+    &:last-child
+      border-bottom: none
+      padding-bottom: 0rem
+    &>p
+      font-family: $LatoB
+      line-height: 2.2rem
+    &_name
+      width: 60%
+    &_number
+      width: 40%
+
+  .values_content_img
+    width: 30%
+    height: auto
+    padding-left: 3rem
+    &>img
+      width: 100%
+      height: auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

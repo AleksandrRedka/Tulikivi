@@ -1,0 +1,131 @@
+@media (min-width: $desct)
+  .product_two_card
+    margin-bottom: 10rem
+    padding: 4rem 13rem 0rem 3rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &_img
+      width: calc( 40% - 1.5rem)
+      height: 100%
+      &_main
+        width: 100%
+        height: calc( 70% - 2rem)
+        &>img
+          width: 100%
+          height: 100%
+      &_list
+        width: 100%
+        height: calc( 30% - 2rem)
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        &_item
+          width: calc( 25% - 0.8rem)
+          height: auto
+          &:hover
+            border: 1px solid $orange
+            border-radius: 10px
+          &>img
+            width: 100%
+            height: 100%
+    &_info
+      width: calc( 60% - 1.5rem)
+      height: 100%
+      &_top
+        width: 50%
+        margin-bottom: 9rem
+      &_main
+        display: flex
+        flex-direction: column
+        &_title
+          font-family: $LatoB
+          font-size: 6.4rem
+          color: $black
+          line-height: 8rem
+          margin-bottom: 3rem
+        &_text
+          margin-bottom: 6rem
+        &_values
+          padding: 3rem
+          margin-bottom: 5rem
+          box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+          display: flex
+          flex-direction: column
+
+        .info_main_values_item
+          width: 100%
+          display: flex
+          flex-direction: row
+          &:first-child
+            padding-bottom: 3.5rem
+          &_size
+            width: 25%
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            border-right: 1px solid rgba(0,0,0,0.2)
+            &:last-child
+              border: none
+            &_name
+              font-size: 1.6rem
+            &_number
+              font-family: $LatoB
+              font-size: 2rem
+        &_button
+          width: 25rem
+          height: 6rem
+          border: none
+          border-radius: 10px
+          background-color: $orange
+          font-family: $LatoR
+          font-size: 1.6rem
+          line-height: 2.4rem
+          color: #FFFFFF
+          transition: transform 500ms
+          &:hover
+            transform: scale(1.1)
+
+    //Section Video
+
+  .product_two_video
+    padding: 0rem 13rem 0rem 3rem
+    margin-bottom: 12rem
+    &_content
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      &_video
+        width: calc( 60% - 1.5rem)
+        height: auto
+        position: relative
+        box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.16)
+        &>img
+          width: 100%
+          height: 100%
+        &_play
+          position: absolute
+          transform: translate(-50%,-50%)
+          top: 50%
+          left: 50%
+          width: 8rem
+          height: 5.5rem
+          &>img
+            width: 100%
+            height: 100%
+      &_text
+        width: calc( 40% - 1.5rem)
+        height: auto
+        padding-top: 5rem
+        &_title
+          font-family: $LatoB
+          font-size: 2.4rem
+          line-height: 3rem
+          color: $black
+          margin-bottom: 3rem
+
+  .product_two_popular_models
+    padding: 0rem 13rem 0rem 3rem
+    margin-bottom: 12rem
+
