@@ -50,7 +50,7 @@ $(document).ready(function(){
         arrows: true,
         prevArrow : '<button class="slick-review slick-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
         nextArrow : '<button class="slick-review slick-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
-        dots: true,
+        dots: false,
         customPaging : function(slider, i) {
             var length = slider.$slides.length;
             $('.slider_works_nav_count_check').text(i+1);
