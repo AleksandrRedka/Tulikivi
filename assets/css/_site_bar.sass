@@ -95,7 +95,9 @@
           font-size: 1.8rem
           line-height: 2.4rem
           font-family: $LatoR
+          transition: text-decoration 500ms
         .active_lang
+          color: $orange
           font-size: 2.2rem
     &_btn
       background-color: $orange
@@ -109,9 +111,12 @@
       border-radius: 10px
       width: 60%
       transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out
+      cursor: pointer
       &:hover
         transform: scale(1.03)
         font-weight: normal
+  .lang:hover
+    text-decoration: underline
   //Section Sitebar Call
 
   .out_site_bar_call
@@ -125,14 +130,37 @@
   .site_bar_icons
     display: flex
     flex-direction: row
-    justify-content: space-around
+    justify-content: space-between
     align-items: center
     margin-bottom: 10%
+    position: relative
     &_icon
+      display: block
       width: 13%
+      &_text
+        width: 100%
+        display: block
+        text-align: center
+        position: absolute
+        bottom: -45%
+        left: 0%
+        opacity: 0.0
+        cursor: default
+        transition: opacity 350ms 100ms
+        &>span
+          color: $orange
+
       &>img
         width: 100%
         height: auto
+        transition: transform 250ms 50ms
+        &:hover
+          transform: scale(1.2)
+        &:hover+.site_bar_icons_icon_text
+          opacity: 1
+
+
+
 
   //Without Sitebar
 
@@ -399,9 +427,14 @@
       align-items: center
       &_item
         width: calc(50% - 1.5rem)
+        height: auto
+        position: relative
+        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16)
         &>img
           width: 100%
-          height: 100%
+          height: auto
+          position: absolute
+          cursor: pointer
 
   //Section Video
   .site_bar_video

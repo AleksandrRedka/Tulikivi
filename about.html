@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
-<div class="main_wrapper">
+<div class="main_wrapper ">
     <div class="aside">
-        <a href="/" class="aside_logo">
+        <a href="index.html" class="aside_logo">
             <img src="assets/img/logo.png" alt="Tulikivi"/>
         </a>
         <div class="aside_logo_text">
@@ -70,26 +70,25 @@
                 <h3 class="section_title about_top_text_title">
                     O Tulikivi
                 </h3>
-                <p>
-                    Tulikivi – всемирно известный бренд, под которым производятся
-                    уникальные печи-камины из талькомагнезита – природного горшечного
-                    камня. Каминами и печами Tulikivi отапливаются более 250 000 домов
-                    в Финляндии, Австрии, Германии, Италии, Чехии, России и Украине.
-                    уникальные печи-камины из талькомагнезита – природного горшечного
-                    камня. Каминами и печами Tulikivi отапливаются более 250 000 домов
-                    в Финляндии, Австрии, Германии, Италии, Чехии, России и Украине.
-                </p>
-                <p>
-                    Продукция Tulikivi соединила в себе качество, комфорт,
-                    экологичность и инновации. Созданный самой природой путем
-                    кристаллизации лавы, горшечный камень наделен исключительным
-                    свойством сохранять тепло до 2 суток и постепенно отдавать его в
-                    окружающую среду, оставаясь теплым на ощупь и в момент растопки, и
-                    48 часов спустя.
-                </p>
+                <div class="about_top_text_context">
+                    <p>
+                        Tulikivi – всемирно известный бренд, под которым производятся
+                        уникальные печи-камины из талькомагнезита – природного горшечного
+                        камня. Каминами и печами Tulikivi отапливаются более 250 000 домов
+                        в Финляндии, Австрии, Германии, Италии, Чехии, России и Украине.
+                    </p>
+                    <p>
+                        Продукция Tulikivi соединила в себе качество, комфорт,
+                        экологичность и инновации. Созданный самой природой путем
+                        кристаллизации лавы, горшечный камень наделен исключительным
+                        свойством сохранять тепло до 2 суток и постепенно отдавать его в
+                        окружающую среду, оставаясь теплым на ощупь и в момент растопки, и
+                        48 часов спустя.
+                    </p>
+                </div>
             </div>
             <div class="about_top_wrapper_img">
-                <img class="about_top_image" src="assets/img/ about_us@2x.png" alt="foto"/>
+                <img class="about_top_image" src="assets/img/about_us@2x.png" alt="foto"/>
             </div>
         </section>
         <section class="about_company">
@@ -244,19 +243,25 @@
                         месяцев.</p>
                 </li>
             </ul>
-            <p class="about_guarantees_text">Срок службы каминов, каминных печей, кухонных плит, печей с духовками,
-                легких каминов практически неограничен.</p>
-            <p class="about_guarantees_text">Гарантия на продукцию Tulikivi вступает в действие только после регистрации
-                владельца камина на официальном сайте Tulikivi Oyj. Зарегистрировать владельца продукции Tulikivi и
-                получить детальную информацию о гарантийных обязательствах можно на сайте Tulikivi.</p>
-            <div class="about_sertificates">
-                <div class="sertificate">
-                    <img src="assets/img/Sertificate1.png" alt="Sertificate1">
+            <div class="about_guarantees_content">
+                <p class="about_guarantees_text">Срок службы каминов, каминных печей, кухонных плит, печей с духовками,
+                    легких каминов практически неограничен.</p>
+                <p class="about_guarantees_text">Гарантия на продукцию Tulikivi вступает в действие только после регистрации
+                    владельца камина на официальном сайте Tulikivi Oyj. Зарегистрировать владельца продукции Tulikivi и
+                    получить детальную информацию о гарантийных обязательствах можно на сайте Tulikivi.</p>
+            </div>
+            <div class="about_certificates">
+                <div class="certificate">
+                    <div class="certificate_img">
+                        <img class="pop-up-js" src="assets/img/Sertificate1@2x.png.jpg" alt="Sertificate1">
+                    </div>
                     <p>Компания ООО "ТЕРМИКС УКРАИНА" является эксклюзивным дистрибьютором продукции финского концерна
                         Tulikivi в Украине.</p>
                 </div>
-                <div class="sertificate">
-                    <img src="assets/img/Sertificate2.png" alt="Sertificate2">
+                <div class="certificate">
+                    <div class="certificate_img">
+                        <img class="pop-up-js" src="assets/img/Sertificate2@2x.jpg" alt="Sertificate2">
+                    </div>
                     <p>Вся продукция Tulikivi, реализуемая компанией ООО "ТЕРМИКС УКРАИНА" в Украине имеет сертификат
                         безопасности камня.</p>
                 </div>
@@ -278,10 +283,10 @@
                     <label for="form_email">Электронная почта:</label>
                 </div>
                 <div class="form_input">
-                    <input id="form_mesg" name="messege" type="text">
+                    <textarea id="form_mesg" name="messege" type="text"></textarea>
                     <label for="form_mesg">Ваше сообщение:</label>
                 </div>
-                <button class="form_submit" type="submit"><p>ОТПРАВИТЬ</p></button>
+                <button class="form_submit" type="submit">ОТПРАВИТЬ</button>
             </form>
             <div class="form_bg"></div>
         </section>
@@ -289,13 +294,17 @@
             <div class="footer_top_content">
                 <div class="footer_contact_info">
                     <h5 class="footer_title">Связатся с нами</h5>
-                    <p class="footer_contact_info_tel" type="tel">
-                        +380 (44) 338-08-29
-                    </p>
-                    <p class="footer_contact_info_tel" type="tel">
-                        +380 (67) 620-23-25
-                    </p>
-                    <p class="footer_contact_info_time">Мы работаем по будням с 9:00 до 18:00</p>
+                    <div class="footer_contact_info_tel">
+                        <p>
+                            +380 (44) 338-08-29
+                        </p>
+                        <p>
+                            +380 (67) 620-23-25
+                        </p>
+                    </div>
+                    <div class="footer_contact_info_time">
+                        <p >Мы работаем по будням с 9:00 до 18:00</p>
+                    </div>
                 </div>
                 <div class="footer_nav">
                     <h5 class="footer_title">Главная</h5>
@@ -304,7 +313,8 @@
                         <li class="footer_nav_link"><a href="#">Печи для бани</a></li>
                         <li class="footer_nav_link"><a href="plitka.html">Плитка, мозаика</a></li>
                         <li class="footer_nav_link"><a href="#">Посуда и аксессуары</a></li>
-                        <li class="footer_nav_link"><a href="page_individual_order.html">Камины по индивидуальным заказам</a></li>
+                        <li class="footer_nav_link"><a href="page_individual_order.html">Камины по индивидуальным
+                            заказам</a></li>
                         <li class="footer_nav_link"><a href="about.html">О нас</a></li>
                         <li class="footer_nav_link"><a href="why_tulikivi.html">Почему Tulikivi</a></li>
                         <li class="footer_nav_link"><a href="gallery.html">Галерея</a></li>
@@ -342,12 +352,12 @@
                 </div>
             </div>
             <div class="footer_down_content">
-                <div class="footer_down_content_bold">
+                <div class="footer_down_content_company">
                     <p>
-                        © ПІІ «Туликиви Украина»
+                        ©&nbsp;ПІІ&nbsp;«Туликиви&nbsp;Украина»
                     </p>
                     <p>
-                        Design&Development by IS.Agency
+                        Design&Development<br> by IS.Agency
                     </p>
                 </div>
                 <p class="footer_down_content_text">
@@ -357,7 +367,6 @@
                 </p>
             </div>
         </footer>
-
     </div>
     <div class="site_bar">
         <div class="site_bar_call">
@@ -365,42 +374,48 @@
                 Мы работаем по будням с 9:00 до 18:00
             </div>
             <ul class="site_bar_call_lang">
-                <li><a href="#">UA</a></li>
+                <li><a  class="lang" href="#">UA</a></li>
                 <li>/</li>
-                <li><a href="#" class="active_lang">RU</a></li>
+                <li><a href="#" class="lang active_lang">RU</a></li>
             </ul>
             <div class="site_bar_call_btn">
                 Заказать звонок
             </div>
         </div>
         <div class="site_bar_icons">
-            <div class="site_bar_icons_icon">
+            <a class="site_bar_icons_icon" href="#">
                 <img src="assets/img/Icons-01.svg" alt="">
-            </div>
-            <div class="site_bar_icons_icon">
+                <p class="site_bar_icons_icon_text">Теплоотдача до <span>48 часов</span></p>
+            </a>
+            <a class="site_bar_icons_icon" href="#">
                 <img src="assets/img/Icons-02.svg" alt="">
-            </div>
-            <div class="site_bar_icons_icon">
+                <p class="site_bar_icons_icon_text">Уникальный камень - <span>талькомагнезит</span></p>
+            </a>
+            <a class="site_bar_icons_icon" href="#">
                 <img src="assets/img/Icons-03.svg" alt="">
-            </div>
-            <div class="site_bar_icons_icon">
+                <p class="site_bar_icons_icon_text"><span>Полезное</span> и <span>безопасное</span> тепло</p>
+            </a>
+            <a class="site_bar_icons_icon" href="#">
                 <img src="assets/img/Icons-04.svg" alt="">
-            </div>
-            <div class="site_bar_icons_icon">
+                <p class="site_bar_icons_icon_text"><span>Совершенная</span> вихревая топка</p>
+            </a>
+            <a class="site_bar_icons_icon" href="#">
                 <img src="assets/img/Icons-05.svg" alt="">
-            </div>
-            <div class="site_bar_icons_icon">
+                <p class="site_bar_icons_icon_text"><span>Экономичное</span> отопление</p>
+            </a>
+            <a class="site_bar_icons_icon" href="#">
                 <img src="assets/img/Icons-06.svg" alt="">
-            </div>
+                <p class="site_bar_icons_icon_text">Еда на <span>живом</span> огне</p>
+            </a>
         </div>
         <div class="site_bar_certificates">
             <h4 class="site_bar_title">Сертификаты</h4>
             <div class="site_bar_certificates_img">
                 <div class="site_bar_certificates_img_item">
-                    <img src="assets/img/Sertificate1@2x.png" alt="">
+                    <img src="assets/img/Sertificate1@2x.png.jpg" alt="">
                 </div>
                 <div class="site_bar_certificates_img_item">
-                    <img src="assets/img/Sertificate2@2x.png" alt="">
+                    <img src="assets/img/Sertificate2@2x.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -408,6 +423,12 @@
             <img src="assets/img/page_gallery/site_bar_down_bg@2x.png" alt="">
         </div>
     </div>
+</div>
+<div class="pop_up_box">
+    <div class="pop_up_content">
+
+    </div>
+    <p class="button_close_pop"></p>
 </div>
 <script src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>

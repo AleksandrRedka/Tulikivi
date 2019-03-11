@@ -68,8 +68,8 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow : '<button class="slick-review slick-prev slick-models-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
-        nextArrow : '<button class="slick-review slick-next slick-models-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+        prevArrow : '<button class="slick-review slick-prev slick-models-prev "><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow : '<button class="slick-review slick-next slick-models-next "><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
     });
 });
 
@@ -102,8 +102,53 @@ $(document).ready(function(){
 });
 
 // ----------------------------------
+// Counter Slider
+(function () {
+    var imageArr= document.querySelectorAll('.about_slider_img');
+    var countImage = document.querySelector('.slider_works_nav_count_quantity');
+    var imagesLength = imageArr.length;
+    countImage.textContent = imagesLength;
+    var count = 0;
+    var btnNext = document.querySelectorAll('.js-next');
+    // btnNext.addEventListener('submit', plusCount);
+    // function plusCount() {
+    //     count++;
+    //    return
+    // }
 
 
+})();
+//----Pop-up--------------------------------------
+(function () {
+    const popUpItem=$('.pop-up-js');
+    popUpItem.click(function (e) {
+            e.preventDefault();
+            var target =  e.target;
+            var targetSrc = target.scr;
+            console.log(targetSrc);
+            $('.pop_up_box').addClass('pop_up_open');
+            $('.main_wrapper').addClass('main_wrapper_pop');
+            $('body').css('overflow','hidden');
+            var img = document.createElement('img');
+            img.setAttribute('src',`${targetSrc}`)
+            var contentBox = document.querySelector('.pop_up_content');
+            contentBox.append(img)
+        }
+    );
+    var popClose = $('.button_close_pop');
+    popClose.click(function (e) {
+        e.preventDefault();
+        $('.pop_up_box').removeClass('pop_up_open');
+        $('.main_wrapper').removeClass('main_wrapper_pop');
+        var contentBox = document.querySelector('.pop_up_content');
+        contentBox.innerHTML = ''
+        $('body').css('overflow','auto');
+
+    })
+
+})();
+
+// ----------------------------------------
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');

@@ -3,7 +3,7 @@
     margin-top: 12rem
     padding: 0rem 3rem
     margin-bottom: 12.5rem
-    &>p
+    &_content>p
       margin-bottom: 3rem
       &:last-child
         margin-bottom: 0rem
@@ -17,22 +17,25 @@
       display: flex
       flex-direction: row
       flex-wrap: wrap
-      justify-content: space-around
+      justify-content: space-between
       align-items: center
       .partner
+        width: 25%
         text-align: center
         margin-bottom: 3rem
         &:last-child
+          width: 100%
           margin-bottom: 0rem
         &_box_img
-          width: 9rem
-          height: 9rem
+          width: 100%
+          height: auto
           display: inline-block
           margin-bottom: 40px
           position: relative
           &::after
             position: absolute
-            left: 20%
+            transform: translate(-50%,-50%)
+            left: 50%
             bottom: -25%
             content: ""
             width: 5rem
@@ -43,7 +46,7 @@
   .partners_our_benefits
     padding: 0rem 3rem
     margin-bottom: 12rem
-    &>p
+    &_content>p
       margin-bottom: 30px
       &:last-child
         margin-bottom: 0rem
@@ -52,7 +55,7 @@
   .why_we
     padding: 0rem 3rem
     margin-bottom: 12rem
-    &>p
+    &_content>p
       margin-bottom: 2rem
       &:last-child
         margin-bottom: 0rem

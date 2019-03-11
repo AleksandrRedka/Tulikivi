@@ -62,20 +62,44 @@
         top: - 50%
         font-size: 1.4rem
         color: $orange
+    textarea
+      display: inline-block
+      background-color: transparent
+      outline: none
+      border: none
+      border-bottom: 1px solid rgba(172, 172, 172, 1)
+      height: 3rem
+      max-height: 8 rem
+      max-width: 10
+      width: 100%
+      color: $black
+      font-size: 1.8rem
+      text-indent: 10rem
+      transition: text-indent 200ms ease-in-out
+      &:focus
+        text-indent: 1rem
+        border-bottom: 1px solid $orange
+      &:focus + label
+        top: - 50%
+        font-size: 1.4rem
+        color: $orange
+
   .form_submit
     width: 40%
     height: 6rem
     background-color: #ffffff
     border: 1px solid $orange
     border-radius: 10px
-    transition: scale 500ms
+    transition: all 500ms
+    font-family: $LatoR
+    font-size: 1.6rem
+    line-height: 2.4rem
+    color: $black
     &:hover
       background-color: $orange
       text-decoration: none
-      color: white
+      color: #ffffff
       transform: scale(1.05)
-    p
-      font-size: 1.6rem
   .form_bg
     content: ""
     position: absolute
