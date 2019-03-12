@@ -16,6 +16,9 @@
       &_title
         font-size: 9rem
         line-height: 10rem
+        white-space: nowrap
+        position: relative
+        text-shadow: 0px 0px 20px #fff
       &_context
         display: flex
         flex-direction: column
@@ -41,7 +44,7 @@
     margin-bottom: 10rem
     &_title
       margin-bottom: 2rem
-    &>p
+    &_content>p
       margin-bottom: 2rem
       &:last-child
         margin-bottom: 0px
@@ -50,7 +53,7 @@
   //Process work//
 
   .about_process_work
-    padding: 13rem 3rem 15rem
+    padding: 0rem 3rem 15rem
 
     &_title
       margin-bottom: 5rem
@@ -94,6 +97,7 @@
     flex-direction: row
     justify-content: space-between
     &_item
+      position: relative
       width: calc(33% - 2rem)
       height: auto
       padding: 3rem 2rem 1rem

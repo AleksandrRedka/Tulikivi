@@ -13,9 +13,14 @@
       &_main
         width: 100%
         height: 80%
+        position: relative
+        padding-top: 125%
         &>img
           width: 100%
           height: 100%
+          position: absolute
+          top: 0
+          left: 0
       &_list
         width: 100%
         height: 20%
@@ -25,12 +30,17 @@
         &_wrapper_photo
           width: calc(25% - 0.75rem)
           height: auto
+          position: relative
+          padding-top: 25%
           &:hover
             border: 1px solid $orange
             border-radius: 10px
           &>img
             width: 100%
-            height: 100%
+            height: auto
+            position: absolute
+            top: 0
+            left: 0
         &_wrapper_video
           width: calc(25% - 0.75rem)
           height: auto
@@ -39,7 +49,7 @@
           border-radius: 10px
           &>img
             width: 100%
-            height: 100%
+            height: auto
           &_icon
             position: absolute
             top: 50%
@@ -49,7 +59,7 @@
             transform: translate(-50%,-50%)
             &>img
               width: 100%
-              height: 100%
+              height: auto
 
 
 
@@ -62,8 +72,7 @@
       &_title
         width: 70%
         margin-bottom: 3rem
-
-      &>p
+      &_text>p
         font-size: 1.6rem
         margin-bottom: 3rem
       &_feature

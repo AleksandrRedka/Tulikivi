@@ -1,19 +1,19 @@
-(function(){
+(function () {
     var slides = $('.main_slide');
     var counter = $('.main_slide_count span');
     var count = 0;
-    slides.click(function(){
-        if($(this).hasClass('main_slide_active')) return;
+    slides.click(function () {
+        if ($(this).hasClass('main_slide_active')) return;
         count = slides.index(this);
         var countText = count + 1 + '/';
-        counter.text( '0' + countText);
+        counter.text('0' + countText);
         $('.main_slide').removeClass('main_slide_active');
         $(this).addClass('main_slide_active');
     });
-    $('.main_slide_left_arrow').click(function(){
+    $('.main_slide_left_arrow').click(function () {
         event.stopPropagation();
         slides.removeClass('main_slide_active');
-        if(count === 0) {
+        if (count === 0) {
             count = slides.length - 1;
             $(slides[count]).addClass('main_slide_active');
         } else {
@@ -21,13 +21,13 @@
             $(slides[count]).addClass('main_slide_active');
         }
         var countText = count + 1 + '/';
-        counter.text( '0' + countText);
+        counter.text('0' + countText);
     });
-    $('.main_slide_right_arrow').click(function(){
+    $('.main_slide_right_arrow').click(function () {
         console.log('here');
         event.stopPropagation();
         slides.removeClass('main_slide_active');
-        if(count === slides.length -1) {
+        if (count === slides.length - 1) {
             count = 0;
             $(slides[count]).addClass('main_slide_active');
         } else {
@@ -35,25 +35,25 @@
             $(slides[count]).addClass('main_slide_active');
         }
         var countText = count + 1 + '/';
-        counter.text( '0' + countText);
+        counter.text('0' + countText);
     });
 })();
-$('.main_slide_img_viewer img').click(function(){
+$('.main_slide_img_viewer img').click(function () {
     $(this).toggleClass('rotate_img');
 });
 
 // Slick Works--------------------------------------
-$(document).ready(function(){
+$(document).ready(function () {
     $('.slider_works_list').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow : '<button class="slick-review slick-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
-        nextArrow : '<button class="slick-review slick-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+        prevArrow: '<button class="slick-review slick-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow: '<button class="slick-review slick-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
         dots: false,
-        customPaging : function(slider, i) {
+        customPaging: function (slider, i) {
             var length = slider.$slides.length;
-            $('.slider_works_nav_count_check').text(i+1);
+            $('.slider_works_nav_count_check').text(i + 1);
             $('.slider_works_nav_count_quantity').text(length);
             console.log(i);
             // console.log(length)
@@ -63,16 +63,15 @@ $(document).ready(function(){
     });
 });
 // Slick Popular Мodels-----------------------------------------
-$(document).ready(function(){
+$(document).ready(function () {
     $('.popular_models').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow : '<button class="slick-review slick-prev slick-models-prev "><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
-        nextArrow : '<button class="slick-review slick-next slick-models-next "><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+        prevArrow: '<button class="slick-review slick-prev slick-models-prev "><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow: '<button class="slick-review slick-next slick-models-next "><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
     });
 });
-
 
 
 //---Table on Page Proguct------------------------------------------------------------
@@ -83,72 +82,123 @@ $(document).ready(function(){
     markers.click(function () {
         markers.removeClass('product_specifications_marker_active');
         $(this).addClass('product_specifications_marker_active');
-        blocks.css('display','none');
+        blocks.css('display', 'none');
         var i = markers.index(this);
-        blocks[i].style.display='flex';
+        blocks[i].style.display = 'flex';
     })
 })();
 
 // Slick Slider photo on page Individual Order
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.individual_order_card_img_slider_main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow : '<button class="slick-review slick-prev slick-photo-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
-        nextArrow : '<button class="slick-review slick-next slick-photo-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+        prevArrow: '<button class="slick-review slick-prev slick-photo-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow: '<button class="slick-review slick-next slick-photo-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
     });
 });
 
 // ----------------------------------
 // Counter Slider
 (function () {
-    var imageArr= document.querySelectorAll('.about_slider_img');
-    var countImage = document.querySelector('.slider_works_nav_count_quantity');
-    var imagesLength = imageArr.length;
-    countImage.textContent = imagesLength;
-    var count = 0;
-    var btnNext = document.querySelectorAll('.js-next');
-    // btnNext.addEventListener('submit', plusCount);
-    // function plusCount() {
-    //     count++;
-    //    return
-    // }
+        $('.slider_works_list').on('init', function (event, slick) {
+            console.log("initialized");
+            var imageArr = document.querySelectorAll('.about_slider_img');
+            var countImage = document.querySelector('.slider_works_nav_count_quantity');
+            var counterText = document.querySelector('.slider_works_nav_count_check');
+            var imagesLength = imageArr.length;
+            countImage.textContent = imagesLength;
+            var count = 1;
+            $('.slick-next').click(
+                function () {
+                    count++;
+                    if (count === imagesLength + 1) {
+                        count = 1;
+                        counterText.textContent = `0${count}`;
+                        return
+                    }
+                    if (count < imagesLength + 1) {
+                        counterText.textContent = `0${count}`;
+                        return
+                    }
+                });
+            $('.slick-prev').click(
+                function () {
+                    count--;
+                    if (count < 1) {
+                        count = 7;
+                        counterText.textContent = `0${count}`;
+                        return
+                    }
+                    if (count < imagesLength + 1) {
+                        counterText.textContent = `0${count}`;
+                        return
+                    }
+                }
+            )
+        });
+    }
+)();
+//----Pop-up--Image/Frame------------------------------------
 
-
-})();
-//----Pop-up--------------------------------------
 (function () {
-    const popUpItem=$('.pop-up-js');
+    var popUpItem = $('.pop-up-js');
+    var contentBox = $('.pop_up_content');
     popUpItem.click(function (e) {
             e.preventDefault();
-            var target =  e.target;
-            var targetSrc = target.scr;
-            console.log(targetSrc);
+            var target = e.target;
+            console.log(target);
             $('.pop_up_box').addClass('pop_up_open');
             $('.main_wrapper').addClass('main_wrapper_pop');
-            $('body').css('overflow','hidden');
-            var img = document.createElement('img');
-            img.setAttribute('src',`${targetSrc}`)
-            var contentBox = document.querySelector('.pop_up_content');
-            contentBox.append(img)
+            $('body').css('overflow', 'hidden');
+            var elementClone = target.cloneNode(true);
+            contentBox.append(elementClone);
+
         }
     );
-    var popClose = $('.button_close_pop');
-    popClose.click(function (e) {
+    $('.button_close_pop').click(function (e) {
         e.preventDefault();
         $('.pop_up_box').removeClass('pop_up_open');
         $('.main_wrapper').removeClass('main_wrapper_pop');
-        var contentBox = document.querySelector('.pop_up_content');
-        contentBox.innerHTML = ''
-        $('body').css('overflow','auto');
+        contentBox.empty();
+        console.log('no delete');
+        $('body').css('overflow', 'auto');
+
 
     })
 
 })();
+//------------------------------------------------------------------
 
-// ----------------------------------------
+//----Pop-up----Page Contacts----------------------------------------
+(function () {
+    $('.pop-up-js-form').click(function (e) {
+        e.preventDefault();
+        $('.pop_up_box').addClass('pop_up_open');
+        $('.main_wrapper').addClass('main_wrapper_pop');
+        $('body').css('overflow', 'hidden');
+    });
+    $('.button_close_pop_contacts').click(function (e) {
+        e.preventDefault();
+        $('.pop_up_box').removeClass('pop_up_open');
+        $('.main_wrapper').removeClass('main_wrapper_pop');
+        $('body').css('overflow', 'auto')
+    })
+})();
+// -----------------------------------------------------------------
+
+//---------Page Ovens Top section-----------------------------------
+(function () {
+    $('.info-open-js').click(function () {
+        $(".ovens_top_information_open").toggleClass('close-info-js', 1000);
+        $('.ovens_top_information_title').toggleClass('text-orange-js', 1000);
+        $(this).toggleClass('arrow-js', 1000);
+    })
+})();
+//------------------------------------------------------------------
+//
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');

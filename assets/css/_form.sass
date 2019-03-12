@@ -32,14 +32,12 @@
     margin-bottom: 5rem
     &:nth-child(3)
       margin-bottom: 0rem
-    &:nth-child(4)
-      margin-bottom: 12rem
     label
-      font-size: 1.8rem
-      color: #ACACAC
+      font-size: 1.4rem
+      color: $orange
       position: absolute
       display: inline-block
-      top: 0
+      top: -2rem
       left: 0
       transition: top 350ms ease-in-out, font-size 350ms ease-in-out
       pointer-events: none
@@ -53,36 +51,56 @@
       width: 100%
       color: $black
       font-size: 1.8rem
-      text-indent: 10rem
+      text-indent: 2rem
       transition: text-indent 200ms ease-in-out
+      &:placeholder-shown+label
+        top: 0
+        font-size: 1.8rem
+        color: #ACACAC
       &:focus
-        text-indent: 1rem
+        //text-indent: 1rem
         border-bottom: 1px solid $orange
       &:focus + label
-        top: - 50%
+        top: - 2rem
         font-size: 1.4rem
         color: $orange
     textarea
+      position: relative
       display: inline-block
       background-color: transparent
       outline: none
       border: none
       border-bottom: 1px solid rgba(172, 172, 172, 1)
+      line-height: 3rem
       height: 3rem
-      max-height: 8 rem
-      max-width: 10
       width: 100%
+      min-height: 3rem
+      max-height: 11rem
+      min-width: 100%
+      max-width: 35rem
       color: $black
       font-size: 1.8rem
-      text-indent: 10rem
+      text-indent: 2rem
       transition: text-indent 200ms ease-in-out
+      &:placeholder-shown+label
+        top: 0
+        font-size: 1.8rem
+        color: #ACACAC
       &:focus
-        text-indent: 1rem
+        //text-indent: 1rem
         border-bottom: 1px solid $orange
       &:focus + label
-        top: - 50%
+        top: - 2rem
         font-size: 1.4rem
         color: $orange
+      &:after
+        content: ''
+        width: 5rem
+        height: 5rem
+        position: absolute
+        right: 0
+        bottom: 0
+        background-color: #F3F3F3
 
   .form_submit
     width: 40%
@@ -95,6 +113,9 @@
     font-size: 1.6rem
     line-height: 2.4rem
     color: $black
+    position: absolute
+    left: 50%
+    bottom: 10%
     &:hover
       background-color: $orange
       text-decoration: none

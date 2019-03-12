@@ -34,14 +34,20 @@
       &:hover &_view
         z-index: 3
         transform: scale(1.5)
-        transition: transform 1s
-      &:hover p
+        transition: transform 1s 200ms
+        cursor: pointer
+      &:hover a
         left: 0%
         bottom: -10%
         z-index: 2
         transition: bottom 500ms 200ms
 
-      & > p
+      & > a
+        font-family: $LatoR
+        font-size: 1.8rem
+        color: $black
+        line-height: 2.4rem
+        cursor: pointer
         width: 100%
         display: block
         position: absolute
@@ -50,6 +56,8 @@
         bottom: 30%
         left: 0%
         z-index: -1
+        &:hover
+          color: $orange
 
   .button_more
     display: flex
@@ -71,5 +79,6 @@
         background-color: $orange
         transform: scale(1.05)
         font-weight: normal
+        color: #ffffff
 
 
