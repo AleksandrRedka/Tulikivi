@@ -79,6 +79,9 @@ $('.main_popular_category_img_viewer img').click(function(){
 
 (function(){
     $('.main_why_catalog_slider').slick({
+        infinite: true,
+        zIndex: 2,
+        speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
         arrows: true,
