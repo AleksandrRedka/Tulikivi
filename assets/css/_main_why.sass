@@ -169,7 +169,7 @@
       align-items: center
       overflow: hidden
     &_slider
-      width: calc(80vw - 27rem)
+      width: calc(80vw - 30rem)
       height: 70%
       display: block
       &_item
@@ -178,12 +178,14 @@
         height: 100%
         overflow: hidden
         &_img
+          display: block
           position: relative
           width: 100%
           height: auto
           padding-top: 75%
           margin-bottom: 3rem
           &>img
+            display: block
             width: auto
             height: 100%
             position: absolute
@@ -192,6 +194,10 @@
         &_text
           color: #ffffff
           text-align: left
+          display: block
+          font-family: $LatoR
+          font-size: 1.8rem
+          line-height: 2.4rem
 
 .main_why_catalog_slider>.slick-prev
   left: 10%
