@@ -106,7 +106,9 @@
     right: 0
     bottom: 2rem
     z-index: 2
-    transition: width 600ms ease-in-out
+    padding-top: 9rem
+    padding-bottom: 9rem
+    transition: width 600ms ease-in-out, display 500ms 400ms, opacity 2s 500ms
     &:before
       content: ''
       display: block
@@ -129,7 +131,7 @@
       line-height: 8rem
       color: white
       transform: rotate(90deg)
-      transition: transform 450ms 0ms ease-in-out, right 500ms 100ms ease-in-out
+      transition: transform 450ms 0ms ease-in-out, right 500ms 100ms ease-in-out, padding 400ms
       &:after
         content: ''
         display: block
@@ -143,15 +145,46 @@
     &:hover
       text-decoration: none
       color: white
-      width: 58rem
+      width: 100%
+      transition: padding 1s
+      padding: 9rem 20rem 9rem 10rem
       &:before
         transform: rotateY(180deg)
         left: 5rem
       h4
-        transform: rotate(0)
-        right: 4rem
-        transition: transform 350ms 250ms ease-in-out, right 600ms ease-in-out
         &:after
           width: 100%
+    &:hover &_list
+        opacity: 1
+        transition: opacity 100ms
+    &_list
+      width: 100%
+      height: auto
+      display: flex
+      opacity: 0
+      flex-direction: row
+      justify-content: space-between
+      transition: opacity 100ms 400ms
+      &_item
+        width: calc(25% - 3rem)
+        height: auto
+        &_img
+          position: relative
+          width: 100%
+          height: auto
+          padding-top: 75%
+          margin-bottom: 3rem
+          &>img
+            width: auto
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+        &_text
+          color: #ffffff
+          text-align: left
+
+
+
 
 

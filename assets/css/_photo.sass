@@ -1,10 +1,9 @@
-@media (min-width: $desct)
 
+.photo_wrapper
+  padding: 0rem 3rem
+  margin-top: 12.5rem
+  margin-bottom: 12rem
 
-  .photo_wrapper
-    padding: 0rem 3rem
-    margin-top: 12.5rem
-    margin-bottom: 12rem
   .photo
     display: flex
     flex-direction: row
@@ -21,21 +20,25 @@
 
       &:nth-child(3n)
         margin-right: 0rem
+
       &_view
         position: relative
         width: 100%
         height: 90%
         padding-bottom: 25px
+
         & > img
           position: relative
           width: 100%
           height: 100%
           transition: transform 500ms
+
       &:hover &_view
         z-index: 3
         transform: scale(1.5)
         transition: transform 1s 200ms
         cursor: pointer
+
       &:hover a
         left: 0%
         bottom: -10%
@@ -56,6 +59,7 @@
         bottom: 30%
         left: 0%
         z-index: -1
+
         &:hover
           color: $orange
 
@@ -63,7 +67,8 @@
     display: flex
     justify-content: center
     align-items: center
-    &>button
+
+    & > button
       outline: none
       width: 25rem
       height: 6rem
@@ -75,6 +80,7 @@
       line-height: 2rem
       color: $black
       transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out
+
       &:hover
         background-color: $orange
         transform: scale(1.05)

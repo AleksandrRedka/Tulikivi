@@ -17,7 +17,7 @@
 <body>
 <div class="main_wrapper">
     <div class="aside">
-        <a href="/" class="aside_logo">
+        <a href="index.html" class="aside_logo">
             <img src="assets/img/logo.png" alt="Tulikivi"/>
         </a>
         <div class="aside_logo_text">
@@ -303,9 +303,9 @@
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="main_about_options_btn">
+                <button href="#" class="main_about_options_btn">
                     <p>Больше</p>
-                </a>
+                </button>
             </div>
             <div class="main_about_content">
                 <div class="main_about_wrapper">
@@ -871,9 +871,36 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="main_why_catalog">
+            <div class="main_why_catalog">
                 <h4>КАТАЛОГИ</h4>
-            </a>
+                <div class="main_why_catalog_list">
+                    <div class="main_why_catalog_list_item">
+                        <div class="main_why_catalog_list_item_img">
+                            <img src="assets/img/page_gallery/Tulikivi_Production@2x.png" alt="">
+                        </div>
+                        <p class="main_why_catalog_list_item_text">Каталог продукции Tulikivi</p>
+                    </div>
+                    <div class="main_why_catalog_list_item">
+                        <div class="main_why_catalog_list_item_img">
+                            <img src="assets/img/page_gallery/Tulikivi_Dreams@2x.png" alt="">
+                        </div>
+                        <p class="main_why_catalog_list_item_text">Каталог моделей по индивидуальному заказу «Tulikivi Dreams»</p>
+                    </div>
+                    <div class="main_why_catalog_list_item">
+                        <div class="main_why_catalog_list_item_img">
+                            <img src="assets/img/page_gallery/Tulikivi_Sauna@2x.png" alt="">
+                        </div>
+                        <p class="main_why_catalog_list_item_text">Каталог «Сауны Tulikivi»</p>
+                    </div>
+                    <div class="main_why_catalog_list_item">
+                        <div class="main_why_catalog_list_item_img">
+                            <img src="assets/img/page_gallery/Tulikivi_Karelia@2x.png" alt="">
+                        </div>
+                        <p class="main_why_catalog_list_item_text">Печи-камины из камня Tulikivi: коллекция Karelia</p>
+                    </div>
+
+                </div>
+            </div>
         </section>
         <section class="drive">
             <div class="drive_img">
@@ -928,13 +955,17 @@
             <div class="footer_top_content">
                 <div class="footer_contact_info">
                     <h5 class="footer_title">Связатся с нами</h5>
-                    <p class="footer_contact_info_tel" type="tel">
-                        +380 (44) 338-08-29
-                    </p>
-                    <p class="footer_contact_info_tel" type="tel">
-                        +380 (67) 620-23-25
-                    </p>
-                    <p class="footer_contact_info_time">Мы работаем по будням с 9:00 до 18:00</p>
+                    <div class="footer_contact_info_tel">
+                        <p>
+                            +380 (44) 338-08-29
+                        </p>
+                        <p>
+                            +380 (67) 620-23-25
+                        </p>
+                    </div>
+                    <div class="footer_contact_info_time">
+                        <p >Мы работаем по будням с 9:00 до 18:00</p>
+                    </div>
                 </div>
                 <div class="footer_nav">
                     <h5 class="footer_title">Главная</h5>
@@ -943,7 +974,8 @@
                         <li class="footer_nav_link"><a href="#">Печи для бани</a></li>
                         <li class="footer_nav_link"><a href="plitka.html">Плитка, мозаика</a></li>
                         <li class="footer_nav_link"><a href="#">Посуда и аксессуары</a></li>
-                        <li class="footer_nav_link"><a href="page_individual_order.html">Камины по индивидуальным заказам</a></li>
+                        <li class="footer_nav_link"><a href="page_individual_order.html">Камины по индивидуальным
+                            заказам</a></li>
                         <li class="footer_nav_link"><a href="about.html">О нас</a></li>
                         <li class="footer_nav_link"><a href="why_tulikivi.html">Почему Tulikivi</a></li>
                         <li class="footer_nav_link"><a href="gallery.html">Галерея</a></li>
@@ -981,12 +1013,12 @@
                 </div>
             </div>
             <div class="footer_down_content">
-                <div class="footer_down_content_bold">
+                <div class="footer_down_content_company">
                     <p>
-                        © ПІІ «Туликиви Украина»
+                        ©&nbsp;ПІІ&nbsp;«Туликиви&nbsp;Украина»
                     </p>
                     <p>
-                        Design&Development by IS.Agency
+                        Design&Development<br> by IS.Agency
                     </p>
                 </div>
                 <p class="footer_down_content_text">
@@ -998,8 +1030,7 @@
         </footer>
     </div>
 </div>
-
-<script src="assets/js/script.js"></script>
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

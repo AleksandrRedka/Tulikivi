@@ -1,69 +1,63 @@
 //Slider
-@media (min-width: $desct)
-  .slider_works
-    padding: 0rem 3rem
-    margin-bottom: 12rem
-
-    &_list
-      position: relative
-      width: 100%
-      height: auto
-      margin-bottom: -3rem
-    .about_slider_img>img
-      width: 100%
-    &_nav
-      margin-top: 6rem
-      display: flex
-      flex-direction: row
-      justify-content: center
-      align-items: center
-      line-height: 45px
-
-      &_count
+.slider_works
+  padding: 0rem 3rem
+  margin-top: 12rem
+  margin-bottom: 12rem
+  &_list
+    position: relative
+    width: 100%
+    height: auto
+    margin-bottom: -3rem
+  .about_slider_img>img
+    width: 100%
+  &_nav
+    margin-top: 6rem
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    line-height: 45px
+    &_count
+      font-family: $LatoB
+      font-size: 1.6rem
+      line-height: 60px
+      color: $black
+      &_check
+        font-size: 4rem
+        font-family: $LatoB
+        line-height: 60px
+        color: $black
+      &_quantity
         font-family: $LatoB
         font-size: 1.6rem
         line-height: 60px
         color: $black
-        &_check
-          font-size: 4rem
-          font-family: $LatoB
-          line-height: 60px
-          color: $black
-        &_quantity
-          font-family: $LatoB
-          font-size: 1.6rem
-          line-height: 60px
-          color: $black
-
-
-
-  .slick-review
-    position: absolute
-    background-color: transparent
-    width: 45px
-    height: 45px
-    border: none
-    outline: none
-    transition: transform 200ms ease-in-out
-    &:after
-      content: none
-    &::before
-      content: none
-  .slick-next
-    position: absolute
-    bottom: -15%
-    right: 30%
-    top: auto
-    left: auto
-    padding: 0rem
-  .slick-prev
-    position: absolute
-    bottom: -15%
-    left: 30%
-    top: auto
-    right: auto
-    padding: 0rem
-
+.slick-review
+  position: absolute
+  background-color: transparent
+  width: 45px
+  height: 45px
+  border: none
+  outline: none
+  transition: transform 200ms ease-in-out
+  &:after
+    content: none
+  &::before
+    content: none
+.slick-next
+  position: absolute
+  bottom: -15%
+  right: 30%
+  top: auto
+  left: auto
+  padding: 0rem
+.slick-prev
+  position: absolute
+  bottom: -15%
+  left: 30%
+  top: auto
+  right: auto
+  padding: 0rem
 .slider_works_nav_margin_rem
   margin-top: 4rem
 //&_img

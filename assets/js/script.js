@@ -104,7 +104,6 @@ $(document).ready(function () {
 // Counter Slider
 (function () {
         $('.slider_works_list').on('init', function (event, slick) {
-            console.log("initialized");
             var imageArr = document.querySelectorAll('.about_slider_img');
             var countImage = document.querySelector('.slider_works_nav_count_quantity');
             var counterText = document.querySelector('.slider_works_nav_count_check');
@@ -116,12 +115,12 @@ $(document).ready(function () {
                     count++;
                     if (count === imagesLength + 1) {
                         count = 1;
-                        counterText.textContent = `0${count}`;
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
                         return
                     }
                     if (count < imagesLength + 1) {
-                        counterText.textContent = `0${count}`;
-                        return
+                       setTimeout(counterText.textContent = `0${count}`,2000) ;
+                       return
                     }
                 });
             $('.slick-prev').click(
@@ -129,11 +128,11 @@ $(document).ready(function () {
                     count--;
                     if (count < 1) {
                         count = 7;
-                        counterText.textContent = `0${count}`;
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
                         return
                     }
                     if (count < imagesLength + 1) {
-                        counterText.textContent = `0${count}`;
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
                         return
                     }
                 }
