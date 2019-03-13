@@ -2286,7 +2286,7 @@ input[type=range]::-moz-range-thumb {
 }
 .main_why_catalog_slider {
   width: calc(80vw - 27rem);
-  height: 50%;
+  height: 70%;
   display: block;
 }
 .main_why_catalog_slider_item {
