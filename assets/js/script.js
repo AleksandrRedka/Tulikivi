@@ -77,6 +77,9 @@ $('.main_popular_category_img_viewer img').click(function(){
     });
 })();
 
+(function(){
+    $('.main_why_catalog_list').slick();
+})();
 // Slick Works--------------------------------------
 $(document).ready(function () {
     $('.slider_works_list').slick({
