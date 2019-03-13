@@ -2215,6 +2215,7 @@ input[type=range]::-moz-range-thumb {
   bottom: 2rem;
   z-index: 2;
   transition: width 600ms ease-in-out;
+  overflow: hidden;
 }
 .main_why_catalog:before {
   content: "";
@@ -2317,7 +2318,7 @@ input[type=range]::-moz-range-thumb {
   display: block;
   font-family: "Lato Regular", sans-serif;
   font-size: 1.8rem;
-  line-height: 2.4rem;
+  height: 8rem;
 }
 
 .main_why_catalog_slider > .slick-prev {
@@ -2329,28 +2330,15 @@ input[type=range]::-moz-range-thumb {
 }
 
 .main_why_catalog_slider > .slick-next {
-  left: 20%;
+  left: 15%;
   top: auto;
   right: auto;
   bottom: 5%;
   transform: translate(-50%, -50%);
 }
 
-.main_why_catalog_list_nav {
-  font-family: "Lato Bold", sans-serif;
-  font-size: 2.4rem;
-  color: #FFF;
-  line-height: 2.4rem;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  bottom: 9%;
-  left: 15%;
-}
-.main_why_catalog_list_nav > span {
-  color: #FFF;
-}
-
 .main_reviews {
+  overflow: hidden;
   width: 100%;
   margin: 0 auto;
   position: relative;
