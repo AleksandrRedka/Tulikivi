@@ -78,7 +78,9 @@ $('.main_popular_category_img_viewer img').click(function(){
 })();
 
 (function(){
-    $('.main_why_catalog_list').slick({
+    $('.main_why_catalog_slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
         arrows: true,
         prevArrow : '<button class="slick-review slick-prev"><img src="assets/img/review_arrow_white.svg" alt=""></button>',
         nextArrow : '<button class="slick-review slick-next"><img src="assets/img/review_arrow_white.svg" alt=""></button>'
