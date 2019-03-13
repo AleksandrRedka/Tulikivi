@@ -2214,9 +2214,7 @@ input[type=range]::-moz-range-thumb {
   right: 0;
   bottom: 2rem;
   z-index: 2;
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-  transition: width 600ms ease-in-out, display 500ms 400ms, opacity 2s 500ms;
+  transition: width 600ms ease-in-out;
 }
 .main_why_catalog:before {
   content: "";
@@ -2240,7 +2238,7 @@ input[type=range]::-moz-range-thumb {
   line-height: 8rem;
   color: white;
   transform: rotate(90deg);
-  transition: transform 450ms 0ms ease-in-out, right 500ms 100ms ease-in-out, padding 400ms;
+  transition: transform 450ms 0ms ease-in-out, right 500ms 100ms ease-in-out;
 }
 .main_why_catalog h4:after {
   content: "";
@@ -2257,7 +2255,6 @@ input[type=range]::-moz-range-thumb {
   text-decoration: none;
   color: white;
   width: 100%;
-  transition: padding 1s;
   padding: 9rem 20rem 9rem 10rem;
 }
 .main_why_catalog:hover:before {
@@ -2269,20 +2266,21 @@ input[type=range]::-moz-range-thumb {
 }
 .main_why_catalog:hover .main_why_catalog_list {
   opacity: 1;
-  transition: opacity 100ms;
+  transition: opacity 100ms 400ms;
 }
 .main_why_catalog_list {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   opacity: 0;
   flex-direction: row;
   justify-content: space-between;
-  transition: opacity 100ms 400ms;
+  align-items: center;
+  transition: opacity 100ms;
 }
 .main_why_catalog_list_item {
   width: calc(25% - 3rem);
-  height: auto;
+  height: 50%;
 }
 .main_why_catalog_list_item_img {
   position: relative;

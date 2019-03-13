@@ -116,11 +116,11 @@ $(document).ready(function () {
                     if (count === imagesLength + 1) {
                         count = 1;
                         setTimeout(counterText.textContent = `0${count}`,2000) ;
-                        return
+                        return;
                     }
                     if (count < imagesLength + 1) {
                        setTimeout(counterText.textContent = `0${count}`,2000) ;
-                       return
+                       return;
                     }
                 });
             $('.slick-prev').click(
@@ -129,11 +129,11 @@ $(document).ready(function () {
                     if (count < 1) {
                         count = 7;
                         setTimeout(counterText.textContent = `0${count}`,2000) ;
-                        return
+                        return;
                     }
                     if (count < imagesLength + 1) {
                         setTimeout(counterText.textContent = `0${count}`,2000) ;
-                        return
+                        return;
                     }
                 }
             )
