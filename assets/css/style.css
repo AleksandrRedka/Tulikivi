@@ -1279,7 +1279,7 @@ input[type=range]::-moz-range-thumb {
   font-family: "Lato Bold", sans-serif;
 }
 
-.site_bar_filter_inpu {
+.site_bar_filter_input {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1287,14 +1287,14 @@ input[type=range]::-moz-range-thumb {
   margin-bottom: 1rem;
   position: relative;
 }
-.site_bar_filter_inpu > output {
+.site_bar_filter_input > output {
   position: absolute;
   right: 2%;
   top: -80%;
   font-size: 1.2rem;
   font-family: "Lato Bold", sans-serif;
 }
-.site_bar_filter_inpu > select {
+.site_bar_filter_input > select {
   border: 1px solid #000;
   width: 60%;
   height: 3vh;
@@ -2295,6 +2295,8 @@ input[type=range]::-moz-range-thumb {
   width: calc(25% - 1rem);
   height: 100%;
   overflow: hidden;
+  outline: none;
+  text-decoration: none;
 }
 .main_why_catalog_slider_item_img {
   display: block;
@@ -2416,7 +2418,7 @@ input[type=range]::-moz-range-thumb {
 }
 .main_reviews_slider .slick-review {
   position: absolute;
-  bottom: 1rem;
+  bottom: -1rem;
   width: 5rem;
   background-color: transparent;
   border: none;
