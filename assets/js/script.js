@@ -1,19 +1,19 @@
-(function () {
+(function(){
     var slides = $('.main_slide');
     var counter = $('.main_slide_count span');
     var count = 0;
-    slides.click(function () {
-        if ($(this).hasClass('main_slide_active')) return;
+    slides.click(function(){
+        if($(this).hasClass('main_slide_active')) return;
         count = slides.index(this);
         var countText = count + 1 + '/';
-        counter.text('0' + countText);
+        counter.text( '0' + countText);
         $('.main_slide').removeClass('main_slide_active');
         $(this).addClass('main_slide_active');
     });
-    $('.main_slide_left_arrow').click(function () {
+    $('.main_slide_left_arrow').click(function(){
         event.stopPropagation();
         slides.removeClass('main_slide_active');
-        if (count === 0) {
+        if(count === 0) {
             count = slides.length - 1;
             $(slides[count]).addClass('main_slide_active');
         } else {
@@ -21,13 +21,13 @@
             $(slides[count]).addClass('main_slide_active');
         }
         var countText = count + 1 + '/';
-        counter.text('0' + countText);
+        counter.text( '0' + countText);
     });
-    $('.main_slide_right_arrow').click(function () {
+    $('.main_slide_right_arrow').click(function(){
         console.log('here');
         event.stopPropagation();
         slides.removeClass('main_slide_active');
-        if (count === slides.length - 1) {
+        if(count === slides.length -1) {
             count = 0;
             $(slides[count]).addClass('main_slide_active');
         } else {
@@ -35,12 +35,47 @@
             $(slides[count]).addClass('main_slide_active');
         }
         var countText = count + 1 + '/';
-        counter.text('0' + countText);
+        counter.text( '0' + countText);
     });
 })();
-$('.main_slide_img_viewer img').click(function () {
+$('.main_slide_img_viewer img').click(function(){
     $(this).toggleClass('rotate_img');
 });
+$('.main_popular_category_img_viewer img').click(function(){
+    $(this).toggleClass('rotate_img');
+});
+(function(){
+    $('.main_popular_slider_viewer').slick({
+        infinite: true,
+        zIndex: 2,
+        prevArrow : '<button type="button" class="slick-category slick-prev"><img src="assets/img/slick_l.svg" alt=""></button>',
+        nextArrow : '<button type="button" class="slick-category slick-next"><img src="assets/img/slick_r.svg" alt=""></button>',
+        speed: 300,
+        slidesToShow: 4,
+        adaptiveHeight: true,
+        slidesToScroll: 1
+    });
+    $('.slick_d_arrow').click(function(){
+        var parent  = $(this).parent();
+        parent.toggleClass('main_popular_slider_active');
+        $(this).toggleClass('slick_d_arrow_active');
+    });
+})();
+
+
+(function(){
+    $('.main_reviews_slider').slick({
+        infinite: true,
+        zIndex: 2,
+        arrows: true,
+        prevArrow : '<button class="slick-review slick-prev"><img src="assets/img/review_arrow.svg" alt=""></button>',
+        nextArrow : '<button class="slick-review slick-next"><img src="assets/img/review_arrow.svg" alt=""></button>',
+        speed: 300,
+        slidesToShow: 3,
+        // adaptiveHeight: true,
+        slidesToScroll: 1
+    });
+})();
 
 // Slick Works--------------------------------------
 $(document).ready(function () {

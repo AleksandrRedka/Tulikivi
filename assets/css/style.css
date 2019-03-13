@@ -2214,7 +2214,7 @@ input[type=range]::-moz-range-thumb {
   right: 0;
   bottom: 2rem;
   z-index: 2;
-  transition: width 600ms ease-in-out;
+  transition: width 600ms ease-in-out, padding 600ms ease-in-out;
 }
 .main_why_catalog:before {
   content: "";
@@ -2255,7 +2255,7 @@ input[type=range]::-moz-range-thumb {
   text-decoration: none;
   color: white;
   width: 100%;
-  padding: 9rem 20rem 9rem 10rem;
+  padding: 0rem 20rem 0rem 10rem;
 }
 .main_why_catalog:hover:before {
   transform: rotateY(180deg);
