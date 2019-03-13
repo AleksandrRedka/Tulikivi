@@ -2285,7 +2285,7 @@ input[type=range]::-moz-range-thumb {
   overflow: hidden;
 }
 .main_why_catalog_slider {
-  width: 100%;
+  width: calc(80vw - 20rem);
   height: 50%;
   display: block;
 }
