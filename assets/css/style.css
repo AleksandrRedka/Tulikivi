@@ -4736,12 +4736,20 @@ input[type=range]::-moz-range-thumb {
 }
 
 .footer_top_content {
-  padding: 0rem 3rem;
+  padding: 0 3rem;
   display: flex;
   padding-bottom: 5rem;
   position: relative;
   flex-direction: row;
   height: 35rem;
+}
+@media screen and (max-width: 1024px) {
+  .footer_top_content {
+    justify-content: space-between;
+    padding: 0 13.33rem;
+    margin-bottom: 10rem;
+    height: 32rem;
+  }
 }
 
 .footer_title {
@@ -4751,20 +4759,45 @@ input[type=range]::-moz-range-thumb {
   color: #444444;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer_title {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 3.5rem;
+  }
+}
 
 .footer_contact_info {
   width: 23%;
   margin-right: 5rem;
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1024px) {
+  .footer_contact_info {
+    width: 35%;
+    margin-right: 0;
+  }
 }
 .footer_contact_info_tel > p {
   font-family: "Lato Bold", sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer_contact_info_tel > p {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 .footer_contact_info_tel > p:last-child {
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .footer_contact_info_tel > p:last-child {
+    margin-bottom: 1.66rem;
+  }
 }
 .footer_contact_info_time > p {
   font-family: "Lato Regular", sans-serif;
@@ -4772,9 +4805,20 @@ input[type=range]::-moz-range-thumb {
   line-height: 2.5rem;
   color: #e56744;
 }
+@media screen and (max-width: 1024px) {
+  .footer_contact_info_time > p {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}
 
 .footer_nav {
   width: 55%;
+}
+@media screen and (max-width: 1024px) {
+  .footer_nav {
+    display: none;
+  }
 }
 .footer_nav_list {
   display: flex;
@@ -4811,12 +4855,24 @@ input[type=range]::-moz-range-thumb {
 .footer_adress {
   width: 22%;
 }
+@media screen and (max-width: 1024px) {
+  .footer_adress {
+    width: 35%;
+  }
+}
 .footer_adress_value {
   font-family: "Lato Regular", sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #444444;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .footer_adress_value {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 3.5rem;
+  }
 }
 .footer_adress_email {
   font-family: "Lato Regular", sans-serif;
@@ -4825,17 +4881,34 @@ input[type=range]::-moz-range-thumb {
   color: #444444;
   margin-bottom: 0.5rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer_adress_email {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 .footer_adress_small_text {
   font-family: "Lato Regular", sans-serif;
   font-size: 1.4rem;
   color: #707070;
   line-height: 1.7rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer_adress_small_text {
+    font-size: 2.33rem;
+    line-height: 3rem;
+  }
+}
 
 .social_icon {
   position: absolute;
-  bottom: 5rem;
-  left: 3rem;
+  bottom: 2rem;
+  left: 0;
+}
+@media screen and (max-width: 1024px) {
+  .social_icon {
+    bottom: -4rem;
+  }
 }
 .social_icon > ul {
   display: flex;
@@ -4843,6 +4916,12 @@ input[type=range]::-moz-range-thumb {
 }
 .social_icon > ul > li {
   margin-right: 3.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .social_icon > ul > li {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .footer_down_content {
@@ -4853,8 +4932,18 @@ input[type=range]::-moz-range-thumb {
   justify-content: space-between;
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .footer_down_content {
+    padding: 3.5rem 13.33rem;
+  }
+}
 .footer_down_content_company {
   width: 20%;
+}
+@media screen and (max-width: 1024px) {
+  .footer_down_content_company {
+    width: 45%;
+  }
 }
 .footer_down_content_company > p {
   font-family: "Rubik Medium", sans-serif;
@@ -4863,12 +4952,25 @@ input[type=range]::-moz-range-thumb {
   color: #444444;
   font-weight: bold;
 }
+@media screen and (max-width: 1024px) {
+  .footer_down_content_company > p {
+    font-size: 2.66rem;
+    line-height: 3.33rem;
+  }
+}
 .footer_down_content_text {
   width: 65%;
   font-family: "Lato Regular", sans-serif;
   font-size: 1.4rem;
   color: #ACACAC;
   line-height: 1.8rem;
+}
+@media screen and (max-width: 1024px) {
+  .footer_down_content_text {
+    width: 55%;
+    font-size: 2.33rem;
+    line-height: 3rem;
+  }
 }
 
 .main_wrapper_pop {
