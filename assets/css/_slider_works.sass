@@ -1,15 +1,18 @@
 //Slider
 .slider_works
+  position: relative
   padding: 0rem 3rem
   margin-top: 12rem
   margin-bottom: 12rem
+  @media screen and (max-width: $tablet)
+    padding: 0rem 13.33rem
+    margin-bottom: 21rem
   &_list
     position: relative
     width: 100%
     height: auto
     margin-bottom: -3rem
-  .about_slider_img>img
-    width: 100%
+    box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.16)
   &_nav
     margin-top: 6rem
     display: flex
@@ -18,6 +21,10 @@
     align-items: center
     line-height: 45px
     &_count
+      position: absolute
+      transform: translate(-50%,-50%)
+      bottom: -21%
+      left: 50%
       font-family: $LatoB
       font-size: 1.6rem
       line-height: 60px
@@ -32,6 +39,16 @@
         font-size: 1.6rem
         line-height: 60px
         color: $black
+.about_slider_img
+  position: relative
+  padding-top: 8%
+
+  &>img
+    position: absolute
+    top: -10%
+    left: -10%
+    width: 110%
+
 .slick-review
   position: absolute
   background-color: transparent
@@ -46,14 +63,14 @@
     content: none
 .slick-next
   position: absolute
-  bottom: -15%
+  bottom: -25%
   right: 30%
   top: auto
   left: auto
   padding: 0rem
 .slick-prev
   position: absolute
-  bottom: -15%
+  bottom: -25%
   left: 30%
   top: auto
   right: auto

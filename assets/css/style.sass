@@ -17,6 +17,9 @@ p
   font-size: 1.8rem
   color: #444444
   line-height: 2.4rem
+  @media screen and (max-width: $tablet)
+    font-size: 3rem
+    line-height: 4rem
 a
   cursor: pointer
   text-decoration: none
@@ -31,6 +34,11 @@ button
   font-size: 3.2rem
   line-height: 4rem
   margin-bottom: 3rem
+  @media screen and (max-width: $tablet)
+    font-size: 5.33rem
+    line-height: 6.66rem
+    margin-bottom: 5rem
+
 
 //=================================================
 body,html, *
@@ -81,6 +89,9 @@ body,html, *
   margin-left: 20%
   height: auto
   display: block
+  @media screen and (max-width: $tablet)
+    width: 100%
+    margin: 0%
 .page_wrapper_without_site_bar
   width: 80%
   margin-left: 20%
@@ -88,6 +99,8 @@ body,html, *
   display: block
 .aside
   width: 20%
+  @media screen and (max-width: $tablet)
+    width: 80%
 .center_wrapper
   width: 55%
   padding-left: 3rem
@@ -106,3 +119,5 @@ body,html, *
   position: fixed
   right: 0
   top: 0
+  @media screen and (max-width: $tablet)
+    display: none
