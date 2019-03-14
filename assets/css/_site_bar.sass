@@ -92,9 +92,14 @@
         line-height: 2.4rem
         font-family: $LatoR
         transition: text-decoration 500ms
+        @media screen and (max-width: $tablet)
+          font-size: 2.33rem
+          line-height: 6.66rem
       .active_lang
         color: $orange
         font-size: 2.2rem
+        @media screen and (max-width: $tablet)
+          font-size: 4rem
   &_btn
     background-color: $orange
     color: white

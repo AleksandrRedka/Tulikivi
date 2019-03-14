@@ -1,75 +1,64 @@
-
 .photo_wrapper
   padding: 0rem 3rem
   margin-top: 12.5rem
   margin-bottom: 12rem
+.photo
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 100%
+  margin-bottom: 5rem
 
-  .photo
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    flex-wrap: wrap
-    width: 100%
-    margin-bottom: 5rem
+  &_wrapper_img
+    width: 30%
+    height: auto
+    position: relative
+    margin-right: 3rem
 
-    &_wrapper_img
-      width: 30%
-      height: auto
+    &:nth-child(3n)
+      margin-right: 0rem
+    &_view
       position: relative
-      margin-right: 3rem
-
-      &:nth-child(3n)
-        margin-right: 0rem
-
-      &_view
+      width: 100%
+      height: 90%
+      padding-bottom: 25px
+      & > img
         position: relative
         width: 100%
-        height: 90%
-        padding-bottom: 25px
+        height: 100%
+        transition: transform 500ms
+    &:hover &_view
+      z-index: 3
+      transform: scale(1.5)
+      transition: transform 1s 200ms
+      cursor: pointer
+    &:hover a
+      left: 0%
+      bottom: -10%
+      z-index: 2
+      transition: bottom 500ms 200ms
 
-        & > img
-          position: relative
-          width: 100%
-          height: 100%
-          transition: transform 500ms
+    & > a
+      font-family: $LatoR
+      font-size: 1.8rem
+      color: $black
+      line-height: 2.4rem
+      cursor: pointer
+      width: 100%
+      display: block
+      position: absolute
+      transition: bottom 500ms
+      background-color: #ffffff
+      bottom: 30%
+      left: 0%
+      z-index: -1
 
-      &:hover &_view
-        z-index: 3
-        transform: scale(1.5)
-        transition: transform 1s 200ms
-        cursor: pointer
-
-      &:hover a
-        left: 0%
-        bottom: -10%
-        z-index: 2
-        transition: bottom 500ms 200ms
-
-      & > a
-        font-family: $LatoR
-        font-size: 1.8rem
-        color: $black
-        line-height: 2.4rem
-        cursor: pointer
-        width: 100%
-        display: block
-        position: absolute
-        transition: bottom 500ms
-        background-color: #ffffff
-        bottom: 30%
-        left: 0%
-        z-index: -1
-
-        &:hover
-          color: $orange
-
-  .button_more
+  &_button
     display: flex
     justify-content: center
     align-items: center
-
-    & > button
-      outline: none
+    &>button
       width: 25rem
       height: 6rem
       border: 1px solid $orange
@@ -79,12 +68,8 @@
       font-family: $LatoR
       line-height: 2rem
       color: $black
-      transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out
-
       &:hover
         background-color: $orange
         transform: scale(1.05)
         font-weight: normal
         color: #ffffff
-
-

@@ -79,6 +79,9 @@ body,html, *
 @import "why_tulikivi"
 @import "footer"
 @import "window_pop_up"
+@import "tablet_header"
+.body_hidden
+  overflow: hidden
 .main_wrapper
   width: 100%
   height: auto
@@ -121,3 +124,10 @@ body,html, *
   top: 0
   @media screen and (max-width: $tablet)
     display: none
+
+.tablet_header
+  display: none
+  @media screen and (max-width: $tablet)
+    display: flex
+    padding-bottom: 3rem
+    transition: background-color 1.5s

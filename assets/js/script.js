@@ -248,9 +248,19 @@ $(document).ready(function () {
     $('.menu_tablet').click(function () {
         $('.menu_tablet_icon').toggleClass('menu_tablet_icon_active',1000);
         $('.aside').toggleClass('aside_active',1000);
-        $('.menu_tablet_link').toggleClass('menu_tablet_link_active',1000)
+        $('.menu_tablet_link').toggleClass('menu_tablet_link_active',1000);
+        $('body').toggleClass('body_hidden',1000)
     })
-})()
+})();
+
+$(document).on('scroll', function () {
+    let lengthScroll = $(document).scrollTop();
+    if (lengthScroll > 80) {
+        $('.tablet_header').css('background-color','#fff')
+    } else {
+        $('.tablet_header').css('background-color','')
+    }
+});
 //------------------------------------------------------------------
 // (function() {
 //     // Init
