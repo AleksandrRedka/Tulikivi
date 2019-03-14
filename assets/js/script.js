@@ -62,7 +62,7 @@ $('.main_popular_category_img_viewer img').click(function(){
     });
 })();
 
-
+//------------------------------------------------------------------
 (function(){
     $('.main_reviews_slider').slick({
         infinite: true,
@@ -244,7 +244,14 @@ $(document).ready(function () {
     })
 })();
 //------------------------------------------------------------------
-//
+(function () {
+    $('.menu_tablet').click(function () {
+        $('.menu_tablet_icon').toggleClass('menu_tablet_icon_active',1000);
+        $('.aside').toggleClass('aside_active',1000);
+        $('.menu_tablet_link').toggleClass('menu_tablet_link_active',1000)
+    })
+})()
+//------------------------------------------------------------------
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');
