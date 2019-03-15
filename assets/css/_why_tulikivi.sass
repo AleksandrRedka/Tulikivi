@@ -1,17 +1,28 @@
 .why_tulikivi_top
-  padding: 0rem 3rem
+  padding: 0 3rem
   display: flex
   flex-direction: row
   position: relative
-
+  margin-bottom: 12rem
+  @media screen and (max-width: $tablet)
+    flex-direction: column-reverse
+    padding: 0 13.3rem
+    margin-top: 33rem
+    margin-bottom: 5rem
   &_text
     width: 45%
     height: auto
     padding-right: 3rem
     margin-top: 10vh
+    @media screen and (max-width: $tablet)
+      margin-top: 3.33rem
+      width: 100%
   &_title
     font-size: 9rem
     line-height: 11rem
+    @media screen and (max-width: $tablet)
+      font-size: 8.33rem
+      line-height: 10rem
   .six_quality
     position: absolute
     bottom: 0%
@@ -19,32 +30,51 @@
     font-family: $LatoB
     font-size: 3.2rem
     line-height: 40px
+    @media screen and (max-width: $tablet)
+      position: static
+      font-size: 5.33rem
+      line-height: 6.5rem
+      margin-top: 13.33rem
   &_wrapper_img
     width: 55%
     padding-top: 75%
     position: relative
     overflow: hidden
+    @media screen and (max-width: $tablet)
+      width: 100%
     &>img
       width: auto
       height: 100%
       position: absolute
       top: 0
       left: -60%
+      @media screen and (max-width: $tablet)
+        left: 0
 .box_qualities
-  margin: 6rem 0rem
+  margin-bottom: 6rem
+  @media screen and (max-width: $tablet)
+    margin-bottom: 10rem
   &_list
-    padding: 0rem 3rem
+    padding: 0 3rem
     padding-bottom: 6rem
     overflow: hidden
+    @media screen and (max-width: $tablet)
+      padding: 0 13.33rem
+      padding-bottom: 10rem
   .wrapper_quality
     display: inline-block
-    width: 45%
+    width: calc(50% - 8%)
     height: auto
+    @media screen and (max-width: $tablet)
+      width: calc(50% - 1.33rem)
     &:nth-child(2)
       padding-top: 15rem
+      @media screen and (max-width: $tablet)
+        padding-top: 48rem
     &:nth-child(n+3)
       padding-top: 12rem
-      margin-top: 10%
+      @media screen and (max-width: $tablet)
+        padding-top: 30rem
     &:nth-child(even)
       float: right
     &:nth-child(odd)
@@ -54,6 +84,9 @@
       padding: 14rem 3rem 10rem
       min-height: 58rem
       position: relative
+      @media screen and (max-width: $tablet)
+        padding: 17.33rem 1.5rem 3.33rem
+        min-height: 96rem
     .quality
       width: 100%
       &_num
@@ -62,6 +95,9 @@
         left: 0
         font-size: 10rem
         line-height: 12rem
+        @media screen and (max-width: $tablet)
+          font-size: 11.66rem
+          line-height: 14rem
       &_title
         font-family: $LatoB
         font-size: 2.4rem
@@ -70,11 +106,17 @@
         margin-bottom: 3rem
         position: relative
         z-index: 1
+        @media screen and (max-width: $tablet)
+          font-size: 3.66rem
+          line-height: 5rem
       &_text
         position: relative
         z-index: 1
         margin-bottom: 3rem
+        @media screen and (max-width: $tablet)
+          font-size: 2.66rem
       &_buttons
+        width: calc(100% - 6rem)
         position: absolute
         bottom: 3rem
         left: 2.5rem
@@ -83,8 +125,13 @@
         flex-direction: row
         justify-content: space-between
         align-items: center
+        @media screen and (max-width: $tablet)
+          width: calc(100% - 3rem)
+          left: 1.5rem
+          right: 1.5rem
         &>button
-          width: 15rem
+          outline: none
+          width: 45%
           height: 4rem
           border: 1px solid $orange
           border-radius: 10px
@@ -93,6 +140,9 @@
           line-height: 2rem
           background-color: #FFFFFF
           transition: background-color 500ms, color 50ms, transform 175ms
+          @media screen and (max-width: $tablet)
+            height: 6.66rem
+            font-size: 2.33rem
           &:hover
             background-color: $orange
             text-decoration: none
