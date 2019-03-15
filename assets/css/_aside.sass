@@ -170,14 +170,18 @@
   display: none
   @media screen and (max-width: $tablet)
     display: block
-    position: relative
+    position: fixed
+    width: 13.33rem
+    height: 100%
+    top: 0
+    left: 0
     z-index: 101
   &_link
     transform: translate(-50%,-50%) rotate(-90deg)
-    position: fixed
+    position: absolute
     top: 50%
-    left: 5%
-    font-size: 3rem
+    left: 50%
+    font-size: 4rem
     font-family: $LatoR
     color: $orange
     line-height: 4rem
@@ -227,11 +231,19 @@
         opacity: 1
         top: 0
         transform: rotate(-45deg)
+
 .menu_tablet_link_active:before
   width: 100%
-  bottom: 0%
+  bottom: -5%
   right: 0%
   transition: 1s
+.menu_tablet_right
+  left: auto
+  right: 0
+  z-index: 99
+  &_link
+    transform: translate(-50%,-50%) rotate(90deg)
+
 .aside_img_tablet
   display: none
   @media screen and (max-width: $tablet)

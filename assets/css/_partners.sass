@@ -2,8 +2,15 @@
   margin-top: 12rem
   padding: 0rem 3rem
   margin-bottom: 12.5rem
+  @media screen and (max-width: $tablet)
+    margin-top: 33rem
+    padding: 0 13.33rem
+    margin-bottom: 18.66rem
   &_content>p
     margin-bottom: 3rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 3.33rem
+      font-size: 2.66rem
     &:last-child
       margin-bottom: 0rem
 
@@ -12,6 +19,9 @@
 .partners_interested
   padding: 0rem 3rem
   margin-bottom: 12.5rem
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
+    margin-bottom: 18.66rem
   .partners_list
       display: flex
       flex-direction: row
@@ -22,6 +32,9 @@
         width: 25%
         text-align: center
         margin-bottom: 3rem
+        &>p
+          @media screen and (max-width: $tablet)
+            font-size: 2.66rem
         &:last-child
           width: 100%
           margin-bottom: 0rem
@@ -31,6 +44,9 @@
           display: inline-block
           margin-bottom: 40px
           position: relative
+          &>p
+            @media screen and (max-width: $tablet)
+              font-size: 2.66rem
           &::after
             position: absolute
             transform: translate(-50%,-50%)
@@ -45,8 +61,13 @@
 .partners_our_benefits
   padding: 0rem 3rem
   margin-bottom: 12rem
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
+    margin-bottom: 20rem
   &_content>p
-    margin-bottom: 30px
+    margin-bottom: 3rem
+    @media screen and (max-width: $tablet)
+      margin-bottom: 3.33rem
     &:last-child
       margin-bottom: 0rem
 
@@ -54,8 +75,14 @@
 .why_we
   padding: 0rem 3rem
   margin-bottom: 12rem
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
+    margin-bottom: 20rem
   &_content>p
     margin-bottom: 2rem
+    @media screen and (max-width: $tablet)
+      font-size: 2.66rem
+      margin-bottom: 3.33rem
     &:last-child
       margin-bottom: 0rem
 

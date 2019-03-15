@@ -245,10 +245,10 @@ $(document).ready(function () {
 })();
 //------------------------------------------------------------------
 (function () {
-    $('.menu_tablet').click(function () {
-        $('.menu_tablet_icon').toggleClass('menu_tablet_icon_active',1000);
+    $('.menu_tablet-js').click(function () {
+        $('.menu_tablet_icon',this).toggleClass('menu_tablet_icon_active',1000);
         $('.aside').toggleClass('aside_active',1000);
-        $('.menu_tablet_link').toggleClass('menu_tablet_link_active',1000);
+        $('.menu_tablet_link',this).toggleClass('menu_tablet_link_active',1000);
         $('body').toggleClass('body_hidden',1000)
     })
 })();

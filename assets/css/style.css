@@ -345,16 +345,20 @@ input[type=range]::-moz-range-thumb {
 @media screen and (max-width: 1024px) {
   .menu_tablet {
     display: block;
-    position: relative;
+    position: fixed;
+    width: 13.33rem;
+    height: 100%;
+    top: 0;
+    left: 0;
     z-index: 101;
   }
 }
 .menu_tablet_link {
   transform: translate(-50%, -50%) rotate(-90deg);
-  position: fixed;
+  position: absolute;
   top: 50%;
-  left: 5%;
-  font-size: 3rem;
+  left: 50%;
+  font-size: 4rem;
   font-family: "Lato Regular", sans-serif;
   color: #e56744;
   line-height: 4rem;
@@ -408,9 +412,18 @@ input[type=range]::-moz-range-thumb {
 
 .menu_tablet_link_active:before {
   width: 100%;
-  bottom: 0%;
+  bottom: -5%;
   right: 0%;
   transition: 1s;
+}
+
+.menu_tablet_right {
+  left: auto;
+  right: 0;
+  z-index: 99;
+}
+.menu_tablet_right_link {
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .aside_img_tablet {
@@ -4713,8 +4726,21 @@ input[type=range]::-moz-range-thumb {
   padding: 0rem 3rem;
   margin-bottom: 12.5rem;
 }
+@media screen and (max-width: 1024px) {
+  .partners_about_us {
+    margin-top: 33rem;
+    padding: 0 13.33rem;
+    margin-bottom: 18.66rem;
+  }
+}
 .partners_about_us_content > p {
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .partners_about_us_content > p {
+    margin-bottom: 3.33rem;
+    font-size: 2.66rem;
+  }
 }
 .partners_about_us_content > p:last-child {
   margin-bottom: 0rem;
@@ -4723,6 +4749,12 @@ input[type=range]::-moz-range-thumb {
 .partners_interested {
   padding: 0rem 3rem;
   margin-bottom: 12.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .partners_interested {
+    padding: 0 13.33rem;
+    margin-bottom: 18.66rem;
+  }
 }
 .partners_interested .partners_list {
   display: flex;
@@ -4736,6 +4768,11 @@ input[type=range]::-moz-range-thumb {
   text-align: center;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 1024px) {
+  .partners_interested .partners_list .partner > p {
+    font-size: 2.66rem;
+  }
+}
 .partners_interested .partners_list .partner:last-child {
   width: 100%;
   margin-bottom: 0rem;
@@ -4746,6 +4783,11 @@ input[type=range]::-moz-range-thumb {
   display: inline-block;
   margin-bottom: 40px;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .partners_interested .partners_list .partner_box_img > p {
+    font-size: 2.66rem;
+  }
 }
 .partners_interested .partners_list .partner_box_img::after {
   position: absolute;
@@ -4762,8 +4804,19 @@ input[type=range]::-moz-range-thumb {
   padding: 0rem 3rem;
   margin-bottom: 12rem;
 }
+@media screen and (max-width: 1024px) {
+  .partners_our_benefits {
+    padding: 0 13.33rem;
+    margin-bottom: 20rem;
+  }
+}
 .partners_our_benefits_content > p {
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .partners_our_benefits_content > p {
+    margin-bottom: 3.33rem;
+  }
 }
 .partners_our_benefits_content > p:last-child {
   margin-bottom: 0rem;
@@ -4773,8 +4826,20 @@ input[type=range]::-moz-range-thumb {
   padding: 0rem 3rem;
   margin-bottom: 12rem;
 }
+@media screen and (max-width: 1024px) {
+  .why_we {
+    padding: 0 13.33rem;
+    margin-bottom: 20rem;
+  }
+}
 .why_we_content > p {
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .why_we_content > p {
+    font-size: 2.66rem;
+    margin-bottom: 3.33rem;
+  }
 }
 .why_we_content > p:last-child {
   margin-bottom: 0rem;
@@ -4995,6 +5060,7 @@ input[type=range]::-moz-range-thumb {
   .box_qualities .wrapper_quality .quality_buttons > button {
     height: 6.66rem;
     font-size: 2.33rem;
+    line-height: 4rem;
   }
 }
 .box_qualities .wrapper_quality .quality_buttons > button:hover {
@@ -5371,6 +5437,7 @@ input[type=range]::-moz-range-thumb {
 
 .tablet_header {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   display: flex;
