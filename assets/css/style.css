@@ -5004,7 +5004,7 @@ input[type=range]::-moz-range-thumb {
   transform: scale(1.05);
 }
 .box_qualities .wrapper_quality .quality_bg {
-  width: auto;
+  width: 100%;
   height: auto;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -5013,7 +5013,11 @@ input[type=range]::-moz-range-thumb {
   z-index: -1;
 }
 .box_qualities .wrapper_quality .quality_bg > img {
-  width: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   filter: grayscale(100%) opacity(0.1);
 }
 

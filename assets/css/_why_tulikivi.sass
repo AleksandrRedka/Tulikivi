@@ -149,7 +149,7 @@
             color: white
             transform: scale(1.05)
       &_bg
-        width: auto
+        width: 100%
         height: auto
         position: absolute
         transform: translate(-50%,-50%)
@@ -157,6 +157,10 @@
         left: 50%
         z-index: -1
         &>img
-          width: 30rem
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
+          width: 90%
           filter: grayscale(100%) opacity(0.1)
 
