@@ -1,5 +1,7 @@
 .slider_popular_models
-  padding: 0rem 3rem
+  padding: 0 3rem
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
 .popular_models
   position: relative
   width: 100%
@@ -81,7 +83,7 @@
     height: 5rem
     background-color: $orange
     &>p
-     font-family: $LatoB
+      font-family: $LatoB
       line-height: 2.2rem
       color: #FFFFFF
   &_label_new
@@ -107,4 +109,4 @@
   width: calc( 25% - 1.4rem )
   margin-right: 3rem
   &:last-child
-    margin-right: 0rem
+    margin-right: 0
