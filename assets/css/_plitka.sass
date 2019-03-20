@@ -1,21 +1,22 @@
 .plitka_main
   position: relative
   width: 100%
-  height: auto
+  height: 60vh
   display: flex
   flex-direction: row
   flex-wrap: nowrap
   overflow: hidden
-  padding: 0rem 3rem
+  padding: 0 3rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
     margin-top: 29rem
     flex-direction: column
+    height: auto
 
   &_image
     width: 55%
     position: relative
-    padding-top: 70%
+    padding-top: 55%
     overflow: hidden
     @media screen and (max-width: $tablet)
       padding-top: 60%
@@ -24,7 +25,7 @@
       margin-bottom: 5rem
     img
       position: absolute
-      top: 0
+      bottom: 0
       left: -40%
       width: auto
       height: 100%
@@ -37,23 +38,26 @@
     display: flex
     width: 45%
     flex-direction: column
-    justify-content: space-around
     padding-left: 3rem
-    padding-top: 8%
+    padding-top: 13%
     height: 100%
     @media screen and (max-width: $tablet)
       width: 100%
       padding: 0
-      margin-bottom: 13rem
+      margin-bottom: 10em
   &_header
     display: inline-block
+    white-space: nowrap
     width: 100%
     font-size: 4.8rem
     font-weight: bold
+    margin-bottom: 3.5vh
     @media screen and (max-width: $tablet)
       font-size: 10.66rem
       line-height: 13rem
       margin-bottom: 5rem
+    @media screen and (max-width: 1300px)
+      font-size: 4.6rem
 
 
 
@@ -64,7 +68,7 @@
   width: 100%
   padding: 0 3rem
   padding-top: 4rem
-  margin-bottom: 12rem
+  margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
   &_wrapper

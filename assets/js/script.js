@@ -268,9 +268,14 @@ $(document).on('scroll', function () {
         }
     };
     $('#drive_phone').mask("+380(nn)-nnn-nn-nn").val('+380')
-})()
-
-
+})();
+(function () {
+    $.jMaskGlobals = {translation: {
+            'n': {pattern: /\d/},
+        }
+    };
+    $('#form-tel').mask("+380(nn)-nnn-nn-nn").val('+380')
+})();
 
 //-------------------------------------------------------------------
 // (function() {

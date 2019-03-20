@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Сотейник</title>
+    <title>Tulikivi | Сотейник</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="" type="image/ico" sizes="16x16">
@@ -323,28 +323,33 @@
                 </div>
             </div>
         </section>
-        <section class="contact_form">
-            <h4 class="contact_form_title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h4>
-            <form class="contact_form_info" action="#" method="POST">
-                <div class="form_input">
-                    <input id="form-name" name="name" type="text" placeholder=" ">
-                    <label for="form-name">Ваше имя:*</label>
-                </div>
-                <div class="form_input">
-                    <input id="form-tel" name="telephone" type="tel" placeholder=" ">
-                    <label for="form-tel">Телефон:*</label>
-                </div>
-                <div class="form_input">
-                    <input id="form-email" name="email" type="email" placeholder=" ">
-                    <label for="form-email">Электронная почта:</label>
-                </div>
-                <div class="form_input">
-                    <textarea id="form-mesg" name="message" type="text" placeholder=" "></textarea>
-                    <label for="form-mesg">Ваше сообщение:</label>
-                </div>
-                <button class="form_submit" type="submit">ОТПРАВИТЬ</button>
-            </form>
-            <div class="form_bg"></div>
+        <section class="contact_form_wrapper">
+            <div class="contact_form  contact_form_with_img">
+                <h4 class="contact_form_title">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</h4>
+                <form class="contact_form_info" action="#" method="POST">
+                    <div class="form_input">
+                        <input id="form-name" name="name" type="text" placeholder=" ">
+                        <label for="form-name">Ваше имя:*</label>
+                    </div>
+                    <div class="form_input">
+                        <input id="form-tel" name="telephone" type="tel" placeholder=" ">
+                        <label for="form-tel">Телефон:*</label>
+                    </div>
+                    <div class="form_input">
+                        <input id="form-email" name="email" type="email" placeholder=" ">
+                        <label for="form-email">Электронная почта:</label>
+                    </div>
+                    <div class="form_input">
+                        <textarea id="form-mesg" name="message" type="text" placeholder=" "></textarea>
+                        <label for="form-mesg">Ваше сообщение:</label>
+                    </div>
+                    <button class="form_submit" type="submit">ОТПРАВИТЬ</button>
+                </form>
+                <div class="form_bg form_bg_with_img"></div>
+            </div>
+            <div class="contact_form_img">
+                <img src="assets/img/page_product_2/form_img.png" alt="">
+            </div>
         </section>
         <footer>
             <div class="footer_top_content">
@@ -434,7 +439,9 @@
         <div class="menu_tablet_icon"></div>
     </div>
 </div>
+
 <script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.mask.min.js"></script>
 <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>

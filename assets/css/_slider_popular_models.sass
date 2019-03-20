@@ -19,8 +19,8 @@
   height: auto
   cursor: pointer
   &:hover .popular_model_button_more
-    left: 0%
-    transition: left 500ms
+    bottom: 0%
+    transition: bottom 500ms
   &_img
     width: 100%
     height: auto
@@ -51,8 +51,8 @@
         margin-right: 1.5rem
   &_button_more
     position: absolute
-    left: -110%
-    bottom: 0%
+    left: 0
+    bottom: -100%
     display: flex
     justify-content: center
     align-items: center
@@ -96,6 +96,7 @@
     width: 12rem
     height: 4.5rem
     border: 2px solid $orange
+    background-color: #fff
     border-radius: 20px
     &>p
       line-height: 2.2rem

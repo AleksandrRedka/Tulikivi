@@ -5,7 +5,7 @@
   display: flex
   flex-direction: row
   justify-content: space-between
-  margin-bottom: 8rem
+  margin-bottom: 3rem
   @media screen and (max-width: $tablet)
     flex-direction: column
     margin-top: 29rem
@@ -19,12 +19,13 @@
       margin-bottom: 5rem
     &_main
       position: relative
-      padding-top: 125%
+      padding-top: 112%
+      margin-bottom: 1rem
       @media screen and (max-width: $tablet)
         padding-top: 80%
       &>img
-        width: auto
-        height: 100%
+        width: 100%
+        height: auto
         position: absolute
         top: 0
         left: 0
@@ -132,7 +133,7 @@
             margin-bottom: 0rem
     &_button
       width: 250px
-      height: 60px
+      height: 40px
       border: none
       border-radius: 10px
       background-color: $orange
@@ -148,7 +149,7 @@
         line-height: 4rem
 
 .label_new_for_page_product
-  right: -35%
+  right: -15rem
   top: 5%
   @media screen and (max-width: $tablet)
     right: 5%
@@ -156,7 +157,7 @@
 //-------------Section BOX SALE-----------------------------------
 .box_sale
   padding: 0rem 3rem
-  margin-bottom: 3rem
+  margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
   &_content
@@ -175,7 +176,7 @@
 //---------Section Product Advantages---------
 .product_advantages
   padding: 0rem 3rem
-  margin-bottom: 8rem
+  margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
     margin-bottom: 20rem
@@ -199,8 +200,8 @@
         margin-right: 0
 //-----------Section Product Specifications-----------
 .product_specifications
-  padding: 0rem 3rem
-  margin-bottom: 12rem
+  padding: 0 3rem
+  margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
   &_values
@@ -249,11 +250,11 @@
     line-height: 2.2rem
     color: $black
     &_active
-      box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1)
   &_button
     padding: 2rem 5rem
     width: 40rem
-    height: 6rem
+    height: 40px
     border: 1px solid $orange
     border-radius: 10px
     text-align: center

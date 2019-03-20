@@ -4,11 +4,11 @@
   margin: 0 auto
   position: relative
   padding: 8rem 3rem 2rem 3rem
-  margin-bottom: 12rem
+  margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
-    margin-bottom: 20rem
   &_content
+    position: relative
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -17,6 +17,7 @@
     height: auto
     width: 100%
     padding-top: 3rem
+
   &_wrapper
     display: flex
     flex-direction: column
@@ -38,6 +39,7 @@
       right: -35%
       top: 0
   &_videos
+    position: relative
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -50,6 +52,10 @@
     &_for_page_ovens
       width: 35%
       flex-direction: column
+    &_look_more
+      position: absolute
+      right: 1.5rem
+      bottom: 0
   &_video
     width: calc(50% - 1.5rem)
     height: calc(50% - 1.2rem)
