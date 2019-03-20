@@ -191,7 +191,7 @@ $(document).ready(function () {
 
 (function () {
     var popUpItem = $('.pop-up-js');
-    var contentBox = $('.pop_up_content');
+    var contentBox = $('.pop_up_content_view');
     popUpItem.click(function (e) {
             e.preventDefault();
             var target = e.target;
@@ -208,8 +208,7 @@ $(document).ready(function () {
         e.preventDefault();
         $('.pop_up_box').removeClass('pop_up_open');
         $('.main_wrapper').removeClass('main_wrapper_pop');
-        contentBox.empty();
-        console.log('no delete');
+        contentBox.empty().not('.button_close_pop');
         $('body').css('overflow', 'auto');
 
 
@@ -262,6 +261,18 @@ $(document).on('scroll', function () {
     }
 });
 //------------------------------------------------------------------
+// Mask on Main Page------------------------------------------------
+(function () {
+    $.jMaskGlobals = {translation: {
+            'n': {pattern: /\d/},
+        }
+    };
+    $('#drive_phone').mask("+380(nn)-nnn-nn-nn").val('+380')
+})()
+
+
+
+//-------------------------------------------------------------------
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');

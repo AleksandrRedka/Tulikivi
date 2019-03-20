@@ -15,9 +15,11 @@
 <body>
 <div class="main_wrapper">
     <div class="aside">
-        <a href="index.html" class="aside_logo">
-            <img src="assets/img/logo.png" alt="Tulikivi"/>
-        </a>
+        <div class="aside_wrapper_logo">
+            <a href="index.html" class="aside_logo">
+                <img src="assets/img/logo.png" alt="Tulikivi"/>
+            </a>
+        </div>
         <div class="aside_logo_text">
             <i>Единственные в мире</i> печи&#8209;камины с теплоотдачей до&nbsp;<i
         >48&nbsp;часов</i>
@@ -30,14 +32,14 @@
         <div class="aside_menu">
             <ul>
                 <li><a href="ovens.html">ПЕЧИ-КАМИНЫ</a></li>
-                <li><a href="#">ПЕЧИ ДЛЯ БАНИ</a></li>
+                <li><a href="">ПЕЧИ ДЛЯ БАНИ</a></li>
                 <li><a href="plitka.html">ПЛИТКА, МОЗАИКА</a></li>
-                <li><a href="page_product_two.html">ПОСУДА И АКСЕССУАРЫ</a></li>
+                <li><a href="#">ПОСУДА И АКСЕССУАРЫ</a></li>
                 <li><a href="page_individual_order.html">КАМИНЫ ПО ИНДИВИДУАЛЬНЫМ ЗАКАЗАМ</a></li>
                 <li><a href="about.html">О Нас</a></li>
                 <li><a href="why_tulikivi.html">Почему Tulikivi</a></li>
                 <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="articles.html">Новости</a></li>
+                <li><a href="#">Новости</a></li>
                 <li><a href="articles.html">Статьи</a></li>
                 <li><a href="partners.html">Стать партнером</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -47,20 +49,23 @@
             <ul>
                 <li>
                     <a href="">
-                        <img src="assets/img/facebook.svg" alt=""/>FACEBOOK
+                        <img src="assets/img/facebook.svg" alt=""/>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="assets/img/instagram.svg" alt=""/>INSTAGRAM
+                        <img src="assets/img/instagram.svg" alt=""/>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="assets/img/youtube.svg" alt=""/>YOUTUBE
+                        <img src="assets/img/youtube.svg" alt=""/>
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="aside_img_tablet">
+            <img src="assets/img/aside_img@2x.png" alt="">
         </div>
     </div>
     <div class="page_wrapper_without_site_bar">
@@ -1030,16 +1035,11 @@
                         <label for="drive_phone">Телефон:*</label>
                     </div>
                     <div class="drive_form_input">
-                        <select name="city" id="drive_city" value="">
-                            <option value=""></option>
-                            <option value="Киев">Киев</option>
-                            <option value="Одесса">Одесса</option>
-                            <option value="Днепр">Днепр</option>
-                        </select>
+                        <input type="text" name="city" id="drive_city" value="">
                         <label for="drive_city">Город:</label>
                     </div>
                     <div class="drive_form_input">
-                        <input type="text" name="time" id="drive_time" value="">
+                        <input type="text" name="time" id="drive_time"  value="">
                         <label for="drive_time">Удобное время:</label>
                     </div>
                     <div class="drive_form_input">
@@ -1063,50 +1063,54 @@
                     <div class="footer_contact_info_time">
                         <p>Мы работаем по будням с 9:00 до 18:00</p>
                     </div>
+
+                    <div class="social_icon">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="assets/img/facebook.svg" alt=""/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="assets/img/instagram.svg" alt=""/>
+                                </a
+                                >
+                            </li>
+                            <li>
+                                <a href=""><img src="assets/img/youtube.svg" alt=""/></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer_nav">
-                    <h5 class="footer_title">Главная</h5>
-                    <ul class="footer_nav_list">
-                        <li class="footer_nav_link"><a href="ovens.html">Печи-камины</a></li>
-                        <li class="footer_nav_link"><a href="#">Печи для бани</a></li>
-                        <li class="footer_nav_link"><a href="plitka.html">Плитка, мозаика</a></li>
-                        <li class="footer_nav_link"><a href="#">Посуда и аксессуары</a></li>
-                        <li class="footer_nav_link"><a href="page_individual_order.html">Камины по индивидуальным
-                            заказам</a></li>
-                        <li class="footer_nav_link"><a href="about.html">О нас</a></li>
-                        <li class="footer_nav_link"><a href="why_tulikivi.html">Почему Tulikivi</a></li>
-                        <li class="footer_nav_link"><a href="gallery.html">Галерея</a></li>
-                        <li class="footer_nav_link"><a href="#">Новости</a></li>
-                        <li class="footer_nav_link"><a href="articles.html">Статьи</a></li>
-                        <li class="footer_nav_link"><a href="partners.html">Стать партнером</a></li>
-                        <li class="footer_nav_link"><a href="contacts.html">Контакты</a></li>
-                    </ul>
+                <div class="footer_central_content">
+                    <p>Присоединяйтесь к нам в <a class="footer_link_social" href="#">FACEBOOK</a></p>
+                    <p>Следите за нами в <a class="footer_link_social" href="#">INSTAGRAM</a></p>
+                    <p>Смотрите нас в <a class="footer_link_social" href="#">YOUTUBE</a></p>
                 </div>
+                <!--<div class="footer_nav">-->
+                <!--<h5 class="footer_title">Главная</h5>-->
+                <!--<ul class="footer_nav_list">-->
+                <!--<li class="footer_nav_link"><a href="ovens.html">Печи-камины</a></li>-->
+                <!--<li class="footer_nav_link"><a href="#">Печи для бани</a></li>-->
+                <!--<li class="footer_nav_link"><a href="plitka.html">Плитка, мозаика</a></li>-->
+                <!--<li class="footer_nav_link"><a href="#">Посуда и аксессуары</a></li>-->
+                <!--<li class="footer_nav_link"><a href="page_individual_order.html">Камины по индивидуальным-->
+                <!--заказам</a></li>-->
+                <!--<li class="footer_nav_link"><a href="about.html">О нас</a></li>-->
+                <!--<li class="footer_nav_link"><a href="why_tulikivi.html">Почему Tulikivi</a></li>-->
+                <!--<li class="footer_nav_link"><a href="gallery.html">Галерея</a></li>-->
+                <!--<li class="footer_nav_link"><a href="#">Новости</a></li>-->
+                <!--<li class="footer_nav_link"><a href="articles.html">Статьи</a></li>-->
+                <!--<li class="footer_nav_link"><a href="partners.html">Стать партнером</a></li>-->
+                <!--<li class="footer_nav_link"><a href="contacts.html">Контакты</a></li>-->
+                <!--</ul>-->
+                <!--</div>-->
                 <div class="footer_adress">
                     <h5 class="footer_title">Tulikivi в Украине</h5>
                     <p class="footer_adress_value">Киев, пр-т Победы, 67, корпус D1, 03062</p>
-                    <p class="footer_adress_email">E-mail:</p>
-                    <p class="footer_adress_email"> welcome@tulikivi.com.ua</p>
+                    <p class="footer_adress_email">E-mail:welcome@tulikivi.com.ua</p>
                     <p class="footer_adress_small_text">Мы обещаем Вам полную конфиденциальность данных</p>
-                </div>
-                <div class="social_icon">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <img src="assets/img/facebook.svg" alt=""/>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="assets/img/instagram.svg" alt=""/>
-                            </a
-                            >
-                        </li>
-                        <li>
-                            <a href=""><img src="assets/img/youtube.svg" alt=""/></a>
-                        </li>
-                    </ul>
-
                 </div>
             </div>
             <div class="footer_down_content">
@@ -1128,6 +1132,7 @@
     </div>
 </div>
 <script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.mask.min.js"></script>
 <script src="assets/slick/slick.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>

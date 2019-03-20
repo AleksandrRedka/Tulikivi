@@ -1,25 +1,31 @@
 .why_tulikivi_top
   padding: 0 3rem
+  height: 60vh
   display: flex
   flex-direction: row
   position: relative
-  margin-bottom: 12rem
+  margin-bottom: 10rem
+  overflow: hidden
   @media screen and (max-width: $tablet)
     flex-direction: column-reverse
     padding: 0 13.3rem
-    margin-top: 33rem
+    margin-top: 29rem
     margin-bottom: 5rem
   &_text
     width: 45%
     height: auto
     padding-right: 3rem
-    margin-top: 10vh
+    margin-top: 13vh
     @media screen and (max-width: $tablet)
       margin-top: 3.33rem
       width: 100%
   &_title
-    font-size: 9rem
-    line-height: 11rem
+    font-size: 8rem
+    line-height: 9rem
+    white-space: nowrap
+    position: relative
+    z-index: 2
+    text-shadow: 0 0 20px #fff
     @media screen and (max-width: $tablet)
       font-size: 8.33rem
       line-height: 10rem
@@ -29,7 +35,7 @@
     left: 3rem
     font-family: $LatoB
     font-size: 3.2rem
-    line-height: 40px
+    line-height: 4rem
     @media screen and (max-width: $tablet)
       position: static
       font-size: 5.33rem
@@ -37,7 +43,7 @@
       margin-top: 13.33rem
   &_wrapper_img
     width: 55%
-    padding-top: 75%
+    padding-top: 55%
     position: relative
     overflow: hidden
     @media screen and (max-width: $tablet)
@@ -47,13 +53,11 @@
       height: 100%
       position: absolute
       top: 0
-      left: -60%
+      left: -40%
       @media screen and (max-width: $tablet)
         left: 0
 .box_qualities
-  margin-bottom: 6rem
-  @media screen and (max-width: $tablet)
-    margin-bottom: 10rem
+  margin-bottom: 10rem
   &_list
     padding: 0 3rem
     padding-bottom: 6rem

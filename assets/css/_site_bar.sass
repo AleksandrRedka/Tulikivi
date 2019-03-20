@@ -54,7 +54,7 @@
   font-family: $LatoB
   font-size: 3.2rem
   line-height: 4rem
-  margin-bottom: 6%
+  margin-bottom: 1vh
   color: $black
 
 
@@ -62,17 +62,19 @@
   //Sections site bar
 .site_bar_call
   position: relative
+  width: 100%
+  height: 10vh
   display: flex
   flex-direction: row
   flex-wrap: wrap
-  margin-bottom: 10%
+  margin-bottom: 2rem
   &_text
     text-align: center
     width: 100%
     color: $black
     font-size: 1.8rem
     line-height: 2.2rem
-    margin-bottom: 2.5rem
+    margin-bottom: 1rem
     font-family: $LatoR
   &_lang
     width: 40%
@@ -103,9 +105,11 @@
   &_btn
     background-color: $orange
     color: white
-    display: inline-block
-    height: 40px
-    line-height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 4rem
+    line-height: 4rem
     text-align: center
     font-size: 1.6rem
     font-weight: 300
@@ -163,7 +167,7 @@
 //Without Sitebar
 .site_bar_icons_without_sitebar
   width: calc( 50% - 3rem)
-  margin-bottom: 0rem
+  margin-bottom: 0
   &_icon
     width: 4.5rem
     height: 4.5rem
@@ -189,19 +193,16 @@
   justify-content: space-between
   flex-wrap: wrap
   width: 100%
-  height: 50vh
+  height: 45vh
   &_item
     overflow: hidden
     position: relative
-    width: calc(50% - 2rem)
-    height: 25%
+    width: calc(50% - 0.5rem)
+    height: calc(33% - 1.5rem)
     padding: 1rem
-    margin-bottom: 4rem
     background-color: #FFFFFF
     transition: border 500ms
     cursor: pointer
-    &:nth-child(2n)
-      margin-right: 0
     &:hover
       border: 1px solid $orange
     &:hover &_bg
@@ -210,7 +211,7 @@
       opacity: 0.3
       transition: 500ms
     &>p
-      font-size: 1.6rem
+      font-size: 1.5rem
       font-family: $LatoB
       line-height: 2rem
       position: relative
@@ -415,14 +416,17 @@
     align-items: center
     &_item
       width: calc(50% - 1.5rem)
+      padding-top: 65%
       height: auto
       position: relative
-      box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16)
+      box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)
+      cursor: pointer
       &>img
-        width: 100%
-        height: auto
+        width: auto
+        height: 100%
         position: absolute
-        cursor: pointer
+        top: 0
+        left: 0
 
 //Section Video
 .site_bar_video

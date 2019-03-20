@@ -9,13 +9,13 @@
   overflow: hidden
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
-    margin-top: 33rem
+    margin-top: 29rem
     margin-bottom: 14.5rem
     height: 145rem
     flex-wrap: wrap
   &_img
     width: 40%
-    padding-top: 65%
+    padding-top: 60%
     overflow: hidden
     position: relative
     @media screen and (max-width: $tablet)
@@ -224,8 +224,8 @@
       &:nth-child(n+5)
         margin-bottom: 0
     &:hover &_button_more
-      left: 0
-      transition: left 500ms
+      bottom: 0
+      transition: bottom 500ms
     &_img
       width: 100%
       height: auto
@@ -259,8 +259,8 @@
             height: 5rem
     &_button_more
       position: absolute
-      left: -110%
-      bottom: 0%
+      left: 0%
+      bottom: -100%
       display: flex
       justify-content: center
       align-items: center
@@ -273,7 +273,7 @@
       font-size: 1.6rem
       line-height: 2rem
       color: $orange
-      transition: left 500ms
+      transition: bottom 500ms
       &:hover
         color: #FFFFFF
         background-color: $orange
@@ -305,6 +305,7 @@
   height: 4.5rem
   border: 2px solid $orange
   border-radius: 20px
+  background-color: #fff
   @media screen and (max-width: $tablet)
     width: 20rem
     height: 7.5rem

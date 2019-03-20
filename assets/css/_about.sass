@@ -3,20 +3,21 @@
 
   .about_top
     width: 100%
+    height: 60vh
     display: flex
     flex-direction: row
-    padding: 0px 3rem
-    margin-bottom: 8.5rem
+    padding: 0 3rem
+    margin-bottom: 10rem
     @media screen and (max-width: $tablet)
       flex-direction: column-reverse
       margin-bottom: 10rem
-      padding: 0rem 13.3rem
-      margin-top: 33rem
+      padding: 0 13.3rem
+      margin-top: 29rem
 
     &_text
       width: 45%
       height: 100%
-      padding-top: 12%
+      padding-top: 13%
       padding-right: 3rem
       @media screen and (max-width: $tablet)
         width: 100%
@@ -41,7 +42,7 @@
           font-size: 1.6rem
           line-height: 2.4rem
           color: $black
-          margin-bottom: 3rem
+          margin-bottom: 1rem
           @media screen and (max-width: $tablet)
             font-size: 3rem
             line-height: 4rem
@@ -50,9 +51,8 @@
             margin-bottom: 0rem
     &_wrapper_img
       width: 55%
-      height: auto
       position: relative
-      padding-top: 75%
+      padding-top: 55%
       overflow: hidden
       z-index: 1
       @media screen and (max-width: $tablet)
@@ -63,11 +63,12 @@
       height: 100%
       position: absolute
       top: 0
-      left: -40%
+      left: -20%
       @media screen and (max-width: $tablet)
-        top: 0%
+        top: -20%
         left: 0
         width: 100%
+        height: auto
 
 
   //Company us
@@ -76,7 +77,7 @@
     padding: 0px 3rem
     margin-bottom: 10rem
     @media screen and (max-width: $tablet)
-      padding: 0rem 13.3rem
+      padding: 0 13.3rem
 
     &_title
       margin-bottom: 2rem
@@ -92,9 +93,9 @@
   //Process work//
 
   .about_process_work
-    padding: 0rem 3rem 15rem
+    padding: 0 3rem 10rem
     @media screen and (max-width: $tablet)
-      padding: 0rem 13.33rem 13.5rem
+      padding: 0 13.33rem 13.5rem
 
     &_title
       margin-bottom: 5rem
@@ -179,7 +180,7 @@
         &:last-child
           width: 100%
           min-height: auto
-          margin-bottom: 0rem
+          margin-bottom: 0
 
     .additional_work_item
       &_title
@@ -193,15 +194,18 @@
           margin-bottom: 6rem
       @media screen and (max-width: $tablet)
       &_text
-        font-size: 2.6rem
-        line-height: 3.3rem
+        font-size: 1.8rem
+        line-height: 2.4rem
+        @media screen and (max-width: $tablet)
+          font-size: 2.6rem
+          line-height: 3.3rem
 
 
   //About guarantees
 
   .about_guarantees
     padding: 0rem 3rem
-    margin-bottom: 15rem
+    margin-bottom: 10rem
     @media screen and (max-width: $tablet)
       padding: 0rem 13.33rem 19rem
       margin-bottom: 0rem
@@ -238,7 +242,7 @@
         padding-top: 135%
         position: relative
         margin-bottom: 2rem
-        box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16)
+        box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16)
         cursor: pointer
         &>img
           position: absolute
