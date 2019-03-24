@@ -117,7 +117,7 @@
         </section>
         <section class="page_contacts_map">
             <div class="contacts_map">
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8793.0806113277!2d30.40191678566139!3d50.45785476798663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc5cae2067cf%3A0x4008b7471f5f7a72!2z0LrQvtGA0L_Rg9GBINCSLCDQv9GA0L7RgdC_0LXQutGCINCf0LXRgNC10LzQvtCz0LgsIDY3LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1553247793237" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>
         <section class="contact_form">
@@ -235,7 +235,7 @@
                 <li>/</li>
                 <li><a href="#" class="lang active_lang">RU</a></li>
             </ul>
-            <div class="site_bar_call_btn">
+            <div class="site_bar_call_btn call-js">
                 Заказать звонок
             </div>
         </div>
@@ -282,34 +282,72 @@
         </div>
     </div>
 </div>
-<div class="pop_up_box">
+<div class="pop_up_box form-contacts-js">
     <div class="pop_up_content">
-        <section class="contact_form">
-            <h4 class="contact_form_title">УЗНАТЬ УСЛОВИЯ ТЕСТ-ДРАЙВА</h4>
-            <form class="contact_form_info" action="#" method="POST">
-                <div class="form_input">
-                    <input id="form_name" name="name" type="text" placeholder=" ">
-                    <label for="form_name">Ваше имя:*</label>
-                </div>
-                <div class="form_input">
-                    <input id="form_tel" name="telephone" type="tel" placeholder=" ">
-                    <label for="form_tel">Телефон:*</label>
-                </div>
-                <div class="form_input">
-                    <input id="form_email" name="email" type="email" placeholder=" ">
-                    <label for="form_email">Электронная почта:</label>
-                </div>
-                <div class="form_input">
-                    <textarea id="form_mesg" name="messege" type="text" placeholder=" "></textarea>
-                    <label for="form_mesg">Ваши пожелания:</label>
-                </div>
-                <button class="form_submit" type="submit">ОТПРАВИТЬ</button>
-            </form>
-            <div class="form_bg"></div>
-        </section>
+        <div class="pop_up_content_wrapper">
+                <section class="contact_form pop_up_form">
+                    <h4 class="contact_form_title pop_up_form_title">ЗАПИСЬ НА ТЕСТ-ДРАЙВ</h4>
+                    <form class="contact_form_info pop_up_form_info" action="#" method="POST">
+                        <div class="form_input  pop_up_form_input">
+                            <input id="form_name" name="name" type="text" placeholder=" ">
+                            <label for="form_name">Ваше имя:*</label>
+                        </div>
+                        <div class="form_input pop_up_form_input">
+                            <input id="form_tel" name="telephone" type="tel" placeholder=" ">
+                            <label for="form_tel">Телефон:*</label>
+                        </div>
+                        <div class="form_input pop_up_form_input">
+                            <input id="drive_city" name="email" type="email" placeholder=" ">
+                            <label for="drive_city">Город:</label>
+                        </div>
+                        <div class="form_input pop_up_form_input">
+                            <input id="drive_time" name="email" type="email" placeholder=" ">
+                            <label for="drive_time">Удобное время:</label>
+                        </div>
+                        <button class="form_submit pop_up_form_submit" type="submit">Записатся</button>
+                    </form>
+                </section>
+            <p class="button_close_pop"></p>
+        </div>
     </div>
-    <div class="button_close_pop_contacts"></div>
 </div>
+<!--Form Call Back -->
+<div class="pop_up_box form-call-js">
+    <div class="pop_up_content">
+        <div class="pop_up_content_wrapper form_white_bg">
+            <section class="contact_form pop_up_form">
+                <div class="contact_form_icon_call">
+                    <img src="assets/img/phone-call.svg" alt="">
+                </div>
+                <div class="contact_form_phones">
+                    <p>
+                        +380 (44) 338-08-29
+                    </p>
+                    <p>
+                        +380 (67) 620-23-25
+                    </p>
+                </div>
+                <div class="contact_form_time_work">
+                    <p>Мы работаем по будням с 9:00 до 18:00</p>
+                </div>
+                <form class="contact_form_info pop_up_form_info" action="#" method="POST">
+                    <div class="form_input  pop_up_form_input  pop_up_form_input_call">
+                        <input id="form_name" name="name" type="text" placeholder=" ">
+                        <label for="form_name">Ваше имя:*</label>
+                    </div>
+                    <div class="form_input pop_up_form_input pop_up_form_input_call">
+                        <input id="form_tel" name="telephone" type="tel" placeholder=" ">
+                        <label for="form_tel">Телефон:*</label>
+                    </div>
+                    <button class="form_submit pop_up_form_submit pop_up_form_call_submit" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
+                </form>
+            </section>
+            <p class="pop_up_content_call">Звонок</p>
+            <p class="button_close_pop"></p>
+        </div>
+    </div>
+</div>
+
 <div class="menu_tablet menu_tablet-js">
     <div class="menu_tablet_link" href="#">МЕНЮ
         <div class="menu_tablet_icon"></div>

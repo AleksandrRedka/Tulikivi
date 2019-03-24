@@ -24,15 +24,29 @@
   flex-direction: row
   justify-content: center
   align-items: center
-
+  &_call
+    font-size: 25rem
+    position: absolute
+    transform: translate(-50%,-50%)
+    color: $black
+    font-family: 'Rubik', sans-serif
+    font-style: normal
+    font-weight: 400
+    top: 50%
+    left: 50%
+    opacity: 0.1
   &>img
     width: auto
     height: 100%
+
 .pop_up_content_wrapper
   width: auto
   height: 100%
   position: absolute
   text-align: center
+.form_white_bg
+  width: 100%
+  background-color: #ffffff
 .pop_up_content_view
   width: auto
   height: 100%
@@ -108,7 +122,78 @@
   margin: auto
   position: absolute
   transform: translate(-50%,-50%)
-  bottom: -8rem
+  bottom: -9rem
   left: 50%
   padding: 1rem 4rem
   font-size: 2rem
+  border: none
+//Form----------------------------------------
+.pop_up_form
+  height: 100%
+  margin: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &_title
+    color: $black
+  &_info
+    width: 100%
+    height: auto
+  &_input
+    width: 100%
+    margin-bottom: 5rem
+    &:nth-child(n+3)
+      margin-top: 0
+      margin-bottom: 5rem
+  &_submit
+    width: 100%
+    position: static
+
+//Call- POP -UP---------------------------------------
+.pop_up_form_title
+  margin-top: 10vh
+.pop_up_form_input_call
+  width: 30%
+  margin: auto
+  margin-bottom: 5rem
+.pop_up_form_call_submit
+  width: 30%
+  margin: auto
+.contact_form_icon_call
+  width: 9rem
+  height: 9rem
+  position: relative
+  margin-bottom: 5rem
+  &>img
+    width: 100%
+    height: auto
+.contact_form_phones
+  position: relative
+  &>p
+    color: $orange
+    font-size: 2.4rem
+    line-height: 3.5rem
+    font-family: 'Rubik', sans-serif
+    font-style: normal
+    font-weight: 400
+.contact_form_time_work
+  position: relative
+  &>p
+    color: $black
+    font-size: 1.8rem
+    line-height: 2.2rem
+    font-family: 'Rubik', sans-serif
+    font-style: normal
+    font-weight: 400
+.pop_up_content_none
+  display: none
+.form_want_it
+  display: none
+.form_want_it_show
+  display: flex
+  height: 100%
+.pop_up_content_wrapper_form
+  height: 70%
+.pop_up_form_title_want_it
+  margin-bottom: 0

@@ -1,7 +1,7 @@
 
 .product_two_card
   margin-bottom: 10rem
-  padding: 4rem 3rem 0 3rem
+  padding: 0 3rem
   display: flex
   flex-direction: row
   justify-content: space-between
@@ -32,6 +32,7 @@
       &_item
         width: calc( 25% - 0.8rem)
         height: auto
+        cursor: pointer
         @media screen and (max-width: $tablet)
           width: calc( 20% - 0.8rem)
         &:hover
@@ -55,12 +56,13 @@
     @media screen and (max-width: $tablet)
       width: 100%
     &_top
+      margin-top: 3rem
       width: 100%
       margin-bottom: 2.5rem
       display: flex
       flex-direction: row
       justify-content: space-between
-      align-items: flex-end
+      align-items: center
       @media screen and (max-width: $tablet)
         display: none
     &_main
@@ -142,6 +144,7 @@
     &_video
       width: calc( 60% - 1.5rem)
       height: auto
+      cursor: pointer
       position: relative
       box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.16)
       @media screen and (max-width: $tablet)

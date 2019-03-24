@@ -148,7 +148,7 @@ $(document).ready(function () {
 });
 
 // ----------------------------------
-// Counter Slider
+// Counter Slider page about
 (function () {
         $('.slider_works_list').on('init', function (event, slick) {
             var imageArr = document.querySelectorAll('.about_slider_img');
@@ -187,6 +187,46 @@ $(document).ready(function () {
         });
     }
 )();
+// Counter Slider page Individual Page
+(function () {
+        $('.individual_order_card_img_slider_main').on('init', function (event, slick) {
+            var imageArr = document.querySelectorAll('.individual_order_card_img_slider_main_wrapper');
+            var countImage = document.querySelector('.slider_works_nav_count_quantity');
+            var counterText = document.querySelector('.slider_works_nav_count_check');
+            var imagesLength = imageArr.length;
+            console.log(imageArr.length);
+            countImage.textContent = imagesLength;
+            var count = 1;
+            $('.slick-next').click(
+                function () {
+                    count++;
+                    if (count === imagesLength + 1) {
+                        count = 1;
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
+                        return;
+                    }
+                    if (count < imagesLength + 1) {
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
+                        return;
+                    }
+                });
+            $('.slick-prev').click(
+                function () {
+                    count--;
+                    if (count < 1) {
+                        count = 7;
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
+                        return;
+                    }
+                    if (count < imagesLength + 1) {
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
+                        return;
+                    }
+                }
+            );
+        });
+    }
+)();
 //----Pop-up--Image/Frame------------------------------------
 
 (function () {
@@ -210,30 +250,57 @@ $(document).ready(function () {
         $('.main_wrapper').removeClass('main_wrapper_pop');
         contentBox.empty().not('.button_close_pop');
         $('body').css('overflow', 'auto');
-
-
+        $('.pop-up-content-js').removeClass('pop_up_content_none');
+        $('.form_want_it').removeClass('form_want_it_show');
+        $('.pop_up_content_wrapper').removeClass('pop_up_content_wrapper_form');
+        $('.pop_up_form_title').removeClass('pop_up_form_title_want_it');
+        $('.want-it-js').text('Хочу такой же');
     })
 
 })();
 //------------------------------------------------------------------
-
+// Pop-up Call------------------------------------------------------
+(function () {
+    $('.call-js').click(function (e) {
+        e.preventDefault();
+        console.log('open');
+        $('.form-call-js').addClass('pop_up_open');
+        $('.main_wrapper').addClass('main_wrapper_pop');
+        $('body').css('overflow', 'hidden');
+    })
+})();
 //----Pop-up----Page Contacts----------------------------------------
 (function () {
     $('.pop-up-js-form').click(function (e) {
         e.preventDefault();
-        $('.pop_up_box').addClass('pop_up_open');
+        $('.form-contacts-js').addClass('pop_up_open');
         $('.main_wrapper').addClass('main_wrapper_pop');
         $('body').css('overflow', 'hidden');
     });
     $('.button_close_pop_contacts').click(function (e) {
         e.preventDefault();
-        $('.pop_up_box').removeClass('pop_up_open');
+        $('.form-contacts-js').removeClass('pop_up_open');
         $('.main_wrapper').removeClass('main_wrapper_pop');
         $('body').css('overflow', 'auto')
     })
 })();
 // -----------------------------------------------------------------
-
+// ----------Button WANT IT------------------------------------------=
+(function () {
+    var textBtn = document.querySelector('.want-it-js');
+    $('.want-it-js').click(function (e) {
+        e.preventDefault();
+        $('.pop-up-content-js').toggleClass('pop_up_content_none');
+        $('.form_want_it').toggleClass('form_want_it_show');
+        $('.pop_up_content_wrapper').toggleClass('pop_up_content_wrapper_form');
+        $('.pop_up_form_title').toggleClass('pop_up_form_title_want_it');
+        if( textBtn.textContent !== 'Хочу такой же'){
+            $('.want-it-js').text('Хочу такой же');
+            return
+        }
+        $('.want-it-js').text('Назад');
+        })
+})();
 //---------Page Ovens Top section-----------------------------------
 (function () {
     $('.info-open-js').click(function () {
