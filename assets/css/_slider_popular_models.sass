@@ -12,6 +12,8 @@
   align-items: center
   flex-wrap: wrap
   margin-bottom: 10rem
+  @media screen and (max-width: $tablet)
+    margin-bottom: 20rem
 .popular_model
   position: relative
   overflow: hidden
@@ -114,3 +116,12 @@
   margin-right: 3rem
   &:last-child
     margin-right: 0
+.slick-models-next
+  bottom: -10%
+  @media screen and (max-width: $tablet)
+    bottom: -20%
+.slick-models-prev
+  bottom: -10%
+  @media screen and (max-width: $tablet)
+    bottom: -20%
+

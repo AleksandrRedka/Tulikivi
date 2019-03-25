@@ -3,6 +3,9 @@
   margin: 0 auto
   position: relative
   padding: 10rem 3rem 2rem 3rem
+  @media screen and (max-width: $tablet)
+    padding-right: 13.33rem
+    padding-left: 13.33rem
   &_header
     font-size: 3.6rem
     font-weight: bold
@@ -54,8 +57,12 @@
     padding-top: 3rem
     flex-direction: row
     justify-content: space-between
+    @media screen and (max-width: $tablet)
+      flex-wrap: wrap
   &_column
     width: calc(50% - 1.5rem)
+    @media screen and (max-width: $tablet)
+      width: 100%
     &:first-child
       .main_popular_viewer:first-child
         .main_popular_category
@@ -93,6 +100,9 @@
     position: relative
     overflow: visible
     padding-bottom: 8rem
+    @media screen and (max-width: $tablet)
+      &:last-child
+        display: none
   &_category
     position: relative
     z-index: 1

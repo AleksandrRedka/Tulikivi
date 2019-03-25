@@ -95,8 +95,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<button class="slick-review slick-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
-        nextArrow: '<button class="slick-review slick-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+        prevArrow: '<button class="slick-review slick-prev slick-works-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow: '<button class="slick-review slick-next slick-works-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
         dots: false,
         customPaging: function (slider, i) {
             var length = slider.$slides.length;
@@ -117,6 +117,31 @@ $(document).ready(function () {
         arrows: true,
         prevArrow: '<button class="slick-review slick-prev slick-models-prev "><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
         nextArrow: '<button class="slick-review slick-next slick-models-next "><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            // {
+            //     breakpoint: 600,
+            //     settings: {
+            //         slidesToShow: 2,
+            //         slidesToScroll: 2
+            //     }
+            // },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+    ]
     });
 });
 
@@ -134,6 +159,43 @@ $(document).ready(function () {
         blocks[i].style.display = 'flex';
     })
 })();
+// Counter Slider page Individual Page
+(function () {
+        var imageArr = document.querySelectorAll('.individual_order_card_img_slider_main_wrapper');
+        $('.individual_order_card_img_slider_main').on('init', function (event, slick) {
+            var countImage = document.querySelector('.slider_works_nav_count_quantity');
+            var counterText = document.querySelector('.slider_works_nav_count_check');
+            var imagesLength = imageArr.length;
+            countImage.textContent = imagesLength;
+            var count = 1;
+            $('.slick-next').click(
+                function () {
+                    count++;
+                    if (count === imagesLength + 1) {
+                        count = 1;
+                        counterText.textContent = `0${count}`;
+                        return;
+                    }
+                    if (count < imagesLength + 1) {
+                       counterText.textContent = `0${count}`;
+                    }
+                });
+            $('.slick-prev').click(
+                function () {
+                    count--;
+                    if (count < 1) {
+                        count = 7;
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
+                        return;
+                    }
+                    if (count < imagesLength + 1) {
+                        setTimeout(counterText.textContent = `0${count}`,2000) ;
+                    }
+                }
+            );
+        });
+    }
+)();
 
 // Slick Slider photo on page Individual Order
 
@@ -184,46 +246,6 @@ $(document).ready(function () {
                     }
                 }
             )
-        });
-    }
-)();
-// Counter Slider page Individual Page
-(function () {
-        $('.individual_order_card_img_slider_main').on('init', function (event, slick) {
-            var imageArr = document.querySelectorAll('.individual_order_card_img_slider_main_wrapper');
-            var countImage = document.querySelector('.slider_works_nav_count_quantity');
-            var counterText = document.querySelector('.slider_works_nav_count_check');
-            var imagesLength = imageArr.length;
-            console.log(imageArr.length);
-            countImage.textContent = imagesLength;
-            var count = 1;
-            $('.slick-next').click(
-                function () {
-                    count++;
-                    if (count === imagesLength + 1) {
-                        count = 1;
-                        setTimeout(counterText.textContent = `0${count}`,2000) ;
-                        return;
-                    }
-                    if (count < imagesLength + 1) {
-                        setTimeout(counterText.textContent = `0${count}`,2000) ;
-                        return;
-                    }
-                });
-            $('.slick-prev').click(
-                function () {
-                    count--;
-                    if (count < 1) {
-                        count = 7;
-                        setTimeout(counterText.textContent = `0${count}`,2000) ;
-                        return;
-                    }
-                    if (count < imagesLength + 1) {
-                        setTimeout(counterText.textContent = `0${count}`,2000) ;
-                        return;
-                    }
-                }
-            );
         });
     }
 )();
@@ -342,6 +364,13 @@ $(document).on('scroll', function () {
         }
     };
     $('#form-tel').mask("+380(nn)-nnn-nn-nn").val('+380')
+})();
+(function () {
+    $.jMaskGlobals = {translation: {
+            'n': {pattern: /\d/},
+        }
+    };
+    $('#form-tell-call').mask("+380(nn)-nnn-nn-nn").val('+380')
 })();
 
 //-------------------------------------------------------------------

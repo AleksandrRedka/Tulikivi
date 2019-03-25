@@ -27,6 +27,8 @@
     //padding-right: 3rem
     padding-left: 1.5rem
     position: relative
+    @media screen and (max-width: $tablet)
+      width: 60%
     &:after
       pointer-events: none
       content: ''
@@ -49,9 +51,13 @@
     align-content: space-between
     padding-right: 1.5rem
     padding-bottom: 5rem
+    @media screen and (max-width: $tablet)
+      width: 40%
     &_for_page_ovens
       width: 35%
       flex-direction: column
+      @media screen and (max-width: $tablet)
+        width: 40%
     &_look_more
       font-size: 1.6rem
       line-height: 2.4rem
@@ -67,6 +73,10 @@
   &_video
     width: calc(50% - 1.5rem)
     height: calc(50% - 1.2rem)
+    @media screen and (max-width: $tablet)
+      width: 100%
+      &:nth-child(n+3)
+        display: none
     &_for_page_ovens
       width: 100%
       cursor: pointer
@@ -100,6 +110,8 @@
       background-color: transparent
       border: none
       transition: transform 200ms ease-in-out
+      @media screen and (max-width: $tablet)
+        bottom: -5rem
       img
         width: 100%
       &:focus

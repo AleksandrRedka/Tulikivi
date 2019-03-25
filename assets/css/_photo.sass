@@ -16,16 +16,18 @@
 
   &_wrapper_img
     width: calc(33% - 1rem)
-    height: auto
+    height: 22rem
     position: relative
+    margin-bottom: 3rem
     @media screen and (max-width: $tablet)
+      height: auto
       width: calc(50% - 1.5rem)
     &:nth-child(3n)
       margin-right: 0
     &_view
       position: relative
       width: 100%
-      height: 90%
+      height: 100%
       @media screen and (max-width: $tablet)
         height: 100%
       & > img
@@ -39,8 +41,9 @@
       transition: transform 1s 300ms
       cursor: pointer
     &:hover a
+      pointer-events: none
       left: 0%
-      bottom: -25%
+      bottom: -37%
       z-index: 2
       transform: scale(1.5)
       transition: bottom 500ms 500ms, transform 400ms 500ms

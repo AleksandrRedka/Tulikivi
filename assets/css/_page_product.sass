@@ -214,10 +214,10 @@
     &_header
       display: flex
       flex-direction: row
-      width: 100%
     &_content
       display: none
       width: 100%
+      background-color: #ffffff
       flex-direction: row
       padding: 5rem
       border-radius: 0px 0px 10px 10px
@@ -242,15 +242,16 @@
   //Style First Block Item
   &_marker
     width: 33%
-    padding: 3rem 0rem
+    padding: 3rem 0
     display: flex
     justify-content: center
     align-items: center
     border: none
-    border-radius: 10px 10px 0px 0px
+    border-radius: 10px 10px 0 0
     font-family: $LatoB
     font-size: 1.8rem
     line-height: 2.2rem
+    cursor: pointer
     color: $black
     &:last-child
       width: 34%
@@ -277,8 +278,7 @@
       background-color: $orange
     &>img
       margin-left:  2rem
-      width: 3rem
-      height: 3rem
+      width: 8%
     //Second Block
 .values_content_data
   width: 100%

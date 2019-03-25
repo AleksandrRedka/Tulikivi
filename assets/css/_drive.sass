@@ -2,23 +2,39 @@
   width: 100%
   margin: 0 auto
   position: relative
-  padding: 10rem 0 2rem 3rem
+  padding: 0 3rem
+  padding-right: 0
   display: flex
   flex-direction: row
   flex-wrap: nowrap
+  margin-top: 10rem
   margin-bottom: 12rem
+  @media screen and (max-width: $tablet)
+    padding: 0
+    overflow: hidden
   &_header
     width: 100%
     font-size: 3.2rem
     line-height: 4rem
     color: $orange
     font-weight: bold
+    @media screen and (max-width: $tablet)
+      font-size: 5.33rem
+      line-height: 6rem
+      margin-bottom: 3rem
   &_img
     display: inline-block
     width: 35%
     min-height: 80vh
     overflow: hidden
     position: relative
+    @media screen and (max-width: $tablet)
+      width: 100%
+      height: 60vh
+      position: absolute
+      z-index: 1
+      top: -20%
+      left: 0
     &_viewer
       width: 200%
       height: 200%
@@ -34,6 +50,10 @@
       min-height: 55%
       min-width: 55%
       transition: all 350ms ease-in-out
+      height: 57%
+      position: absolute
+      top: 20%
+      left: 23%
       &:hover
         transform: rotateY(1deg)
         transition: all 350ms ease-in-out
@@ -48,17 +68,35 @@
     background-color: rgba(250, 250, 250, 1)
     padding: 3rem
     text-align: center
+    @media screen and (max-width: $tablet)
+      width: 100%
+      height: 60vh
+      position: relative
+      opacity: 0.85
+      z-index: 2
   &_sub_header
     font-size: 1.8rem
     color: $black
     line-height: 2.4rem
     margin-top: 3rem
+    @media screen and (max-width: $tablet)
+      margin: auto
+      font-size: 2.66rem
+      line-height: 3.33rem
+      width: 70%
+      margin-bottom: 5rem
   &_text
     font-size: 1.8rem
     line-height: 2.4rem
     color: $black
     margin-top: 5rem
     text-align: center
+    @media screen and (max-width: $tablet)
+      margin: auto
+      width: 80%
+      font-size: 2.66rem
+      line-height: 3.33rem
+      margin-bottom: 3.33rem
   &_form
     display: block
     margin: 5rem auto
@@ -78,6 +116,8 @@
         left: 0
         transition: top 350ms ease-in-out, font-size 350ms ease-in-out
         pointer-events: none
+        @media screen and (max-width: $tablet)
+          font-size: 3rem
       option
         font-size: 1.8rem
         color: $black
@@ -101,6 +141,10 @@
         font-size: 1.8rem
         text-indent: 10rem
         transition: text-indent 200ms ease-in-out
+        @media screen and (max-width: $tablet)
+          font-size: 3rem
+          height: 5rem
+          text-indent: 17rem
         &:focus
           text-indent: 1rem
           border-bottom: 1px solid $orange
@@ -108,9 +152,13 @@
           top: - 50%
           font-size: 1.4rem
           color: $orange
+          @media screen and (max-width: $tablet)
+            font-size: 2.4rem
       &:nth-child(4)
         input
           text-indent: 15rem
+          @media screen and (max-width: $tablet)
+            text-indent: 25rem
           &:focus
             text-indent: 1rem
 

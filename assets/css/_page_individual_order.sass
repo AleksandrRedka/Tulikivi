@@ -6,31 +6,54 @@
   flex-direction: row
   justify-content: space-between
   overflow: hidden
+  @media screen and (max-width: $tablet)
+    height: auto
+    margin-top: 29rem
+    padding: 0 13.33rem
+    flex-wrap: wrap
   &_img_slider
     position: relative
     width: calc( 40% - 1.5rem)
     height: 100%
+    @media screen and (max-width: $tablet)
+      width: 100%
     &_main
       width: 100%
       height: 100%
+      @media screen and (max-width: $tablet)
+        width: auto
+        margin-bottom: 10rem
       &_wrapper
         position: relative
         padding-top: 95%
         overflow: hidden
+        @media screen and (max-width: $tablet)
+          padding-top: 12%
         &>img
           width: 100%
           height: auto
           position: absolute
           top: 0
           left: 0
+          @media screen and (max-width: $tablet)
+            width: 100%
+            height: auto
+            top: -75%
+
+
     &_count
       position: absolute
       bottom: 1%
       right: -44%
+      @media screen and (max-width: $tablet)
+        bottom: -5%
+        right: 45%
   &_info
     padding-top: 3rem
     width: calc( 60% - 1.5rem)
     height: 100%
+    @media screen and (max-width: $tablet)
+      width: 100%
     &_top
       width: 100%
       margin-bottom: 7.5rem
@@ -38,6 +61,8 @@
       flex-direction: row
       justify-content: space-between
       align-items: center
+      @media screen and (max-width: $tablet)
+        display: none
     &_main
       display: flex
       flex-direction: column
@@ -47,22 +72,33 @@
         color: $black
         line-height: 6rem
         margin-bottom: 3.5rem
+        @media screen and (max-width: $tablet)
+          font-size: 10.3rem
+          line-height: 13rem
 //Slider arrow
 .slick-photo-prev
   bottom: 0
   top: auto
   left: auto
   right: -20%
+  @media screen and (max-width: $tablet)
+    bottom: -25%
+    right: 65%
 .slick-photo-next
   bottom: 0
   top: auto
   left: auto
   right: -60%
+  @media screen and (max-width: $tablet)
+    bottom: -25%
+    right: 25%
 //--------------------------
 //Individual Order----------
 .individual_order_gallery
   margin-bottom: 10rem
   padding: 0 3rem
+  @media screen and (max-width: $tablet)
+    padding: 0 13.33rem
   &_list
     width: 100%
     display: flex
