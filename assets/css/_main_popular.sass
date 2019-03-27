@@ -19,6 +19,9 @@
     margin-top: 1.5rem
     position: relative
     display: inline-block
+    @media screen and (max-width: $tablet)
+      float: none
+      margin-bottom: 2rem
     span
       display: inline-block
       position: relative
@@ -39,6 +42,9 @@
     margin-top: 1.5rem
     position: relative
     display: inline-block
+    @media screen and (max-width: $tablet)
+      float: none
+      margin-bottom: 2rem
     span
       display: inline-block
       position: relative
@@ -64,36 +70,44 @@
     @media screen and (max-width: $tablet)
       width: 100%
     &:first-child
-      .main_popular_viewer:first-child
+      .main_popular_viewer:nth-child(2)
         .main_popular_category
           position: relative
           z-index: 20
+          @media screen and (max-width: $tablet)
+            z-index: 30
         .main_popular_slider
           //position: relative
           z-index: 10
+          @media screen and (max-width: $tablet)
+            z-index: 25
       .main_popular_viewer:last-child
         .main_popular_category
           position: relative
           z-index: 6
         .main_popular_slider
           //position: relative
-          z-index: 2
+          z-index: 4
 
     &:last-child
-      .main_popular_viewer:first-child
+      .main_popular_viewer:nth-child(2)
         .main_popular_category
           position: relative
           z-index: 20
+          @media screen and (max-width: $tablet)
+            z-index: 20
         .main_popular_slider
           //position: relative
           z-index: 10
+          @media screen and (max-width: $tablet)
+            z-index: 15
       .main_popular_viewer:last-child
         .main_popular_category
           position: relative
           z-index: 6
         .main_popular_slider
           //position: relative
-          z-index: 2
+          z-index: 4
 
   &_viewer
     width: 100%
@@ -101,6 +115,7 @@
     overflow: visible
     padding-bottom: 8rem
     @media screen and (max-width: $tablet)
+      margin-bottom: 13.33rem
       &:last-child
         display: none
   &_category
@@ -112,7 +127,7 @@
     align-items: stretch
     width: 100%
     background-color: white
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.05)
     &_img
       width: 100%
       display: block

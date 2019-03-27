@@ -6,6 +6,9 @@
     padding: 0 13.33rem
     margin-top: 29rem
     margin-bottom: 17rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 13.33rem
 .photo
   display: flex
   flex-direction: row
@@ -22,6 +25,8 @@
     @media screen and (max-width: $tablet)
       height: auto
       width: calc(50% - 1.5rem)
+      @media screen and (max-width: $mobile)
+        width: calc(50% - 0.5rem)
     &:nth-child(3n)
       margin-right: 0
     &_view

@@ -5,13 +5,17 @@
   @media screen and (max-width: $tablet)
     margin-top: 29rem
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      margin-top: 21rem
+      padding: 0 6rem
+      padding-bottom: 13.33rem
   &_content>p
     margin-bottom: 2rem
     @media screen and (max-width: $tablet)
       margin-bottom: 3.33rem
       font-size: 2.66rem
     &:last-child
-      margin-bottom: 0rem
+      margin-bottom: 0
 
 
 
@@ -21,6 +25,9 @@
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
     margin-bottom: 18.66rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 13.33rem
   .partners_list
       display: flex
       flex-direction: row
@@ -33,18 +40,25 @@
         display: flex
         flex-direction: column
         justify-content: space-between
+        @media screen and (max-width: $mobile)
+          width: calc(50% - 0.8rem)
+          margin-bottom: 4.66rem
         &>p
           @media screen and (max-width: $tablet)
             font-size: 2.66rem
+
         &_box_img
           width: 100%
           height: 11rem
           display: inline-block
           margin-bottom: 40px
           position: relative
+          @media screen and (max-width: $mobile)
+            height: 15rem
           &>p
             @media screen and (max-width: $tablet)
               font-size: 2.66rem
+
           &::after
             position: absolute
             transform: translate(-50%,-50%)
@@ -57,17 +71,20 @@
 
 
 .partners_our_benefits
-  padding: 0rem 3rem
+  padding: 0 3rem
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
     margin-bottom: 17rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 13.33rem
   &_content>p
     margin-bottom: 3rem
     @media screen and (max-width: $tablet)
       margin-bottom: 3.33rem
     &:last-child
-      margin-bottom: 0rem
+      margin-bottom: 0
 
 
 .why_we
@@ -76,11 +93,17 @@
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
     margin-bottom: 20rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 13.33rem
   &_content>p
     margin-bottom: 2rem
     @media screen and (max-width: $tablet)
       font-size: 2.66rem
       margin-bottom: 3.33rem
+      @media screen and (max-width: $mobile)
+        font-size: 3rem
+        line-height: 4rem
     &:last-child
       margin-bottom: 0
 

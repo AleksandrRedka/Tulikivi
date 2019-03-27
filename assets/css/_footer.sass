@@ -15,6 +15,12 @@
     padding: 0 13.33rem
     margin-bottom: 10rem
     height: 32rem
+    @media screen and (max-width: $mobile)
+      height: auto
+      padding: 0 6rem 10rem
+      margin-bottom: 0
+      flex-wrap: wrap
+
 .footer_title
   font-family: $LatoB
   font-size: 2.4rem
@@ -25,6 +31,7 @@
     font-size: 4rem
     line-height: 5rem
     margin-bottom: 3.5rem
+
 //Contacts
 .footer_contact_info
   width: 38%
@@ -39,6 +46,9 @@
     padding: 0 3rem
     width: 40%
     margin-right: 0
+    @media screen and (max-width: $mobile)
+      width: 100%
+      margin-bottom: 11rem
   &_tel>p
     font-family: $LatoB
     font-size: 1.6rem
@@ -113,6 +123,9 @@
   width: 27%
   @media screen and (max-width: $tablet)
     width: 40%
+    @media screen and (max-width: $mobile)
+      width: 100%
+      padding: 0 3rem
   &_value
     width: 70%
     font-family: $LatoR
@@ -124,6 +137,7 @@
       font-size: 3rem
       line-height: 4rem
       margin-bottom: 3.5rem
+
   &_email
     font-family: $LatoR
     font-size: 1.6rem
@@ -132,6 +146,7 @@
     @media screen and (max-width: $tablet)
       font-size: 3rem
       line-height: 4rem
+      white-space: nowrap
   &_small_text
     font-family: $LatoR
     font-size: 1.4rem
@@ -178,10 +193,16 @@
   width: 100%
   @media screen and (max-width: $tablet)
     padding: 3.5rem 13.33rem
+    @media screen and (max-width: $mobile)
+      flex-wrap: wrap
+      padding: 4rem 6rem
   &_company
     width: 20%
     @media screen and (max-width: $tablet)
       width: 30%
+      @media screen and (max-width: $mobile)
+        width: 100%
+        margin-bottom: 6rem
     &>p
       font-family: $RubikM
       margin-bottom: 1.5rem
@@ -192,6 +213,10 @@
       @media screen and (max-width: $tablet)
         font-size: 2.66rem
         line-height: 3.33rem
+        @media screen and (max-width: $mobile)
+          font-size: 3rem
+          line-height: 5rem
+          margin-bottom: 0rem
   &_text
     width: 60%
     font-family: $LatoR
@@ -202,3 +227,7 @@
       width: 50%
       font-size: 2.33rem
       line-height: 3rem
+      @media screen and (max-width: $mobile)
+        width: 100%
+        font-size: 2rem
+        line-height: 2.33rem

@@ -1,0 +1,25 @@
+.right_menu
+  display: none
+  @media screen and (max-width: $tablet)
+    background-color: #fff
+    display: block
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    right: -100%
+    z-index: 99
+    transition: right 500ms
+    padding: 29rem 13.33rem 0
+    &_open
+      z-index: 102
+      right: 0
+      background-color: #FAFAFA
+
+  &_main_title
+    font-size: 3.33rem
+    line-height: 4rem
+  &_address_btn
+    width: 50%
+    font-size: 2.66rem
+  

@@ -6,6 +6,10 @@
     padding: 0 13.33rem
     margin-top: 29rem
     margin-bottom: 13.33rem
+    @media screen and (max-width: $mobile)
+      margin-top: 21rem
+      padding: 0 6rem
+      margin-bottom: 7rem
   &_list_catalog
     width: 100%
     height: auto
@@ -14,6 +18,8 @@
     flex-wrap: wrap
     align-items: center
     justify-content: space-between
+    @media screen and (max-width: $mobile)
+      align-items: normal
   .catalog
     width: calc(33% - 1rem)
     height: auto
@@ -25,6 +31,8 @@
         margin-bottom: 5rem
     @media screen and (max-width: $tablet)
       width: calc(50% - 1.33rem)
+      @media screen and (max-width: $mobile)
+        width: calc(50% - 1rem)
     &_main_foto
       width: 100%
       height: auto
@@ -45,6 +53,8 @@
     margin-bottom: 10rem
     @media screen and (max-width: $tablet)
       padding: 0 13.33rem
+      @media screen and (max-width: $mobile)
+        padding: 0 6rem
     &_list
       width: 100%
       height: auto
@@ -52,20 +62,28 @@
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-between
+      @media screen and (max-width: $mobile)
+        flex-direction: column
       .video
         width: calc(50% - 1.5rem)
         height: auto
         margin-bottom: 7.5rem
         &:nth-child(n+3)
           margin-bottom: 0
+          @media screen and (max-width: $mobile)
+            margin-bottom: 5rem
         @media screen and (max-width: $tablet)
           width: calc(50% - 1.33rem)
           margin-bottom: 5rem
+          @media screen and (max-width: $mobile)
+            width: 100%
         &_background_wrapper_item
           position: relative
           width: 100%
           height: auto
           margin-bottom: 3rem
+          @media screen and (max-width: $mobile)
+            margin-bottom: 2.33rem
           &_img
             width: 100%
             height: 100%
@@ -82,11 +100,18 @@
           color: $black
           line-height: 2.4rem
           text-decoration: none
+          @media screen and (max-width: $mobile)
+            font-size: 2.33rem
+            line-height: 3rem
 .gallery_video_feedback
   padding: 0 3rem
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 13.33rem
+
   &_list
     width: 100%
     height: auto
@@ -94,15 +119,25 @@
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-between
+    @media screen and (max-width: $mobile)
+      flex-direction: column
     .video_feedback
       width: calc(50% - 1.5rem)
       height: auto
       margin-bottom: 7.5rem
+      @media screen and (max-width: $mobile)
+        width: 100%
+        &:nth-child(2)
+          margin-bottom: 0
       &:nth-last-child(-n+2)
         margin-bottom: 0
+        @media screen and (max-width: $mobile)
+          display: none
       @media screen and (max-width: $tablet)
         width: calc(50% - 1.33rem)
         margin-bottom: 5rem
+        @media screen and (max-width: $mobile)
+          width: 100%
       &_background_wrapper_item
         position: relative
         width: 100%
@@ -124,6 +159,9 @@
         color: $black
         line-height: 2.4rem
         text-decoration: none
+        @media screen and (max-width: $mobile)
+          font-size: 2.33rem
+          line-height: 3rem
 
 
 
@@ -135,6 +173,8 @@
     padding: 0 13.33rem
     margin-bottom: 20rem
     width: 100%
+    @media screen and (max-width: $mobile)
+      display: none
     &_list
       width: 100%
       display: flex

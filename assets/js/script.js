@@ -331,7 +331,7 @@ $(document).ready(function () {
         $(this).toggleClass('arrow-js', 1000);
     })
 })();
-//------------------------------------------------------------------
+//-------Open Main Menu -----------------------------------------------------------
 (function () {
     $('.menu_tablet-js').click(function () {
         $('.menu_tablet_icon',this).toggleClass('menu_tablet_icon_active',1000);
@@ -349,7 +349,16 @@ $(document).on('scroll', function () {
         $('.tablet_header').css('background-color','')
     }
 });
-//------------------------------------------------------------------
+//------Open Right Menu----------------------------------------------
+(function () {
+    $('.menu_tablet-right-js').click(function () {
+        $('.menu_tablet_link',this).toggleClass('menu_tablet_link_active',1000);
+        $('.menu_tablet_icon',this).toggleClass('menu_tablet_icon_active',1000);
+        $('.menu_tablet_right').toggleClass('menu_tablet_right_open',1000)
+        $('.right-menu-js').toggleClass('right_menu_open',1000);
+        $('body').toggleClass('body_hidden',1000)
+    })
+})();
 // Mask on Main Page------------------------------------------------
 (function () {
     $.jMaskGlobals = {translation: {

@@ -12,13 +12,19 @@
     padding: 0
     padding-left: 13.33rem
     margin-bottom: 5rem
+    margin-top: 29rem
+    @media screen and (max-width: $mobile)
+      margin-top: 21rem
+      padding: 0 6rem
+      margin-bottom: 13.33rem
   &_content
     padding-top: 10%
     width: calc(45% - 1.5rem)
     @media screen and (max-width: $tablet)
       width: calc(40% - 1.5rem)
-      margin-top: 29rem
       padding: 0
+      @media screen and (max-width: $mobile)
+        width: 100%
     &_title
       margin-bottom: 5rem
       @media screen and (max-width: $tablet)
@@ -37,6 +43,8 @@
     @media screen and (max-width: $tablet)
       width: calc(60% - 1.5rem)
       padding-top: 90%
+      @media screen and (max-width: $mobile)
+        display: none
     &>img
       position: absolute
       top: 0

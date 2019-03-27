@@ -52,6 +52,9 @@
     justify-content: space-between
     @media screen and (max-width: $tablet)
       padding: 0 13.33rem
+      @media screen and (max-width: $mobile)
+        flex-wrap: wrap
+        padding: 0 6rem
     &_catalog
       padding: 0
       @media screen and (max-width: $tablet)
@@ -68,6 +71,9 @@
     align-content: center
     align-items: center
     cursor: pointer
+    @media screen and (max-width: $mobile)
+      width: calc(50% - 1.5rem)
+      height: 20vh
 
     &:before
       content: ''
@@ -86,6 +92,9 @@
       color: $black
       line-height: 7rem
       vertical-align: baseline
+      @media screen and (max-width: $mobile)
+        font-size: 6rem
+        line-height: 8rem
     &_text
       display: block
       width: 100%

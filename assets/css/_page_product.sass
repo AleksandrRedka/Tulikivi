@@ -222,6 +222,15 @@
       padding: 5rem
       border-radius: 0px 0px 10px 10px
       box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
+      @media screen and (max-width: $tablet)
+        display: block
+        flex-wrap: wrap
+        padding: 2rem 6rem
+        height: 8rem
+        overflow: hidden
+        background-color: transparent
+        &:hover
+          height: auto
       &:nth-child(2)
         display: flex
       //First Block
@@ -230,15 +239,25 @@
         display: flex
         flex-direction: column
         justify-content: center
+        &:nth-child(4)
+          &>p
+            border: none
         &>p
           font-family: $LatoB
           font-size: 1.8rem
           line-height: 2.2rem
           color: $black
-          margin-bottom: 7rem
+          padding-bottom: 7rem
           text-align: center
+          border-right: 1px solid rgba(0,0,0,0.1)
+          @media screen and (max-width: $tablet)
+            font-size: 3rem
+            line-height: 4rem
+            font-family: $LatoR
           &:last-child
             margin-bottom: 0
+      &_square_caption>span
+        display: none
   //Style First Block Item
   &_marker
     width: 33%
@@ -279,6 +298,9 @@
     &>img
       margin-left:  2rem
       width: 8%
+.specifications_values_content_square_caption>span
+  @media screen and (max-width: $tablet)
+    display: none
     //Second Block
 .values_content_data
   width: 100%
@@ -300,6 +322,9 @@
     &>p
       font-family: $LatoB
       line-height: 2.2rem
+      @media screen and (max-width: $tablet)
+        line-height: 3.66rem
+        font-family: $LatoR
     &_name
       width: 80%
     &_number
@@ -309,6 +334,8 @@
   width: 70%
   display: flex
   flex-direction: column
+  @media screen and (max-width: $tablet)
+    width: 100%
 .conection_size
   width: 100%
   height: auto
@@ -322,9 +349,14 @@
   &:last-child
     border-bottom: none
     padding-bottom: 0
+    @media screen and (max-width: $tablet)
+      padding-bottom: 5rem
   &>p
     font-family: $LatoB
     line-height: 2.2rem
+    @media screen and (max-width: $tablet)
+      line-height: 3.66rem
+      font-family: $LatoR
   &_name
     width: 60%
   &_number
@@ -333,6 +365,25 @@
   width: 30%
   height: auto
   padding-left: 3rem
+  @media screen and (max-width: $tablet)
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
   &>img
     width: 100%
     height: auto
+    @media screen and (max-width: $tablet)
+      width: 70%
+      height: 85%
+.desctop_header_tab
+  @media screen and (max-width: $tablet)
+    display: none
+.tablet_header_tab
+  display: none
+  @media screen and (max-width: $tablet)
+    display: block
+    width: 100%
+    font-family: $LatoB
+    padding-bottom: 10rem

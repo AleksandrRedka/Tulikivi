@@ -14,6 +14,9 @@
       padding: 0 13.3rem
       margin-top: 29rem
       height: auto
+      @media screen and (max-width: $mobile)
+        margin-top: 21rem
+        padding: 0 6rem
     &_text
       width: 45%
       height: 100%
@@ -78,7 +81,8 @@
     margin-bottom: 10rem
     @media screen and (max-width: $tablet)
       padding: 0 13.3rem
-
+      @media screen and (max-width: $mobile)
+        padding: 0 6rem
     &_title
       margin-bottom: 2rem
 
@@ -96,11 +100,18 @@
     padding: 0 3rem 10rem
     @media screen and (max-width: $tablet)
       padding: 0 13.33rem 13.5rem
+      @media screen and (max-width: $mobile)
+        padding: 0 6rem
+        margin-bottom: 13.33rem
 
     &_title
       margin-bottom: 5rem
       @media screen and (max-width: $tablet)
         margin-bottom: 8.3rem
+        @media screen and (max-width: $mobile)
+          margin-bottom: 5rem
+          font-size: 5.33rem
+          line-height: 6.66rem
     &_list
       width: 100%
       display: flex
@@ -115,13 +126,27 @@
       padding: 7rem 8.2rem 5rem
       margin-bottom: 3rem
       background-color: #FFFFFF
-      box-shadow: 0px 30px 30px 0px rgba(0,0,0,0.05)
+      box-shadow: 0 30px 30px 0 rgba(0,0,0,0.05)
       @media screen and (max-width: $tablet)
         width: calc(50% - 1.3rem)
         padding: 12rem 2.5rem 20rem
         margin-bottom: 5rem
+        @media screen and (max-width: $mobile)
+          width: 100%
+          height: 21rem
+          overflow: hidden
+          padding: 5rem 4rem 5rem 10rem
+          transition: height 500ms
+          &:hover
+            height: auto
+            &>.process_work_item_bg
+              bottom: -10%
+              right: -14%
+
       &:nth-last-child(-1n+2)
-        margin-bottom: 0px
+        margin-bottom: 0
+        @media screen and (max-width: $mobile)
+          margin-bottom: 5rem
       &_num
         font-size: 10rem
         line-height: 12rem
@@ -133,6 +158,9 @@
           line-height: 20rem
           left: 5%
           top: 3%
+          @media screen and (max-width: $mobile)
+            font-size: 16.33rem
+            top: 0
 
       &_title
         font-family: $LatoB
@@ -145,6 +173,13 @@
           margin-bottom: 0rem
           padding-left: 12rem
           min-height: 14rem
+          @media screen and (max-width: $mobile)
+            margin-bottom: 9rem
+            position: relative
+            z-index: 1
+            padding-left: 7.5rem
+            font-size: 3.33rem
+            min-height: 10rem
       &_text
         position: relative
         z-index: 1
@@ -152,6 +187,9 @@
         @media screen and (max-width: $tablet)
           font-size: 2.6rem
           line-height: 3.3rem
+          @media screen and (max-width: $mobile)
+            font-size: 3rem
+            line-height: 4rem
       &_bg
         position: absolute
         bottom: -10%
@@ -159,6 +197,11 @@
         @media screen and (max-width: $tablet)
           bottom: -10%
           right: -14%
+          @media screen and (max-width: $mobile)
+            z-index: 0
+            bottom: -500%
+            opacity: 0.5
+            transition: bottom 500ms
   .about_additional_work
     display: flex
     flex-direction: row
@@ -171,16 +214,29 @@
       height: auto
       padding: 3rem 2rem 1rem
       background-color: #FFFFFF
-      box-shadow: 0px 30px 30px 0px rgba(0,0,0,0.05)
+      box-shadow: 0 30px 30px 0 rgba(0,0,0,0.05)
       @media screen and (max-width: $tablet)
         width: calc(50% - 1.3rem)
         margin-bottom: 5rem
         padding: 6rem 2.5rem 5rem
         min-height: 57rem
+        @media screen and (max-width: $mobile)
+          width: 100%
+          padding: 4rem 8rem
+          overflow: hidden
+          min-height: auto
+          transition: height 1s
+          &:hover
+            margin-bottom: 5rem
+            &>.additional_work_item_title
+              margin-bottom: 6rem
+            &>.additional_work_item_text
+              display: block
         &:last-child
           width: 100%
           min-height: auto
           margin-bottom: 0
+
 
     .additional_work_item
       &_title
@@ -192,6 +248,9 @@
           font-size: 3rem
           line-height: 4rem
           margin-bottom: 6rem
+          @media screen and (max-width: $mobile)
+            font-size: 3.33rem
+            margin-bottom: 0
       @media screen and (max-width: $tablet)
       &_text
         font-size: 1.8rem
@@ -199,6 +258,10 @@
         @media screen and (max-width: $tablet)
           font-size: 2.6rem
           line-height: 3.3rem
+        @media screen and (max-width: $mobile)
+          font-size: 3.33rem
+          line-height: 4rem
+          display: none
 
 
   //About guarantees
@@ -207,17 +270,25 @@
     padding: 0rem 3rem
     margin-bottom: 10rem
     @media screen and (max-width: $tablet)
-      padding: 0rem 13.33rem 19rem
-      margin-bottom: 0rem
+      padding: 0rem 13.33rem
+      margin-bottom: 19rem
+      @media screen and (max-width: $mobile)
+        padding: 0 6rem
+        margin-bottom: 13.33rem
     &_title
       margin-bottom: 3.5rem
       @media screen and (max-width: $tablet)
         margin-bottom: 6rem
+        @media screen and (max-width: $mobile)
+          fsz
     &_list
       padding-left: 2rem
       margin-bottom: 1rem
       &>li
         list-style-type: disc
+        &>p
+          @media screen and (max-width: $mobile)
+            margin-bottom: 2rem
     &_content>p
       margin-bottom: 2rem
       @media screen and (max-width: $tablet)
@@ -237,6 +308,9 @@
       display: flex
       flex-direction: column
       width: calc( 50% - 1.5rem)
+      @media screen and (max-width: $mobile)
+        &>p
+          display: none
       &_img
         width: 100%
         padding-top: 135%

@@ -30,6 +30,8 @@
       @media screen and (max-width: $tablet)
         max-width: 14.5rem
         height: auto
+        @media screen and (max-width: $mobile)
+          max-width: 11.33rem
       &:hover
         transform: scale(1.1)
     &_text
@@ -44,6 +46,14 @@
       @media screen and (max-width: $tablet)
         display: none
         margin-bottom: 0
+        @media screen and (max-width: $mobile)
+          width: 100%
+          display: block
+          padding: 0 6rem
+          margin: 4rem 0 5rem 0
+          font-size: 3rem
+          line-height: 4rem
+          text-align: left
 
       i
         color: $orange
@@ -68,6 +78,12 @@
       padding: 0 13.33rem
       height: 85%
       padding-top: 33rem
+      @media screen and (max-width: $mobile)
+        padding: 0 6rem
+        height: 70%
+        @media screen and (max-width: 374px)
+          height: 60%
+
     &:before
       content: ''
       display: block
@@ -99,6 +115,8 @@
       justify-content: space-around
       @media screen and (max-width: $tablet)
         width: 60%
+        @media screen and (max-width: $mobile)
+          width: 100%
       li
         width: 100%
       li a
@@ -112,6 +130,9 @@
         @media screen and (max-width: $tablet)
           font-size: 4rem
           line-height: 4rem
+          @media screen and (max-width: $mobile)
+            font-size: 3rem
+            line-height: 4rem
         &:before
           content: ''
           display: block
@@ -146,6 +167,8 @@
     @media screen and (max-width: $tablet)
       padding: 0 13.33rem
       padding-top: 12rem
+      @media screen and (max-width: $mobile)
+        padding-top: 5rem
     ul
       display: flex
       flex-direction: row
@@ -187,10 +210,12 @@
     display: block
     position: fixed
     width: 13.33rem
-    height: 100%
+    height: 100vh
     top: 0
     left: 0
     z-index: 101
+    @media screen and (max-width: $mobile)
+      width: 6rem
   &_link
     transform: translate(-50%,-50%) rotate(-90deg)
     position: absolute
@@ -200,6 +225,8 @@
     font-family: $LatoR
     color: $orange
     line-height: 4rem
+    @media screen and (max-width: $mobile)
+      font-size: 2.33rem
     &:before
       position: absolute
       content: ""
@@ -258,7 +285,12 @@
     display: block
     left: auto
     right: 0
+    position: fixed
     z-index: 99
+    transition: right 500ms
+    &_open
+      //right: 89%
+      z-index: 103
     &_link
       transform: translate(-50%,-50%) rotate(90deg)
 
@@ -274,6 +306,9 @@
     &>img
       width: auto
       height: 100%
+    @media screen and (max-width: $mobile)
+      display: none
+
 
 
 //JS class

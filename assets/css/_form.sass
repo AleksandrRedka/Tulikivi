@@ -1,17 +1,24 @@
 
   //Form
   .contact_form
-    margin: 0px 3rem
+    margin: 0 3rem
     padding: 5rem 13rem
     background-color: #fff
-    box-shadow: 0px 5px 80px 0px rgba(0,0,0,0.05)
+    box-shadow: 0 5px 80px 0 rgba(0,0,0,0.05)
     height: 45rem
     overflow: hidden
     position: relative
     margin-bottom: 10rem
     @media screen and (max-width: $tablet)
+      height: 50rem
       margin: 0 13.33rem
       margin-bottom: 17rem
+      @media screen and (max-width: $mobile)
+        margin: 0
+        margin-bottom: 13.33rem
+        height: auto
+        padding: 5rem 6rem
+
     &_title
       color: $orange
       font-size: 3rem
@@ -22,6 +29,11 @@
       @media screen and (max-width: $tablet)
         font-size: 5rem
         line-height: 7rem
+        @media screen and (max-width: $mobile)
+          text-align: left
+          font-size: 4rem
+          line-height: 5rem
+
     &_info
       margin: auto
       display: flex
@@ -30,13 +42,20 @@
       height: 25rem
       position: relative
       z-index: 2
+      @media screen and (max-width: $mobile)
+        height: auto
   .form_input
     display: block
     position: relative
     width: 40%
     margin-bottom: 5rem
+    @media screen and (max-width: $mobile)
+      width: 100%
+      margin-bottom: 6rem
     &:nth-child(n+3)
       margin-bottom: 0rem
+      @media screen and (max-width: $mobile)
+        margin-bottom: 6rem
     //&:nth-child(4):after
     //  content: ''
     //  width: 2rem
@@ -59,6 +78,8 @@
       @media screen and (max-width: $tablet)
         top: -5rem
         font-size: 2.4rem
+        @media screen and (max-width: $mobile)
+          top: -4rem
     input
       display: inline-block
       background-color: transparent
@@ -92,6 +113,8 @@
         @media screen and (max-width: $tablet)
           top: -5rem
           font-size: 2.4rem
+          @media screen and (max-width: $mobile)
+            top: -4rem
     textarea
       position: relative
       display: inline-block
@@ -110,8 +133,11 @@
       font-size: 1.5rem
       transition: text-indent 200ms ease-in-out
       @media screen and (max-width: $tablet)
-        font-size: 2.4rem
-        line-height: 3rem
+        font-size: 2rem
+        line-height: 2.4rem
+        @media screen and (max-width: $mobile)
+          font-size: 3rem
+          line-height: 3.5rem
       & + label
         font-size: 1.8rem
         top: -3rem
@@ -119,9 +145,6 @@
           top: -4rem
           font-size: 3rem
           line-height: 4rem
-      @media screen and (max-width: $tablet)
-        font-size: 3rem
-        line-height: 2rem
       &:placeholder-shown+label
         top: -3rem
         font-size: 1.8rem
@@ -159,6 +182,10 @@
     @media screen and (max-width: $tablet)
       font-size: 2.66rem
       line-height: 4rem
+      @media screen and (max-width: $mobile)
+        position: static
+        margin: auto
+        width: 60%
     &:hover
       background-color: $orange
       text-decoration: none
@@ -173,12 +200,15 @@
     z-index: 0
     border-radius: 50%
     top: 20%
-    right: 0%
+    right: 0
     @media screen and (max-width: $tablet)
       width: 80rem
       height: 80rem
       top: 25%
       right: -15%
+      @media screen and (max-width: $mobile)
+        top: 60%
+        right: -25%
 
 
 
@@ -193,6 +223,8 @@
       @media screen and (max-width: $tablet)
         width: 100%
         margin-right: 13.33rem
+        @media screen and (max-width: $mobile)
+          margin: 0
     .contact_form_img
       width: 35%
       height: 45rem
