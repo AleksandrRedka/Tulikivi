@@ -10,7 +10,11 @@
     right: -100%
     z-index: 99
     transition: right 500ms
-    padding: 29rem 13.33rem 0
+    padding: 0 13.33rem
+    padding-top: 29rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      padding-top: 10rem
     &_open
       z-index: 102
       right: 0
@@ -22,4 +26,6 @@
   &_address_btn
     width: 50%
     font-size: 2.66rem
+    @media screen and (max-width: $mobile)
+      width: 100%
   
