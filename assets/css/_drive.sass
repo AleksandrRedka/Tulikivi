@@ -22,6 +22,9 @@
       font-size: 5.33rem
       line-height: 6rem
       margin-bottom: 3rem
+      @media screen and (max-width: $mobile)
+        font-size: 4rem
+        line-height: 4rem
   &_img
     display: inline-block
     width: 35%
@@ -35,6 +38,8 @@
       z-index: 1
       top: -20%
       left: 0
+      @media screen and (max-width: $mobile)
+        height: 120vh
     &_viewer
       width: 200%
       height: 200%
@@ -54,6 +59,8 @@
       position: absolute
       top: 20%
       left: 23%
+      @media screen and (max-width: $mobile)
+        left: 5%
       &:hover
         transform: rotateY(1deg)
         transition: all 350ms ease-in-out
@@ -74,6 +81,10 @@
       position: relative
       opacity: 0.85
       z-index: 2
+      @media screen and (max-width: $mobile)
+        height: 95vh
+        padding: 7rem 6rem
+        text-align: left
   &_sub_header
     font-size: 1.8rem
     color: $black
@@ -85,6 +96,10 @@
       line-height: 3.33rem
       width: 70%
       margin-bottom: 5rem
+      @media screen and (max-width: $mobile)
+        width: 100%
+        margin: 0
+        margin-bottom: 3.5rem
   &_text
     font-size: 1.8rem
     line-height: 2.4rem
@@ -97,11 +112,19 @@
       font-size: 2.66rem
       line-height: 3.33rem
       margin-bottom: 3.33rem
+      @media screen and (max-width: $mobile)
+        width: 100%
+        text-align: left
+        line-height: 4rem
+        height: 16rem
+        overflow: hidden
   &_form
     display: block
     margin: 5rem auto
     width: 50%
     min-width: 40rem
+    @media screen and (max-width: $mobile)
+      width: 100%
     &_input
       width: 100%
       display: block

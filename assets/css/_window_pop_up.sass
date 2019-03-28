@@ -1,8 +1,34 @@
 .main_wrapper_pop
   position: absolute
   overflow: hidden
+.main_wrapper_pop_call
+  position: absolute
+  overflow: hidden
 .pop_up_box
   display: none
+
+.pop_up_drive
+  display: none
+  &_content
+    position: absolute
+    width: 70%
+    z-index: 150
+    top: 50%
+    left: 50%
+    height: 80%
+    transform: translate(-50%,-50%)
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    &_wrapper
+      width: auto
+      height: 100%
+      position: absolute
+      text-align: center
+      @media screen and (max-width: $tablet)
+        width: 100%
+        height: 100%
 .pop_up_open
   display: block
   content: ""
@@ -24,6 +50,9 @@
   flex-direction: row
   justify-content: center
   align-items: center
+  @media screen and (max-width: $mobile)
+    width: 100%
+    height: 100%
   &_call
     font-size: 25rem
     position: absolute
@@ -60,6 +89,10 @@
   width: auto
   height: 100%
   position: relative
+  @media screen and (max-width: $mobile)
+    display: flex
+    justify-content: center
+    align-items: center
   &>img
     width: auto
     height: 100%
@@ -78,6 +111,10 @@
   @media screen and (max-width: $tablet)
     right: -25px
     top: -25px
+    @media screen and (max-width: $mobile)
+      right: 0
+      top: 0
+
 
   &:before
     position: absolute

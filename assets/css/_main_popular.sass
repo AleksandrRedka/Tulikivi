@@ -6,6 +6,8 @@
   @media screen and (max-width: $tablet)
     padding-right: 13.33rem
     padding-left: 13.33rem
+    @media screen and (max-width: $mobile)
+      display: none
   &_header
     font-size: 3.6rem
     font-weight: bold
@@ -14,12 +16,14 @@
   &_camin
     font-size: 2.8rem
     color: $black
-    width: calc(50% - 1.5rem)
-    float: left
+    width: 100%
     margin-top: 1.5rem
     position: relative
     display: inline-block
+    margin-bottom: 3rem
     @media screen and (max-width: $tablet)
+      font-size: 4rem
+      line-height: 4rem
       float: none
       margin-bottom: 2rem
     span
@@ -37,14 +41,16 @@
   &_banya
     font-size: 2.8rem
     color: $black
-    width: calc(50% - 1.5rem)
-    float: right
+    width: 100%
     margin-top: 1.5rem
     position: relative
     display: inline-block
+    margin-bottom: 3rem
     @media screen and (max-width: $tablet)
       float: none
       margin-bottom: 2rem
+      font-size: 4rem
+      line-height: 4rem
     span
       display: inline-block
       position: relative
@@ -115,7 +121,7 @@
     overflow: visible
     padding-bottom: 8rem
     @media screen and (max-width: $tablet)
-      margin-bottom: 13.33rem
+      margin-bottom: 3rem
       &:last-child
         display: none
   &_category
@@ -154,9 +160,14 @@
       flex-direction: column
       justify-content: space-around
       padding-left: 3rem
+      @media screen and (max-width: $tablet)
+        justify-content: flex-start
     &_header
       font-size: 2.4rem
       color: $black
+      @media screen and (max-width: $tablet)
+        font-size: 3.5rem
+        margin-bottom: 2rem
     &_text
       font-size: 1.8rem
       line-height: 2rem
@@ -164,8 +175,14 @@
       color: rgba(0, 0, 0, 0.5)
       font-weight: 300
       padding-right: 1rem
+      @media screen and (max-width: $tablet)
+        font-size: 3rem
+        line-height: 4rem
       ul
         padding: 2rem 0
+        @media screen and (max-width: $tablet)
+          padding-top: 3rem
+          padding-bottom: 7rem
       ul li
         font-size: 1.6rem
         line-height: 2rem
@@ -175,6 +192,9 @@
         padding-left: 2.5rem
         position: relative
         padding-bottom: 1rem
+        @media screen and (max-width: $tablet)
+          font-size: 2.33rem
+          line-height: 3rem
         &:before
           content: ''
           display: inline-block

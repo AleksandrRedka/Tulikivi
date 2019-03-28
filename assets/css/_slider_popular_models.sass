@@ -1,11 +1,15 @@
 .slider_popular_models
   padding: 0 3rem
+  margin-bottom: 20rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    margin-bottom: 13rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 10rem
 .popular_models
   position: relative
   width: 100%
-  padding: 0 3rem
   display: flex
   flex-direction: row
   justify-content: space-between
@@ -14,6 +18,8 @@
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     margin-bottom: 20rem
+    @media screen and (max-width: $mobile)
+      padding: 0
 .popular_model
   position: relative
   overflow: hidden
@@ -21,6 +27,8 @@
   height: auto
   cursor: pointer
   outline: none
+  @media screen and (max-width: $mobile)
+    width: calc(50% - 1rem)
   &:hover .popular_model_button_more
     bottom:  1%
     transition: bottom 500ms
@@ -48,6 +56,10 @@
       flex-direction: row
       align-items: center
       justify-content: space-between
+      &>p
+        @media screen and (max-width: $mobile)
+          font-size: 1.4rem
+          line-height: 2rem
       &>img
         width: 3.5rem
         height: 3.5rem
@@ -55,12 +67,12 @@
   &_button_more
     position: absolute
     left: 0
-    bottom: -40px
+    bottom: -42px
     display: flex
     justify-content: center
     align-items: center
     width: 100%
-    height: 40px
+    height: 42px
     background-color: #FFFFFF
     border: 1px solid $orange
     border-radius: 1rem
@@ -85,10 +97,15 @@
     width: 100%
     height: 5rem
     background-color: $orange
+    @media screen and (max-width: $mobile)
+      height: 3rem
     &>p
       font-family: $LatoB
       line-height: 2.2rem
       color: #FFFFFF
+      @media screen and (max-width: $mobile)
+        font-size: 1.5rem
+        line-height: 2rem
   &_label_new
     position: absolute
     top: 0%
@@ -101,13 +118,21 @@
     border: 2px solid $orange
     background-color: #fff
     border-radius: 20px
+    @media screen and (max-width: $tablet)
+      width: 20rem
+      height: 7.5rem
+      @media screen and (max-width: $mobile)
+        width: 9rem
+        height: 4rem
     &>p
       line-height: 2.2rem
       color: $orange
       font-family: $LatoB
       @media screen and (max-width: $tablet)
-        line-height: 2
-        font-size: 2rem
+        line-height: 4rem
+        @media screen and (max-width: $mobile)
+          font-size: 1.5rem
+          line-height: 2rem
 .popular_models_on_page_product_two
   display: flex
   flex-direction: row
@@ -121,8 +146,12 @@
   bottom: -10%
   @media screen and (max-width: $tablet)
     bottom: -20%
+    @media screen and (max-width: $mobile)
+      bottom: -35%
 .slick-models-prev
   bottom: -10%
   @media screen and (max-width: $tablet)
     bottom: -20%
+    @media screen and (max-width: $mobile)
+      bottom: -35%
 

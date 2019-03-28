@@ -12,6 +12,10 @@
     margin-top: 29rem
     flex-direction: column
     height: auto
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-top: 21rem
+      margin-bottom: 7rem
 
   &_image
     width: 55%
@@ -45,6 +49,8 @@
       width: 100%
       padding: 0
       margin-bottom: 10em
+      @media screen and (max-width: $mobile)
+        margin-bottom: 0
   &_header
     display: inline-block
     white-space: nowrap
@@ -56,8 +62,13 @@
       font-size: 10.66rem
       line-height: 13rem
       margin-bottom: 5rem
-    @media screen and (max-width: 1300px)
-      font-size: 4.6rem
+      @media screen and (max-width: 1300px)
+        font-size: 4.6rem
+        line-height: 5rem
+      @media screen and (max-width: $mobile)
+        margin-bottom: 2rem
+
+
 
 
 
@@ -71,6 +82,8 @@
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
   &_wrapper
     position: relative
     width: 100%
@@ -93,6 +106,11 @@
         margin-bottom: auto
       &:nth-last-child(-n-2)
         margin-bottom: 0
+      @media screen and (max-width: $mobile)
+        width: 100%
+        &:nth-child(n+5)
+          display: none
+
     &:hover
       text-decoration: none
       img
@@ -100,6 +118,8 @@
     &_viewer
       width: 100%
       height: auto
+      @media screen and (max-width: $mobile)
+        padding: 3rem
       img
         width: 100%
         height: auto
@@ -111,3 +131,6 @@
     &_name
       font-size: 1.6rem
       font-weight: bold
+      @media screen and (max-width: $mobile)
+        font-size: 2.33rem
+        line-height: 3rem

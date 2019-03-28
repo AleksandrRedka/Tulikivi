@@ -13,6 +13,11 @@
     margin-bottom: 14.5rem
     height: 145rem
     flex-wrap: wrap
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-top: 21rem
+      margin-bottom: 9rem
+      height: auto
   &_img
     width: 40%
     padding-top: 60%
@@ -21,6 +26,9 @@
     @media screen and (max-width: $tablet)
       width: 100%
       padding-top: 40%
+      @media screen and (max-width: $mobile)
+        padding-top: 75%
+        margin-bottom: 5rem
     &>img
       width: auto
       height: 100%
@@ -33,6 +41,8 @@
         left: 0
         bottom: auto
         top: -45%
+        @media screen and (max-width: $mobile)
+          top: 0
   &_text
     width: 60%
     display: flex
@@ -56,6 +66,8 @@
       display: flex
       flex-direction: column
       justify-content: space-evenly
+      @media screen and (max-width: $mobile)
+        width: 100%
     &_title
       font-size: 4.8rem
       line-height: 5.8rem
@@ -64,6 +76,10 @@
         font-size: 8rem
         line-height: 9.5rem
         margin-bottom: 8.33rem
+        @media screen and (max-width: $mobile)
+          font-size: 6.66rem
+          line-height: 8rem
+          margin-bottom: 1.66rem
     &>p
       margin-bottom: 3rem
   .ovens_advantages
@@ -97,6 +113,8 @@
       width: 15%
       background-color: #ffffff
       border: 1px solid $orange
+      @media screen and (max-width: $mobile)
+        display: none
     &_title
       position: absolute
       transform: translate(-50%, -50%) rotate(90deg)
@@ -202,6 +220,8 @@
   margin-bottom: 2rem
   @media screen and (max-width: $tablet)
     margin-bottom: 20rem
+    @media screen and (max-width: $mobile)
+      margin-bottom: 10rem
 .ovens_list
   width: 100%
   padding: 0 3rem
@@ -213,6 +233,8 @@
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
     margin-bottom: 8.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
   &_product
     position: relative
     overflow: hidden
@@ -222,6 +244,13 @@
     @media screen and (max-width: $tablet)
       width: calc(50% - 1.33rem)
       margin-bottom: 5rem
+      @media screen and (max-width: $mobile)
+        width: calc(50% - 0.75rem)
+        margin-bottom: 7rem
+        &:nth-last-child(n+2)
+          margin-bottom: 0
+        &:nth-child(n+5)
+          display: none
       &:nth-child(n+7)
         display: none
       &:nth-child(n+5)
@@ -253,6 +282,10 @@
         flex-direction: row
         align-items: center
         justify-content: space-between
+        &>p
+          @media screen and (max-width: $mobile)
+            font-size: 2rem
+            line-height: 3rem
         &>img
           width: 3.5rem
           height: 3.5rem
@@ -260,6 +293,9 @@
           @media screen and (max-width: $tablet)
             width: 5rem
             height: 5rem
+            @media screen and (max-width: $mobile)
+              width: 2.5rem
+              height: 2.5rem
     &_button_more
       position: absolute
       left: 0%
@@ -293,10 +329,15 @@
   width: 100%
   height: 5rem
   background-color: $orange
+  @media screen and (max-width: $mobile)
+    height: 3rem
   &>p
     font-family: $LatoB
     line-height: 2.2rem
     color: #FFFFFF
+    @media screen and (max-width: $mobile)
+      font-size: 1.5rem
+      line-height: 2rem
 .label_new
   position: absolute
   top: 0%
@@ -312,12 +353,18 @@
   @media screen and (max-width: $tablet)
     width: 20rem
     height: 7.5rem
+    @media screen and (max-width: $mobile)
+      width: 9rem
+      height: 4rem
   &>p
     line-height: 2.2rem
     color: $orange
     font-family: $LatoB
     @media screen and (max-width: $tablet)
       line-height: 4rem
+      @media screen and (max-width: $mobile)
+        font-size: 1.5rem
+        line-height: 2rem
   //MAIN BUTTON MORE
 .close-info-js
   right: 0%

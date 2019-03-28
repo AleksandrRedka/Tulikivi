@@ -45,6 +45,8 @@
       transform: scale(1.5)
       transition: transform 1s 300ms
       cursor: pointer
+      @media screen and (max-width: $tablet)
+        transform: scale(1)
     &:hover a
       pointer-events: none
       left: 0%
@@ -53,9 +55,9 @@
       transform: scale(1.5)
       transition: bottom 500ms 500ms, transform 400ms 500ms
       @media screen and (max-width: $tablet)
-        bottom: -7%
-        transform: scale(1.5)
-        z-index: 104
+        bottom: 30%
+        transform: scale(1)
+        z-index: 1
         transition: bottom 500ms 500ms, transform 400ms 500ms
     & > a
       font-family: $LatoR

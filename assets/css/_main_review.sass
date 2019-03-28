@@ -7,6 +7,8 @@
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
   &_content
     position: relative
     display: flex
@@ -17,6 +19,9 @@
     height: auto
     width: 100%
     padding-top: 3rem
+    @media screen and (max-width: $mobile)
+      padding-top: 0
+      flex-direction: column
 
   &_wrapper
     display: flex
@@ -29,6 +34,8 @@
     position: relative
     @media screen and (max-width: $tablet)
       width: 60%
+      @media screen and (max-width: $mobile)
+        width: 100%
     &:after
       pointer-events: none
       content: ''
@@ -53,11 +60,17 @@
     padding-bottom: 5rem
     @media screen and (max-width: $tablet)
       width: 40%
+      @media screen and (max-width: $mobile)
+        width: 100%
+        margin-bottom: 5rem
     &_for_page_ovens
       width: 35%
       flex-direction: column
       @media screen and (max-width: $tablet)
         width: 40%
+        @media screen and (max-width: $mobile)
+          width: 100%
+          margin-bottom: 5rem
     &_look_more
       font-size: 1.6rem
       line-height: 2.4rem
@@ -77,6 +90,10 @@
       width: 100%
       &:nth-child(n+3)
         display: none
+    @media screen and (max-width: $mobile)
+      margin-bottom: 3.5rem
+      &:nth-child(even)
+        margin-bottom: 0
     &_for_page_ovens
       width: 100%
       cursor: pointer
@@ -98,6 +115,10 @@
     @media screen and (max-width: $tablet)
       font-size: 13.33rem
       line-height: 16rem
+      @media screen and (max-width: $mobile)
+        font-size: 8.33rem
+        line-height: 10rem
+        margin-bottom: 3.5rem
   &_slider
     width: 130%
     height: 100%

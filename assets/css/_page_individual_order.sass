@@ -11,6 +11,10 @@
     margin-top: 29rem
     padding: 0 13.33rem
     flex-wrap: wrap
+    @media screen and (max-width: $mobile)
+      margin-top: 21rem
+      padding: 0 6rem
+      margin-bottom: 7rem
   &_img_slider
     position: relative
     width: calc( 40% - 1.5rem)
@@ -29,6 +33,8 @@
         overflow: hidden
         @media screen and (max-width: $tablet)
           padding-top: 12%
+          @media screen and (max-width: $mobile)
+            width: 15%
         &>img
           width: 100%
           height: auto
@@ -39,8 +45,6 @@
             width: 100%
             height: auto
             top: -75%
-
-
     &_count
       position: absolute
       bottom: 1%
@@ -75,6 +79,9 @@
         @media screen and (max-width: $tablet)
           font-size: 10.3rem
           line-height: 13rem
+          @media screen and (max-width: $mobile)
+            font-size: 4rem
+            line-height: 5rem
 //Slider arrow
 .slick-photo-prev
   bottom: 0
@@ -84,6 +91,9 @@
   @media screen and (max-width: $tablet)
     bottom: -25%
     right: 65%
+    @media screen and (max-width: $mobile)
+      bottom: -80px
+      right: 70%
 .slick-photo-next
   bottom: 0
   top: auto
@@ -92,6 +102,9 @@
   @media screen and (max-width: $tablet)
     bottom: -25%
     right: 25%
+    @media screen and (max-width: $mobile)
+      bottom: -80px
+      right: 25%
 //--------------------------
 //Individual Order----------
 .individual_order_gallery
@@ -99,6 +112,8 @@
   padding: 0 3rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
   &_list
     width: 100%
     display: flex
@@ -112,6 +127,8 @@
       width: calc(33% - 3rem)
       height: auto
       margin-bottom: 3rem
+      @media screen and (max-width: $mobile)
+        margin-bottom: 3.33rem
       &:hover .ovens_list_product_button_more
         bottom: 2%
         transition: bottom 500ms
@@ -122,6 +139,8 @@
           display: none
         &:nth-child(n+5)
           margin-bottom: 0
+        @media screen and (max-width: $mobile)
+          width: 100%
       &:hover &_button_more
         bottom: 2%
         transition: bottom 500ms
@@ -139,3 +158,5 @@
         line-height: 3rem
         color: $black
         margin-bottom: 2rem
+        @media screen and (max-width: $mobile)
+          margin-bottom: 0

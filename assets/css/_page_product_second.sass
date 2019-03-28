@@ -9,6 +9,10 @@
     padding: 0 13.33rem
     margin-top: 29rem
     flex-direction: column
+    @media screen and (max-width: $mobile)
+      margin-top: 15rem
+      padding: 0 6rem
+      margin-bottom: 10rem
   &_img
     width: calc( 40% - 1.5rem)
     height: 100%
@@ -74,14 +78,22 @@
         color: $black
         line-height: 8rem
         margin-bottom: 3rem
+        @media screen and (max-width: $mobile)
+          font-size: 4rem
+          line-height: 5rem
+          margin-bottom: 1.5rem
       &_text
         margin-bottom: 6rem
+        @media screen and (max-width: $mobile)
+          font-size: 2.66rem
+          line-height: 3.33rem
       &_values
         padding: 3rem
         margin-bottom: 6%
         box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1)
         display: flex
         flex-direction: column
+        border-radius: 10px
 
       .info_main_values_item
         width: 100%
@@ -89,8 +101,14 @@
         flex-direction: row
         @media screen and (max-width: $tablet)
           flex-wrap: wrap
+          @media screen and (max-width: $mobile)
+            flex-direction: column
+            &:nth-child(2)
+              display: none
         &:first-child
           padding-bottom: 3.5rem
+          @media screen and (max-width: $mobile)
+            padding-bottom: 0
         &_size
           width: 25%
           display: flex
@@ -103,17 +121,30 @@
               border-right: none
             &:nth-child(-n+2)
               padding-bottom: 3.33rem
+          @media screen and (max-width: $mobile)
+            width: 100%
+            margin-bottom: 4.66rem
+            &:nth-child(-n+2)
+              padding-bottom: 0rem
+            &:last-child
+              margin-bottom: 0
           &:last-child
             border: none
           &_name
             font-size: 1.6rem
             @media screen and (max-width: $tablet)
               font-size: 2.66rem
+              @media screen and (max-width: $mobile)
+                font-size: 2.66rem
+                line-height: 4rem
           &_number
             font-family: $LatoB
             font-size: 2rem
             @media screen and (max-width: $tablet)
               font-size: 3.33rem
+              @media screen and (max-width: $mobile)
+                font-size: 3.33rem
+                line-height: 4rem
       &_button
         width: 25rem
         height: 6rem
@@ -125,9 +156,15 @@
         line-height: 2.4rem
         color: #FFFFFF
         transition: transform 500ms
+        @media screen and (max-width: $mobile)
+          width: 80%
+          margin: auto
         &:hover
           transform: scale(1.1)
-
+.btn_on_page_prod_two
+  @media screen and (max-width: $mobile)
+    width: 80%
+    margin: auto
     //Section Video
 
 .product_two_video
@@ -135,6 +172,9 @@
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 10rem
   &_content
     display: flex
     flex-direction: row

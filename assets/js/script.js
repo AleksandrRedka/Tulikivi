@@ -73,7 +73,19 @@ $('.main_popular_category_img_viewer img').click(function(){
         speed: 300,
         slidesToShow: 3,
         // adaptiveHeight: true,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+                    ],
+
     });
 })();
 
@@ -86,7 +98,25 @@ $('.main_popular_category_img_viewer img').click(function(){
         slidesToScroll: 4,
         arrows: true,
         prevArrow : '<button class="slick-review slick-prev"><img src="assets/img/review_arrow_white.svg" alt=""></button>',
-        nextArrow : '<button class="slick-review slick-next"><img src="assets/img/review_arrow_white.svg" alt=""></button>'
+        nextArrow : '<button class="slick-review slick-next"><img src="assets/img/review_arrow_white.svg" alt=""></button>',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    rows:1,
+                    // variableWidth: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+        ]
     });
 })();
 // Slick Works--------------------------------------
@@ -102,7 +132,6 @@ $(document).ready(function () {
             var length = slider.$slides.length;
             $('.slider_works_nav_count_check').text(i + 1);
             $('.slider_works_nav_count_quantity').text(length);
-            console.log(i);
             // console.log(length)
             // return i + 1;
 
@@ -127,13 +156,14 @@ $(document).ready(function () {
                     dots: false
                 }
             },
-            // {
-            //     breakpoint: 600,
-            //     settings: {
-            //         slidesToShow: 2,
-            //         slidesToScroll: 2
-            //     }
-            // },
+            {
+                breakpoint: 767,
+                settings: {
+                    // rows:2,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
             // {
             //     breakpoint: 480,
             //     settings: {
@@ -257,8 +287,7 @@ $(document).ready(function () {
     popUpItem.click(function (e) {
             e.preventDefault();
             var target = e.target;
-            console.log(target);
-            $('.pop_up_box').addClass('pop_up_open');
+            $('.pop-image-js').addClass('pop_up_open');
             $('.main_wrapper').addClass('main_wrapper_pop');
             $('body').css('overflow', 'hidden');
             var elementClone = target.cloneNode(true);
@@ -268,7 +297,8 @@ $(document).ready(function () {
     );
     $('.button_close_pop').click(function (e) {
         e.preventDefault();
-        $('.pop_up_box').removeClass('pop_up_open');
+        $('.pop-image-js').removeClass('pop_up_open');
+        $('.form-call-js').removeClass('pop_up_open');
         $('.main_wrapper').removeClass('main_wrapper_pop');
         contentBox.empty().not('.button_close_pop');
         $('body').css('overflow', 'auto');
@@ -284,23 +314,20 @@ $(document).ready(function () {
 // Pop-up Call------------------------------------------------------
 (function () {
     $('.call-js').click(function (e) {
-        e.preventDefault();
-        console.log('open');
-        $('.form-call-js').addClass('pop_up_open');
-        $('.main_wrapper').addClass('main_wrapper_pop');
+        e.preventDefault()
+        $('.form-call-js').toggleClass('pop_up_open');
+        $('.main_wrapper').toggleClass('main_wrapper_pop');
         $('body').css('overflow', 'hidden');
     })
 })();
 //----Pop-up----Page Contacts----------------------------------------
 (function () {
     $('.pop-up-js-form').click(function (e) {
-        e.preventDefault();
         $('.form-contacts-js').addClass('pop_up_open');
         $('.main_wrapper').addClass('main_wrapper_pop');
         $('body').css('overflow', 'hidden');
     });
     $('.button_close_pop_contacts').click(function (e) {
-        e.preventDefault();
         $('.form-contacts-js').removeClass('pop_up_open');
         $('.main_wrapper').removeClass('main_wrapper_pop');
         $('body').css('overflow', 'auto')

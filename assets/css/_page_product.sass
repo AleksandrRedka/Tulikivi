@@ -11,6 +11,9 @@
     margin-top: 29rem
     padding: 0 13.33rem
     margin-bottom: 10rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-top: 21rem
   &_img
     width: calc(45% - 1.5rem)
     height: 100%
@@ -47,6 +50,7 @@
         position: relative
         padding-top: 30%
         cursor: pointer
+        border: 1px solid transparent
         @media screen and (max-width: $tablet)
           width: calc(20% - 0.75rem)
           padding-top: 25%
@@ -92,9 +96,16 @@
     &_title
       width: 70%
       margin-bottom: 3rem
+      @media screen and (max-width: $mobile)
+        width: 100%
+        margin-bottom: 1.66rem
     &_text
       @media screen and (max-width: $tablet)
         margin-bottom: 5rem
+        @media screen and (max-width: $mobile)
+          &>p
+            font-size: 2.66rem
+            line-height: 3.33rem
       &>p
       font-size: 1.6rem
       margin-bottom: 3rem
@@ -111,11 +122,18 @@
       margin-bottom: 3rem
       @media screen and (max-width: $tablet)
         margin-bottom: 8.33rem
+        @media screen and (max-width: $mobile)
+          padding-right: 6rem
+          padding-left: 6rem
+          margin: 0 -6rem
+          margin-bottom: 5rem
       &_title
         width: 60%
         height: auto
         display: flex
         flex-direction: column
+        @media screen and (max-width: $mobile)
+          width: 70%
         &>p
           font-size: 1.6rem
           margin-bottom: 2.5rem
@@ -144,6 +162,9 @@
       line-height: 2.4rem
       color: #FFFFFF
       transition: transform 500ms
+      @media screen and (max-width: $mobile)
+        width: 100%
+        margin: auto
       &:hover
         transform: scale(1.05)
       @media screen and (max-width: $tablet)
@@ -163,11 +184,16 @@
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0
   &_content
     border: none
     border-radius: 10px
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1)
     padding: 3rem
+    @media screen and (max-width: $mobile)
+      padding-right: 6rem
+      padding-left: 6rem
     &>p
       font-family: $LatoB
       font-size: 2.4rem
@@ -176,6 +202,10 @@
       @media screen and (max-width: $tablet)
         font-size: 2.66rem
         line-height: 4rem
+        @media screen and (max-width: $mobile)
+          line-height: 3.66rem
+          &:first-child
+            margin-bottom: 3rem
 //---------Section Product Advantages---------
 .product_advantages
   padding: 0rem 3rem
@@ -183,6 +213,9 @@
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
     margin-bottom: 20rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 6.5rem
   &_title
     margin-bottom: 2rem
   &_img
@@ -199,6 +232,9 @@
       border: none
       border-radius: 50%
       margin-right: 4rem
+      @media screen and (max-width: $mobile)
+        width: calc(25% - 4rem)
+        height: auto
       &:last-child
         margin-right: 0
 //-----------Section Product Specifications-----------
@@ -207,10 +243,16 @@
   margin-bottom: 10rem
   @media screen and (max-width: $tablet)
     padding: 0 13.33rem
+    @media screen and (max-width: $mobile)
+      padding: 0 6rem
+      margin-bottom: 8rem
   &_values
     display: flex
     flex-direction: column
     margin-bottom: 5rem
+    @media screen and (max-width: $mobile)
+      margin: 0 -6rem
+      margin-bottom: 5rem
     &_header
       display: flex
       flex-direction: row
@@ -239,6 +281,8 @@
         display: flex
         flex-direction: column
         justify-content: center
+        @media screen and (max-width: $mobile)
+          justify-content: space-between
         &:nth-child(4)
           &>p
             border: none
@@ -254,6 +298,12 @@
             font-size: 3rem
             line-height: 4rem
             font-family: $LatoR
+          @media screen and (max-width: $mobile)
+            padding: 0
+            height: 7rem
+            margin-bottom: 10rem
+            &:first-child
+              margin-bottom: 10rem
           &:last-child
             margin-bottom: 0
       &_square_caption>span
@@ -325,10 +375,16 @@
       @media screen and (max-width: $tablet)
         line-height: 3.66rem
         font-family: $LatoR
+
+
     &_name
       width: 80%
+      @media screen and (max-width: $mobile)
+        width: 70%
     &_number
       width: 20%
+      @media screen and (max-width: $mobile)
+        width: 30%
   //Third Block
 .values_content_conection
   width: 70%
