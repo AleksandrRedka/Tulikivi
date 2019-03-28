@@ -3571,7 +3571,7 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 767px) {
   .main_why_option {
-    width: calc(45% - 1.5rem);
+    width: calc(50% - 1.5rem);
     height: 20vh;
   }
 }
@@ -4032,10 +4032,12 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
   margin-right: 3rem;
   transition: transform 600ms ease-in-out;
+  outline: none;
 }
 .main_reviews_slide:hover {
   text-decoration: none;
   transform: scale(1.05);
+  outline: none;
 }
 .main_reviews_slide_img {
   width: 100%;
@@ -4136,13 +4138,14 @@ input[type=range]::-moz-range-thumb {
 
 .about_slider_img {
   position: relative;
-  padding-top: 8%;
+  padding-top: 13%;
 }
 .about_slider_img > img {
   position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 110%;
+  top: 0%;
+  left: 3%;
+  width: 100%;
+  transform: scale(1.05);
 }
 
 .slick-review {
@@ -4184,9 +4187,46 @@ input[type=range]::-moz-range-thumb {
 .slick-works-prev {
   bottom: -20%;
 }
+@media screen and (max-width: 767px) {
+  .slick-works-prev {
+    bottom: -20%;
+    left: 5%;
+    width: 3rem;
+    height: 3rem;
+  }
+  .slick-works-prev > img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .slick-works-next {
   bottom: -20%;
+}
+@media screen and (max-width: 767px) {
+  .slick-works-next {
+    bottom: -20%;
+    right: auto;
+    left: 20%;
+    width: 3rem;
+    height: 3rem;
+  }
+  .slick-works-next > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slick-dots {
+  text-align: right;
+}
+.slick-dots > li {
+  background-color: #ACACAC;
+  width: 10px;
+  height: 2px;
+}
+.slick-dots .slick-active {
+  background-color: #e56744;
 }
 
 .slider_popular_models {
@@ -8630,8 +8670,8 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 767px) {
   .pop_up_content {
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
 }
 .pop_up_content_call {

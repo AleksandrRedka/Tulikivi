@@ -128,6 +128,25 @@ $(document).ready(function () {
         prevArrow: '<button class="slick-review slick-prev slick-works-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
         nextArrow: '<button class="slick-review slick-next slick-works-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
         dots: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    // prevArrow: '<button class="slick-review slick-prev slick-works-prev"><img src="assets/img/slick_l.svg" alt=""></button>',
+                    // nextArrow: '<button class="slick-review slick-next slick-works-next"><img src="assets/img/review_arrow.svg" alt=""></button>',
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                }
+            },
+            // {
+            //     breakpoint: 480,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1
+            //     }
+            // }
+        ],
         customPaging: function (slider, i) {
             var length = slider.$slides.length;
             $('.slider_works_nav_count_check').text(i + 1);
