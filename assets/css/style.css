@@ -3571,7 +3571,7 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 767px) {
   .main_why_option {
-    width: calc(50% - 1.5rem);
+    width: calc(45% - 1.5rem);
     height: 20vh;
   }
 }
@@ -3646,6 +3646,7 @@ input[type=range]::-moz-range-thumb {
   .main_why_catalog {
     width: 6rem;
     height: 82rem;
+    bottom: 0;
   }
 }
 .main_why_catalog:before {
@@ -3660,6 +3661,11 @@ input[type=range]::-moz-range-thumb {
   top: calc(50% - 2.6rem);
   left: 3rem;
   transition: transform 400ms 300ms ease-in-out, left 400ms 400ms ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  .main_why_catalog:before {
+    left: 2rem;
+  }
 }
 .main_why_catalog h4 {
   position: absolute;
@@ -8624,8 +8630,8 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 767px) {
   .pop_up_content {
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
   }
 }
 .pop_up_content_call {
@@ -9174,8 +9180,8 @@ input[type=range]::-moz-range-thumb {
 }
 @media screen and (max-width: 1024px) and (max-width: 767px) {
   .aside {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
 }
 

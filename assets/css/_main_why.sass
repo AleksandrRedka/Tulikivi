@@ -78,7 +78,7 @@
     align-items: center
     cursor: pointer
     @media screen and (max-width: $mobile)
-      width: calc(50% - 1.5rem)
+      width: calc(45% - 1.5rem)
       height: 20vh
 
     &:before
@@ -138,6 +138,7 @@
     @media screen and (max-width: $mobile)
       width: 6rem
       height: 82rem
+      bottom: 0
     &:before
       content: ''
       display: block
@@ -150,7 +151,8 @@
       top: calc(50% - 2.6rem)
       left: 3rem
       transition: transform 400ms 300ms ease-in-out, left 400ms 400ms ease-in-out
-
+      @media screen and (max-width: $mobile)
+        left: 2rem
     h4
       position: absolute
       bottom: 22rem
